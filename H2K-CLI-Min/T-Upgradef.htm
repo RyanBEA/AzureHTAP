@@ -1,0 +1,227 @@
+<!--TemplateBlock:Header-->
+<HTML>
+<STYLE>
+ A {text-decoration:none}
+ A IMG {border-style:none; border-width:0;}
+ DIV {position:absolute; z-index:25;}
+ TD { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+.fc0 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+.fc1 { COLOR:000000;FONT-SIZE:22PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+.fc2 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+.fc3 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+.fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+
+</STYLE>
+
+<TITLE>Energy Upgrade Report</TITLE>
+<BODY BGCOLOR="FFFFFF">
+<!--EndTemplateBlock-->
+<!--TemplateBlock:Main-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="50%">
+	<p align="left">
+	<span style="COLOR:000000;FONT-SIZE:14PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">RAPPORT DES AMÉLIORATIONS<br></td>
+	<td width="50%">
+	<p align="right">
+	<span style="COLOR:000000;FONT-SIZE:24PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;font-style:italic;">
+	HOT2000<br></span>
+	<span style="COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">
+	  Ressources naturelles CANADA<br>
+	Version [:HOTVER:]</span>
+	</p>
+	</td>
+	<td align="right">
+	<img src="[:ImagePath:]h2k_logo.gif" width =159 height=82>
+	</td></tr>
+</table>
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr> 
+    <td width="13%" class="fc0">Client: </td>
+    <td width="42%" class="fc2">[:ClientName:]</td>
+    <td width="12%" class="fc0">Date de l'évaluation:</td>
+    <td width="33%" class="fc2">[:AuditDate:]</td>
+  </tr>
+  <tr> 
+    <td width="13%" class="fc0">Adresse:</td>
+    <td width="42%" class="fc2">[:ClientAddress:]</td>
+    <td width="12%" class="fc0">Évaluateur:</td>
+    <td width="33%" class="fc2">[:Auditor:]</td>
+  </tr>
+   <tr> 
+    <td width="13%" class="fc0">Ville:</td>
+    <td width="42%" class="fc2">[:CityName:]</td>
+    <td width="12%" class="fc0">Code d'identification du dossier:</td>
+    <td width="33%" class="fc2">[:FileID:]</td>
+  </tr>  
+  <tr> 
+    <td width="13%" class="fc0">Province:</td>
+    <td width="42%" class="fc2">[:ProvName:]</td>
+  </tr>  
+  <tr> 
+    <td width="13%" class="fc0">Code postal:</td>
+    <td width="42%" class="fc2">[:PostalCode:]</td>
+  </tr>
+    <tr> 
+    <td width="13%" class="fc0">Téléphone</td>
+    <td width="42%" class="fc2">[:PhoneNum:]</td>
+  </tr>
+</table>
+
+<p class="fc0">Votre maison a été analysée à l’aide d'un logiciel élaboré par Ressources naturelles du Canada. Les diagrammes suivants présentent la répartition de la consommation d’énergie et des pertes de chaleur annuelles de votre maison.
+</p>
+
+<p class="fc0" align="center"><b>RÉPARTITION DE LA CONSOMMATION D’ÉNERGIE ANNUELLE</b><br>
+	<img alt="" src="[:EnImagePath:]" width="400"height="200">
+</p>
+
+<p class="fc0" align="center"><b>RÉPARTITION DES PERTES DE CHALEUR ANNUELLES</b><br>
+	<img alt="" src="[:HeatImagePath:]" width="400"height="200">
+</p>
+
+<p class="fc0">Actuellement, votre maison consomme près de [:OrigSp+DHW:] kWh au titre du chauffage et de l’eau chaude au cours d’une année moyenne. 
+ Le tableau suivant présente une comparaison de la consommation d’énergie de votre maison, de sa consommation, une fois que des améliorations lui auront été apportées ainsi que de la consommation d’une maison R2000 équivalente.</p>
+
+<p class="fc0" align="center"><b>CONSOMMATION D’ÉNERGIE ANNUELLE DU CHAUFFAGE ET DE L’EAU CHAUDE (kWh)</b></p>
+<img src="[:EnCompImagePath:]" width="550"height="250">
+
+<!--EndTemplateBlock-->
+<!--TemplateBlock:UpgradeOptions-->
+<STYLE>
+.fca { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+.ad2 {border-color:000000;border-style:none;border-bottom-style:solid;border-bottom-width:1PX;border-left-width:0PX;border-top-width:0PX;border-right-width:0PX;}
+</STYLE>
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<p class="fc3">Options relatives aux améliorations<hr></p>
+<p class="fc0">Vous trouverez ci-après une description des améliorations recommandées par l’évaluateur:</p>
+<!--EndTemplateBlock-->
+ <!--TemplateBlock:Upgrade-->
+    <br><br>
+    <table width="100%" border="0" cellspacing="0" cellpadding="4">
+    <tr>
+    <td width="50%" class="fca" valign="bottom">[:UpgradeTitle:]</td>
+    <td width="50%" class="fca" valign="bottom" align="right">[:CostHideOpen:]$[:CostHideClose:][:UpgradeCost:]</td>
+    </tr>
+    </table>
+    <hr>
+	<p class="fc0">[:UpgradeText:]</p>
+   <!--EndTemplateBlock-->
+     <!--TemplateBlock:RecommendationsHeader-->
+    <p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+    <p class="fc3">Recommandations peu coûteuses</p>
+    <ul class="fc0">
+    <!--EndTemplateBlock-->
+    <!--TemplateBlock:Recommendations-->
+	<li>[:RecDesc:]</li>
+	<!--EndTemplateBlock-->
+	<!--TemplateBlock:RecommendationsFooter-->
+	</ul>
+	<!--EndTemplateBlock-->
+<!--TemplateBlock:EnergyRates-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<p class="fc3">Prix de l’énergie<hr></p>
+
+<p class="fc0">Les prix de l’énergie suivants sont établis sur la base de la consommation d’énergie estimée de votre maison et du coût moyen des carburants utilisés dans celle-ci au moment de l’inspection (les prix moyens peuvent varier avec le niveau de consommation; les frais de location de l’équipement ne sont pas inclus).</p>
+
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 width="100%" bordercolor="#000000">
+<TR><TD WIDTH="21%" VALIGN="TOP" rowspan=2>&nbsp;</TD>
+<TD WIDTH="16%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Arial" SIZE=1><P>Électricité</FONT></TD>
+<TD WIDTH="16%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Arial" SIZE=1><P>Gaz natural</FONT></TD>
+<TD WIDTH="16%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Arial" SIZE=1><P>Mazout</FONT></TD>
+<TD WIDTH="16%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Arial" SIZE=1><P>Propane</FONT></TD>
+<TD WIDTH="16%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="Arial" SIZE=1><P>Total</FONT></TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP" HEIGHT=25><FONT FACE="Arial" SIZE=1><P>[:kWh:]</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>$</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>[:GasUnit:]</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>$</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>[:OilUnit:]</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>$</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>[:PropaneUnit:]</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>$</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>[:TotalUnit:]</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P>$</FONT></TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=1><P>Estimation actuelle</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricEn:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricCost:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:NatGasEnCubicMeters:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:GasCost:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilEnLitres:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilCost:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneEnLitres:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneCost:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalEn:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalCost:]</TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=1><P>Après les améliorations</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricEnI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricCostI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:NatGasEnCubicMetersI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:GasCostI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilEnLitresI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilCostI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneEnLitresI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneCostI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalEnI:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalCostI:]</TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=1><P>Économie</FONT></TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricEnS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:ElectricCostS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:NatGasEnCubicMetersS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:GasCostS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilEnLitresS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:OilCostS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneEnLitresS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:PropaneCostS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalEnS:]</TD>
+<TD WIDTH="8%" VALIGN="TOP">[:TotalCostS:]</TD>
+</TR>
+</TABLE>
+<p class="fc0">
+Note:  Un gigajoule (GJ) correspond à la quantité d’énergie consommée par 10 ampoules de 100 watts sur une période de 12 jours.
+</p>
+<!--EndTemplateBlock-->
+<!--TemplateBlock:NoticeBlock-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<p class="fc3"><br>Avis au propriétaire<hr></p>
+<p class="fc0">Votre maison a été analysée à l’aide d'un logiciel élaboré par Ressources naturelles Canada. Ressources naturelles Canada n’offre aucune garantie, expresse ou implicite, relativement aux valeurs de consommation d’énergie, aux estimations de coûts et aux recommandations en matière d’efficacité énergétique qui figurent dans la présente évaluation. Les coûts réels en matière de consommation d’énergie dépendent d’un ensemble de facteurs sur lesquels le ministère des Ressources naturelles n’a aucun contrôle. En aucun cas Ressources naturelles Canada, son ministre, ses représentants, employés ou préposés n’ont d’obligations ni n’assument quelque responsabilité délictuelle que ce soit, à la suite d’éventuelles pertes de revenus ou de profits, voire pour des dommages consécutifs, accessoires, spéciaux, ou indirects découlant de lùtilisation, par le propriétaire, du présent rapport d’évaluation.</p>
+
+<p class="fc0">Il se peut que certaines des hypothèses sous-jacentes du logiciel ne s’appliquent pas à votre maison. Les hypothèses sur lesquelles s’appuie le logiciel se fondent sur un niveau d’utilisation moyen des appareils ménagers.</p>
+
+<p class="fc0">TLe calcul de la période de récupération simple applicable aux améliorations employé dans le présent rapport repose sur les économies en matière d’énergie découlant de la mise en oeuvre simultanée de l’ensemble des mesures d’amélioration. Les économies réelles dépendront de la méthode de mise en oeuvre, des variations, d’une année à l’autre, des conditions météorologiques, du type d’utilisation et des changements futurs des prix de l’énergie. Les données relatives aux économies ne représentent qu’une approximation. Ressources naturelles Canada n’offre ni promesse ni garantie quant aux économies réelles susceptibles d’être réalisées.</p>
+
+<p class="fc0">Il se peut que les coûts annuels en matière d’énergie qui figurent dans le présent rapport ne correspondent pas avec votre montant facturé réel pour la période illustrée. Les valeurs relatives aux coûts de l’énergie ne tiennent pas compte de toutes les taxes applicables, des frais de base, des multiples redressements susceptibles d’être apportés au compte, des crédits non plus que des frais découlant d’un paiement tardif; en outre, elles se fondent sur un coût en matière d’énergie moyen par unité (voir la section Prix de l’énergie).</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+<p class="fc3"><br>[:CommentHeader:]<hr></p>
+<p class="fc0">[:Comments:]</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+<br><br>
+<p class="fc10" align="right">
+  H2Kv9.2-Mar2004
+</p>
+
+</BODY></HTML>
+<!--EndTemplateBlock-->

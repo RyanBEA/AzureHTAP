@@ -1,0 +1,145 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+     A {text-decoration:none}
+     A IMG {border-style:solid; border-width:0;}
+     DIV {position:absolute; z-index:25;}
+    .fc0 { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc1 { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc2 { COLOR:000000;FONT-SIZE:7PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:7PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc4 { COLOR:000000;FONT-SIZE:26PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc5 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .ad0 {border-color:000000;border-style:solid;border-bottom-width:0PX;border-left-width:0PX;border-top-width:0PX;border-right-width:0PX;}
+    .ad1 {border-color:000000;border-style:solid;border-bottom-width:0PX;border-left-width:0PX;border-top-width:0PX;border-right-width:0PX;}
+    .ad2 {border-color:000000;border-style:solid;border-bottom-style:solid;border-bottom-width:1PX;border-left-style:solid;border-left-width:1PX;border-top-style:solid;border-top-width:1PX;border-right-style:solid;border-right-width:1PX;}
+  </style>
+  <title>
+    EnerGuide for New Houses Label
+  </title>
+</head>
+
+<body bgcolor="FFFFFF" leftmargin=0 topmargin=0>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Main-->
+
+<!-- Note: To see gray borders for all fields to test alignment 
+           with preprinted label, Replace all ":none;" with :solid;" 
+           in selected regions. -->
+
+<!-- Outside box border for alignment (black:000000) -->
+<div style="z-index:10;left:89px;top:230px;width:360px;height:575px; border-color:000000;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table border=0 cellpadding=0 cellspacing=0 width=360px height=625px>
+      <td>&nbsp;</td>
+  </table>
+</div>
+
+
+<!-- New Mailing Address labels -->
+<div style="left:0px;top:20px;width:700px;height:180px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="700px" border=0 cellpadding=0 cellspacing=0>
+      <COLGROUP width="400px">
+      <COLGROUP width="300px">
+      <TR><TD class="fc5">[:MailingName:]</TD><TD class="fc5">[:MailingName:]</TD></TR>
+      <TR><TD class="fc5">[:MailingStreet:]</TD><TD class="fc5">[:MailingStreet:]</TD></TR>
+      <TR><TD class="fc5">[:MailingCityProvince:]</TD><TD class="fc5">[:MailingCityProvince:]</TD></TR>
+      <TR><TD class="fc5">[:MailingPostalCode:]</TD><TD class="fc5">[:MailingPostalCode:]</TD></TR>
+  </table>
+</div>
+
+<!-- Box at top enclosing EnerGuide banner -->
+<div style="z-index:1;left:89px;top:230px;width:360px;height:108px;border-color:000000;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;"></div>
+
+
+<!-- Address line -->
+<div style="z-index:2;left:89px;top:360px;width:360px;height:15px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <span class="fc0">
+    <center>[:Addr1:], <br>[:LocName:], [:RegionName:]</center>
+  </span>
+</div>
+
+<!-- Rating text and arrow down -->
+<div style="z-index:3;left:89px;top:400px;width:360px;height:64px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <div class="fc4" style="z-index:4;text-indent:[:EnerBaseTPos:]px;position:relative;">
+          [:CheersRate:]
+        </div>
+	     <div style="text-indent:[:EnerBasePos:]px;position:absolute;">
+          <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Rating graphic box for alignment purposes -->
+<div style="left:107px;top:437px;width:332px;height:22px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;"></div>
+
+<!-- House ID/File No. -->
+<div style="left:120px;top:624px;width:70px;height:15px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="100px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">
+      Numéro de fichier :
+    </td>
+  </table>
+</div>
+<div style="left:235px;top:624px;width:70px;height:15px;border-color:000000;border-style:solid;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="100px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">[:AuditID:]</td>
+  </table>
+</div>
+
+<!-- Software version -->
+<div style="left:120px;top:646px;width:110px;height:15px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="110px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">
+      Version du logiciel :
+    </td>
+  </table>
+</div>
+<div style="left:235px;top:646px;width:50px;height:15px;border-color:000000;border-style:solid;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="100px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">[:HOTVER:]</td>
+  </table>
+</div>
+
+<!-- Builder name -->
+<div style="left:120px;top:671px;width:120px;height:15px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="120px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">
+      Organisme de service :
+    </td>
+  </table>
+</div>
+<div style="left:235px;top:671px;width:200px;height:15px;border-color:000000;border-style:solid;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <table width="200px" border=0 cellpadding=0 cellspacing=0>
+    <td class="fc1">[:SOName:]</td>
+  </table>
+</div>
+
+<!-- Contact information at bottom of label -->
+<div style="left:120px;top:752px;width:310px;height:30px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;">
+  <span class="fc1">
+    [:PrefName+PrefTele:]<br>
+    [:PrefEmail:]
+  </span>
+</div>
+
+<!-- Audit Date -->
+<div style="left:357px;top:779px;width:90px;height:14px;border-color:DDDDDD;border-style:none;border-bottom-style:none;border-bottom-width:1px;border-left-style:none;border-left-width:1px;border-top-style:none;border-top-width:1px;border-right-style:none;border-right-width:1px;"> 
+  <span class="fc2">
+    Date: [:AuditDate:]
+  </span> 
+</div>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+<br>
+</body>
+</html>
+<!--EndTemplateBlock-->

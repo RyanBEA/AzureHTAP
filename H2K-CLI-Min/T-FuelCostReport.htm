@@ -1,0 +1,110 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+<title>H2K</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+P {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;		
+
+		}
+		
+TD {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;}
+
+P.SectionHead {	font-family:Arial, Helvetica, sans-serif;
+		font-size:13pt;
+		font-style:italic;
+		font-weight:bold;
+				margin-top:0pt;
+		}
+HR.A{		height:0.5pt;
+		margin-top:0pt;
+		margin-bottom:0pt;
+		padding:0pt;
+		border-width:0pt}
+		
+TABLE {page-break-inside:avoid}
+
+DIV.KeepTogether {page-break-inside:avoid}
+		
+.fc0 { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!--EndTemplateBlock-->	
+<!--TemplateBlock:Main-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="50%">
+	<p align="left">
+	<span style="COLOR:000000;FONT-SIZE:14PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">FUEL COST REPORT<br></td>
+	<td width="50%">
+	<p align="right">
+	<span style="COLOR:000000;FONT-SIZE:24PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;font-style:italic;">
+	HOT2000<br></span>
+	<span style="COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">
+	  Natural Resources CANADA<br>
+	Version [:HOTVER:]</span>
+	</p>
+	</td>
+	<td align="right">
+	<img src="[:ImagePath:]h2k_logo.gif" width =159 height=82>
+	</td></tr>
+</table>
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="600px">
+	<b>File Name: </b>[:USEFUEL:]
+	</td></tr>
+</table>
+<br>
+<!--EndTemplateBlock-->	
+<!--TemplateBlock:FuelRecord-->
+<table width="600px" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="300px"><b>Record #[:RecNum:]</b> </td>
+    <td>Fuel: [:FUELTYP:]</td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr> 
+    <td width="300px"><b>Rate ID: [:FUELNAM:]</b> </td>
+    <td>[:FUELDOC:]</td>
+  </tr>
+
+<p>&nbsp;</p>
+
+<!--Table:RateTable-->
+<table border="0" cellspacing="0" cellpadding="3" width="600px">
+  <!--TableRow:Header--> 
+  <tr bgcolor="#000000"> 
+    <td width="60"> 
+      <div align="left"><b><font color="#FFFFFF">Rate Block</font></b></div>
+    </td>
+    <td width="60"> 
+      <div align="left"><b><font color="#FFFFFF">[:KWH:]</font></b></div>
+    </td>
+    <td width="60"> 
+      <div align="center"><b><font color="#FFFFFF">Dollars per [:KWH:]</font></b></div>
+    </td>
+    <td width="60"> 
+      <div align="center"><b><font color="#FFFFFF">Charge ($)</font></b></div>
+    </td>
+  </tr>
+ <!--EndTableRow-->
+ <!--TableRow:Body-->
+<tr bgcolor="[:BGColour:]"> 
+    <td width="60"><b>[:RateBlock:]</b></td>
+    <td width="60" align="right"> 
+      [:KWH:]
+    </td>
+    <td width="60" align="right"> 
+      [:DollarsPerKWH:]
+    </td>
+    <td width="60" align="right"> 
+      [:Charge:]
+    </td>
+  </tr>
+ <!--EndTableRow-->
+ </table>
+<!--EndTable-->
+<!--EndTemplateBlock-->	

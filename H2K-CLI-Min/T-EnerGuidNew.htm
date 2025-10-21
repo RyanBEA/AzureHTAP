@@ -1,0 +1,956 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+    A {text-decoration:none}
+    A IMG {border-style:none; border-width:0;}
+    DIV {position:absolute; z-index:25;}
+    .box { float: left; }
+    #boxContent { border: none; background: #FFFFFF; border-color:000000;border-style:solid;border-width:1PX; padding=10;position: relative; left: -4px; top: -4px; } 
+    #boxContainer { position: relative; background: #666; margin: 8px; } 
+    .fc0 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc1 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc2 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc2s { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc4 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc5 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc6 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc7 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;TEXT-DECORATION:UNDERLINE;}
+    .fc8 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-STYLE:ITALIC;}
+    .fc9 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+    .fc11 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc12 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fcRate { COLOR:000000;FONT-SIZE:24PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .PageNum { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+        
+    div.cat {
+	    width: 100%; 
+	    line-height: 1.1em;
+	    border-bottom: 2px dotted gray;
+	    COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;
+	    position:relative;
+    }
+
+    div.head {
+	    width: 100%; 
+	    line-height: 1em;
+	    border-bottom: solid white .2em;
+	    margin-top: .9em;
+	    COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;
+	    position:relative;
+    }
+
+    .itemname	{
+       float: left;
+       position: relative; /*needed by IE6*/
+       top: 5px;
+	    background-color: white;
+	    margin-bottom: -.3em;
+	    border-bottom: solid white .2em;
+	    padding-right: 10px;
+	    text-align: left;
+    }
+
+    .num	{
+	    float: right;
+	    position: relative; /* needed by IE6*/
+	    top: 5px;
+	    background-color: white;
+	    margin-bottom: -.4em;
+	    border-bottom: solid white .2em;
+	    width: 70px;
+	    text-align: right;
+    }
+   </style>
+   <title>
+     EnerGuide - Energy Efficiency Report
+   </title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" class="fc4">
+      <img alt="" src="[:ImagePath:]EGWordLogo.jpg" width="290" height="70" align="bottom">
+      &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width=100% class="fc4">
+        Energy Efficiency Evaluation Report
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="35%" class="fc1">
+      [:ClientName:]<br>
+      [:ClientAddress:]<br>
+      [:CityName:], [:ProvName:]<br>
+      [:PostalCode:]<br>
+    </td>
+    <td width="40%" class="fc1" valign="top">
+      <div class="box" id="boxContainer" style="width:260px;height:60px;"> 
+        <div class="box" id="boxContent" style="width:260px;height:86px"> 
+		    <span class"fc0"> 
+          File Number: [:FileID:]<br>
+          Year Built: [:YearBuilt:] <br>
+          Date of Evaluation: [:DateOfEval:]<br>
+          Builder Name: [:BuilderName:]<br>
+          </span> 
+		  </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<p class="fc3">Congratulations on the purchase of your new house!<br>
+  <span class="fc1">
+  This report contains information on how your new house will consume 
+  energy. Anyone can claim that a house is energy efficient, but the 
+  EnerGuide label and this report shows how 
+  efficient your house is. Any energy efficiency upgrades that you and 
+  your builder decided to include in your house will reduce energy 
+  consumption for years to come and will help protect our environment.
+  </span>
+  <br>
+</p>
+
+<p class="fc3">Your House's Energy Efficiency Rating<br>
+  <span class="fc1">
+  A qualified energy advisor has assessed the energy efficiency of your 
+  house by using Natural Resources Canada's EnerGuide Rating System procedures. 
+  <b>Based on this evaluation, your house has an energy efficiency rating
+  of [:CheersRate:]</b>
+  </span>
+  <br>
+</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+    <td class="fcRate">&nbsp;
+      <span style="text-indent:[:EnerTPos:]px;position:absolute;">
+	    [:CheersRate:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+    <td>
+      <span style="text-indent:[:EnerPos:]px;position:absolute;" class="fc0">
+        <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+    <td>
+	  <img style="border-style:0;" alt="Energy Efficiency Rating Graphic"
+	       width="486" height="36" src="[:ImagePath:]EnerGradNew.jpg" 
+		   align="bottom">
+	</td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp;</td>
+    <td class="fc6">
+      <span style="text-indent:0px;position:absolute;">
+	    Level of energy efficiency<br>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp;</td>
+	<td class="fc9">
+      <span style="text-indent:0px;position:absolute;">
+        <b>65</b>
+      </span>
+      <span style="text-indent:330px;position:absolute;">
+        <b>80+</b>
+      </span>
+      <span style="text-indent:465px;position:absolute;">
+        <b>100</b>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+    <td>
+      <span style="text-indent:330px;position:absolute;" class="fc0">
+        <img alt="" src="[:ImagePath:]uparrow.gif" width="20" height="20" vspace="10">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+	<td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="10%" class="fc0">&nbsp; </td>
+    <td>
+      <span style="text-indent:275px;position:absolute;" class="fc6">
+        Energy Efficiency Target<br>
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+</table>
+<br>
+    
+<span class="fc1">
+  The EnerGuide scale ranges from 0 to 100. It accommodates 
+  millions of houses across Canada - from older houses in need of renovation 
+  to newer, more energy-efficient ones. A "0" on the scale would represent 
+  an uncomfortable house that has major air leakage, no insulation and 
+  extremely high-energy consumption. At the other end of the scale, "100" 
+  represents a house that is very well insulated, airtight yet well 
+  ventilated, and heated by renewable energy sources, such as wind or solar 
+  power. Several factors, such as the size of a home's windows and the 
+  direction they face, can affect the rating. Even if two houses appear 
+  identical, their ratings can be very different if they have different 
+  levels of insulation, types of heating equipment, etc.<br>
+  <br>
+  For many older houses, meeting 65 or higher on the scale would be quite an 
+  achievement. New houses typically receive a rating of 65 or higher, simply 
+  because of improvements in building standards and practices over the years. 
+  Relatively few houses achieve a rating of 80 or higher, and those that do 
+  represent the most energy-efficient houses on the market. Therefore, the 
+  EnerGuide rating scale shown ranges from 65 to 100.
+  <br>
+</span>
+    
+  <div class="head">
+  <div class="itemname">Typical Energy Efficiency Ratings</div>
+  <div class="num" style="width: 150px;">Typical Rating</div>
+  </div>
+  <hr>
+  <div class="cat"><div class="itemname">New house built to building code standards</div>
+  <div class="num">65 - 72</div></div>
+  <div class="cat"><div class="itemname">New house with some energy-efficiency improvements</div>
+  <div class="num">73 - 79</div></div>
+  <div class="cat"><div class="itemname">Energy-efficient new house</div>
+  <div class="num">80 - 90</div></div>
+  <div class="cat"><div class="itemname">House requiring little or no purchased energy</div>
+  <div class="num">91 - 100</div></div>
+
+
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page2-->
+
+<p class="fc0">&nbsp;</p>
+
+<p class="fc3">Estimated Annual Energy Consumption</p>
+    
+<p class="fc1">
+  Below, you will find the estimated annual energy consumption of electricity, 
+  natural gas, propane or oil for your house. These estimates are based on a 
+  number of standard assumptions, such as a family of four living in the home, 
+  specific thermostat settings, and usage rates for hot water, lighting and 
+  appliances.
+</p>
+
+<p class="fc1">
+  These assumptions may not reflect your lifestyle but, since they are the 
+  same for all houses, they allow you to compare your house's rating with 
+  similar-sized houses built in similar regions. The number of occupants and 
+  their day-to-day habits and overall lifestyle may significantly influence 
+  your house's actual energy consumption and your future savings. 
+</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="60%" class="fc1">
+	  This house, as currently rated, has an estimated 
+      annual energy consumption of [:TotalEn:] [:TotalUnit:]*.<br>
+      <br>
+	</td>
+    <td width="40%" class="fc1" valign="top">
+	  <div class="box" id="boxContainer" style="width:340px;height:90px;"> 
+        <div class="box" id="boxContent" style="width:340px;height:90px">
+		  * One [:TotalUnit:] is the amount of energy that would be consumed 
+		  by a 100-Watt light bulb lit continuously for four months.<br>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<p class="fc5">
+  Table 1.&nbsp;&nbsp;Estimated Annual Energy Consumption
+</p>
+
+<table width="100%" border="2" cellspacing="0" cellpadding="4" bordercolor="#000000">
+  <tr>
+    <td class="fc2">&nbsp;</td>
+    <td class="fc2" align="center">Electricity<br>(kilowatt-hours)</td>
+    <td class="fc2" align="center">Natural Gas<br>(cubic metres)</td>
+    <td class="fc2" align="center">Oil<br>(litres)</td>
+    <td class="fc2" align="center">Propane<br>(litres)</td>
+    <td class="fc2" align="center">Total<br>(gigajoules)</td>
+  </tr>
+  <tr>
+    <td class="fc2" align="center">Current estimate</td>
+    <td class="fc0" align="center">[:ElectricEn:]</td>
+    <td class="fc0" align="center">[:NatGasEnCubicMeters:]</td>
+    <td class="fc0" align="center">[:OilEnLitres:]</td>
+    <td class="fc0" align="center">[:PropaneEnLitres:]</td>
+    <td class="fc0" align="center">[:TotalEn:]</td>
+  </tr>
+</table>
+
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="10%" class="fc1">&nbsp;</td>
+    <td width="90%" class="fc1" valign="top">
+        <div class="box" id="boxContainer" style="width:475px;height:47px;"> 
+          <div class="box" id="boxContent" style="width:473px;height:50px;">
+          <b>Did you know?</b><br> 
+          <br>
+          Today, 17 percent of all energy used in Canada goes 
+          toward running our homes. By using less energy in your home, you 
+          can help reduce the production of greenhouse gas (GHG) emissions 
+          that contribute to climate change and harm the environment. Your 
+          house [:GHGSentence:].<br>
+	  </div>
+	</div>
+    </td>
+  </tr>
+</table>
+
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page3-->
+
+<p class="fc0">&nbsp;</p>
+
+<p class="fc3">Estimated Energy Consumption by End Use</p>
+    
+<p class="fc1">
+  All houses lose heat to the outdoors during the heating season through air 
+  leakage, ventilation (e.g. exhaust fans in bathrooms and kitchen) and the 
+  transfer of heat through the basement, walls, roof, windows and doors. Lost 
+  heat must be replaced by your main heating device (furnace, boiler, 
+  fireplace, etc.). This is called space heating. Generally, space heating, 
+  domestic hot water, and lights and appliances make up most of the energy 
+  consumption in a house. <br>
+</p>
+
+<p class="fc1">
+  Figure 1 shows the breakdown of space heating, domestic hot water, and 
+  lights and appliances for your house.
+</p>
+
+<center>
+<span class="fc5">
+  Figure 1.&nbsp;&nbsp;Energy Consumption Estimates by End Use
+</span>
+</center>
+
+<center>
+  <img alt="" src="[:EnImagePath:]" width="600" height="200">
+</center>
+
+<p class="fc1">
+  Figure 2 shows how the energy for the "space heating" segment shown in 
+  Figure 1 actually gets used in the heating of your home. A long bar 
+  indicates where your house will lose more heat; a short bar indicates 
+  where it will lose less heat. If you decide to renovate your home, look at 
+  the long bars on this graph and consider improving those areas.
+</p>
+
+<center>
+<span class="fc5">
+  Figure 2.&nbsp;&nbsp;Estimated Heat Loss<br>
+</span>
+</center>
+
+<center>
+  <img alt="" src="[:HeatImagePath:]" width="550" height="220">
+</center>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="10%" class="fc1">&nbsp;</td>
+    <td width="90%" class="fc1" valign="top">
+	   <div class="box" id="boxContainer" style="width:475px;height:47px;"> 
+        <div class="box" id="boxContent" style="width:473px;height:50px;">
+          <b>Maintenance tip</b><br> 
+          
+          The building envelope is made up of a house's exterior walls, 
+          basement, exposed floors, ceilings, windows, roofs and doors. As 
+          houses age in Canada's severe climate, tiny cracks open in the 
+          building envelope. Any future renovations you undertake may also 
+          affect your house's building envelope. Since increased air leakage 
+          through cracks or holes decreases your house's energy efficiency 
+          and the comfort of the occupants, keep this in mind over time so 
+          that you can protect your investment.
+	    </div>
+	  </div>
+    </td>
+  </tr>
+</table>
+
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page4-->
+
+<p class="fc0">&nbsp;</p>
+
+<p class="fc3">Energy Saving and Maintenance Tips for Your New Home</p>
+
+<p class="fc1">
+  Just like anything else you value, houses need to be maintained with care 
+  and repaired whenever problems appear. A well-maintained house will pay 
+  you back with reduced energy costs and greater comfort.
+</p>
+
+<span class="fc11">
+  Heating equipment<br>
+  <span class="fc1">
+    Have your space- and water-heating equipment serviced annually. If you 
+    have a forced-air heating system, clean or replace your furnace filter 
+    every month, or as required. 
+  </span>
+</span>
+<br><br>
+<span class="fc11">
+  Ventilation systems<br>
+  <span class="fc1">
+    If you have a heat recovery ventilation system, remember to clean the 
+    filter, core and grills regularly. Natural Resources Canada's publication 
+    entitled <i>Heat Recovery Ventilator</i> has a chapter on how to maintain 
+    it properly. You can call 1 800 387-2000 to order a free copy or visit 
+    oee.nrcan.gc.ca/publications and look under &quot;Heating and Cooling.&quot;
+  </span>
+</span>
+<br><br>
+<span class="fc11">
+  Water heating<br>
+  <span class="fc1">
+    Lower your water-heater thermostat setting from to 55&deg;C (130&deg;F). 
+    It will save you money on your water-heating bill and help prevent 
+    accidental scalding.
+  </span>
+</span>
+<br><br>
+<span class="fc11">
+  Energy-efficient lighting<br>
+  <span class="fc1">
+    When replacing lights, install energy-efficient lighting. Energy-efficient 
+    bulbs, such as ENERGY STAR<SUP>&reg;</SUP> qualified compact fluorescents, last longer and reduce 
+    electricity consumption.
+  </span>
+</span>
+<br><br>
+<span class="fc11">
+  Energy-efficient appliances, home electronics and office equipment<br>
+  <span class="fc1">
+    When purchasing appliances, home electronics and office equipment, look 
+    for those displaying the ENERGY STAR<SUP>&reg;</SUP> mark, the international symbol 
+    for energy efficiency. An ENERGY STAR<SUP>&reg;</SUP> labelled computer in "sleep" 
+    mode consumes about 80 percent less electricity than it does in full-power 
+    mode. ENERGY STAR<SUP>&reg;</SUP> labelled home electronics equipment uses less than 
+    half as much energy in standby mode (i.e. when turned "off") - without 
+    sacrificing features you want. For more information, go to 
+    energystar.gc.ca.
+  </span>
+</span>
+<br><br>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Spillage-->
+<span class="fc11">
+  Combustion spillage<br>
+  <span class="fc1">
+    The heating equipment (fireplace, furnace, domestic hot water equipment, 
+    gas dryer, etc.) in your new house produces combustion gases. Combustion 
+    gases are created when fuels such as wood, oil and gas are burned. These 
+    gases must be vented to the outdoors or they may enter the living space 
+    of the house. This  combustion spillage can be dangerous.<br>
+    <br>
+    During the energy evaluation of your new house, the energy advisor 
+    conducted a test to find out if the potential for this problem existed. 
+    The test showed that under certain conditions (e.g., when the occupants 
+    close all windows and turn on all exhaust fans so that more air is 
+    leaving the house than is coming in), combustion spillage may be a 
+    problem. Your builder has installed a carbon monoxide (CO) detector in 
+    your home to help address this issue. It will sound an alarm if it 
+    detects CO in your house, and ventilation will be required immediately. 
+    As with your smoke detector, you must maintain and check your CO 
+    detector regularly.<br>
+    <br>
+    For more information about combustion spillage, contact the EnerGuide Rating
+    System service organization for your area listed on page 5 of this report. 
+    Alternatively, contact the Canada Mortgage and Housing Corporation at 
+    1 800 668-2642 or visit its Web site at cmhc.ca and request a copy of the 
+    publication <i>Combustion Gases in Your Home</i>.
+  </span>
+</span>
+<br><br>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BreakBeforeSolarReady-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<p class="fc0">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page4b-->
+<span class="fc11">
+  Solar ready<br>
+  <span class="fc1">
+    Congratulations, your new home is Solar Ready! This means that your builder 
+    has installed two conduits from the mechanical room up to the attic and there
+    is enough space on the roof for you to install solar panels (to provide
+    domestic water heating and to generate electricity) in the future should 
+    you decide to do so. To learn more about Solar Ready and solar energy visit 
+    <a href="http://www.newhomes.gc.ca">www.newhomes.gc.ca</a> or talk with 
+    your builder.
+  </span>
+</span>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%">
+      [:SolarReadyLogo:]
+      &nbsp;
+    </td>
+  </tr>
+</table>
+<br>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page5-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<p class="fc0">&nbsp;</p>
+
+<p class="fc3">Notice to Homeowner</p>
+<p class="fc1">
+  Thank you for having your house examined by a qualified energy advisor 
+  working with the EnerGuide Rating System. The file number relating to 
+  the independent energy evaluation is indicated in this report and on the 
+  EnerGuide rating label provided by your builder.
+</p>
+<p class="fc1">
+  The annual energy consumption figures indicated in Table 1 of this report 
+  and on the EnerGuide rating label are estimates only. They are based on a 
+  number of assumptions (listed on page 2 of this report) and depend on 
+  factors beyond the control of Natural Resources Canada (NRCan). NRCan makes 
+  no warranty, expressed or implied, with respect to the energy consumption 
+  figures included in this report.
+</p>
+<p class="fc1"> 
+  The purpose of the EnerGuide Rating System is to assess the energy efficiency 
+  of new homes. It does not replace a home inspection.
+</p>
+<p class="fc1"> 
+  The Government of Canada developed and financially supports the EnerGuide
+  Rating System. This support helps service organizations provide the service
+  to homeowners and homebuilders.
+</p>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Service organization name:
+    </td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:HomeAdvisorCompany:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+     </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Address:
+    </td>
+    <td align="left">
+       <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+          [:HomeAdvisorAddress:]
+       </span> 
+       <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Phone number:
+    </td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:HomeAdvisorPhone:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Date of evaluation:
+    </td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:DateOfEval:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+     </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  House address:
+    </td>
+    <td align="left">
+       <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+          [:ClientFullAddress:]
+       </span> 
+       <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  House file number:
+    </td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:FileID:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+</table>
+
+<p class="fc1">
+<i><u>Personal Information Agreement:</u></i><br>
+<br>
+Personal information collected in the course of the energy evaluation of your 
+home will be protected under the <i>Privacy Act</i>. The data collected in the 
+course of preparing this report have been provided to NRCan for the purposes 
+of:
+</p>
+<ul class="fc1">
+  <li>
+    NRCan's quality assurance* and statistical analysis activities; and,
+  </li>
+  <li>
+    enabling NRCan to confirm information on your home to other federal 
+    departments, provincial/territorial or municipal governments or utility 
+    companies which have an agreement in place with NRCan and are offering 
+    incentives based on the energy evaluation of your home.
+  </li>
+</ul>
+<p class="fc1">
+*Note: NRCan representatives may contact you during the quality assurance 
+activities on the EnerGuide Rating System.<br>
+<br>
+By signing below, I authorize NRCan to use my Personal Information in the 
+manner outlined above:
+</p>
+
+<p class="fc8">
+(please print)
+</p>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Homeowner name:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:ClientName:]
+	  </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" align="left">
+	  Phone number:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    [:ClientPhone:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+    </td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="30%" height="40" align="left">
+	  Signature:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:400px;">
+	    <br>
+      </span>
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+</table>
+
+<p class="fc1">
+  <i>Note</i>: The information above must identify the name of the owner of 
+  the home at the time the final energy evaluation is performed. If the 
+  homeowner has not taken legal possession of the home from the builder by 
+  the date of the evaluation, the builder's authorized representative may 
+  complete this section.
+</p>
+
+<p class="fc10" align="right">
+  H2Kv[:HOTVER:] 28-Oct-2008
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+<span class="fc6"> 
+  [:CommentHeader:]
+  <hr>
+</span>
+<span class="fc1">
+  [:Comments:]<br><br>
+</span>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page6-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<p class="fc0">&nbsp;</p>
+
+<p class="fc3">Home Builder Agreement</p>
+<p class="fc1">
+  A qualified energy advisor working with the EnerGuide Rating System has 
+  examined the house at the address indicated below. The date and file number 
+  relating to the independent energy evaluation are indicated below.
+</p>
+<p class="fc1"> 
+  By signing below, the builder commits to:<br>
+<ul type="round" class="fc1">
+  <li>
+    providing the first owner of the house at the address given below with the 
+    EnerGuide rating label and report (pages 1-5) for this home; and  
+  </li>
+  <li>
+    having the "Notice to Homeowner" section of the report signed by the 
+    party who owns the home at the time of the final EnerGuide Rating System 
+    evaluation and ensuring that the service organization receives a copy of 
+    completed waivers.
+  </li>
+</ul>
+</p>
+<p class="fc1"> 
+  The purpose of the EnerGuide Rating System is to assess the energy efficiency 
+  of new homes. It does not replace a home inspection.
+</p>
+<p class="fc1"> 
+  The Government of Canada developed and financially supports the EnerGuide 
+  Rating System. This support helps service organizations to provide the 
+  service to homeowners and homebuilders.
+</p>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  Service organization name :
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:HomeAdvisorCompany:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  Address:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:HomeAdvisorAddress:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  Phone number:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:HomeAdvisorPhone:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  Date of evaluation:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:EvaluationDate:]
+      </span> 
+	</td>
+  </tr>
+
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  House address:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:HouseAddress:]
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  House file number:
+	</td>
+    <td align="left">
+      <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    [:FileID:] 
+	  </span>
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+</table>
+
+<p class="fc1">
+<i><u>Personal Information Agreement:</u></i><br>
+<br>
+Personal information collected in the course of the energy evaluation of your 
+home will be protected under the <i>Privacy Act</i>. The data collected in the 
+course of preparing this report have been provided to NRCan for the purposes 
+of:
+</p>
+<ul class="fc1">
+  <li>
+    NRCan's quality assurance* and statistical analysis activities; and,
+  </li>
+  <li>
+    enabling NRCan to confirm information on your home to other federal 
+    departments, provincial/territorial or municipal governments or utility 
+    companies which have an agreement in place with NRCan and are offering 
+    incentives based on the energy evaluation of your home.
+  </li>
+</ul>
+<p class="fc1">
+*Note: NRCan representatives may contact you during the quality assurance 
+activities on the EnerGuide Rating System.<br>
+<br>
+By signing below, I authorize NRCan to use my Personal Information in the 
+manner outlined above:
+</p>
+
+<p class="fc8">
+(please print)
+</p>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="25%" align="left">
+	  Company name of builder:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+         [:BuilderName:]
+	  </span> 
+	</td>
+  <tr valign="middle"> 
+    <td width="25%" align="left"> 
+	  Phone number:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    &nbsp;<br>
+      </span> 
+	</td>
+  </tr>
+  </tr>
+  <tr valign="middle"> 
+    <td width="25%" align="left"> 
+	  Address:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:450px;">
+	    &nbsp;<br>
+      </span> 
+	</td>
+  </tr>
+</table>
+
+<br>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="2" class="fc0">
+  <tr valign="middle"> 
+    <td width="50%" align="left">
+	  Name of builder representative signing below:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:300px;">
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+  <tr height="40" valign="middle"> 
+    <td width="50%" align="left"> 
+	  Builder representative signature:
+	</td>
+    <td align="left">
+	  <span style="border-style:none; border-width:1px;border-bottom-style:solid;width:300px;">
+	    &nbsp;<br>
+      </span> 
+      <!-- <hr align="left" width="300" size="1"> -->
+	</td>
+  </tr>
+</table>
+
+<br><br>    <!-- Force next paragraph to last page -->
+
+<p class="fc1">
+  <br>
+  <i>Note</i>: The information above must identify the name of the owner of 
+  the home at the time the final energy evaluation is performed. If the 
+  homeowner has not taken legal possession of the home from the builder by 
+  the date of the evaluation, the builder's authorized representative may 
+  complete this section.
+</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ENERGYSTAR-->
+<p class="fc2s">
+  <br>
+  EnerGuide is a trademark of Natural Resources Canada.<br>
+  <br>
+  The ENERGY STAR<SUP>&reg;</SUP> mark is administered and promoted in Canada 
+  by NRCan and is registered in Canada by the United States Environmental 
+  Protection Agency. 
+</p>
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock:Footer-->
+</body>
+</html>
+<!--EndTemplateBlock-->
+
+

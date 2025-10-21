@@ -1,0 +1,879 @@
+
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+    A {text-decoration:none}
+    A IMG {border-style:none; border-width:0;}
+    DIV {position:absolute; z-index:25;}
+    .box { float: left; }
+    #boxContent { border: none; background: #FFFFFF; border-color:000000;border-style:solid;border-width:1px; padding=10;position: relative; left: -4px; top: -4px; } 
+    #boxContainer { position: relative; background: #666; margin: 8px; } 
+    .fc0 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc1 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;FONT-STYLE:NORMAL;}
+    .fc1bc { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:NORMAL;TEXT-ALIGN:CENTER;}
+    .fc2 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4u { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:NORMAL;TEXT-DECORATION:UNDERLINE;}
+    .fc5 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc6 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc7 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;TEXT-DECORATION:UNDERLINE;}
+    .fc8 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc9 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+    .fc10l { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:LEFT;}
+    .fc11 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc12 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+	 .style5 {FONT-SIZE:14PT; FONT-FAMILY:Arial; FONT-WEIGHT:NORMAL; color: 000000;}
+    .style6 {FONT-SIZE:20pt; FONT-FAMILY:Verdana, Arial, Helvetica, sans-serif; color:000000; FONT-WEIGHT:bold;}
+    .style7 {FONT-SIZE:16PT; FONT-FAMILY:Arial; FONT-WEIGHT:NORMAL; color: 000000;}
+    
+body {
+	margin-left: 40px;
+	margin-right: 40px; 
+	margin-bottom: 50px;
+	margin-top: 2px
+}
+        
+div.cat {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: 2px dotted gray;
+	COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;
+	position:relative;
+}
+
+div.head {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: solid white .2em;
+	margin-top: .9em;
+	COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;
+	position:relative;
+}
+
+.itemname	{
+	float: left;
+	position: relative; /*needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.3em;
+	border-bottom: solid white .2em;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.num	{
+	float: right;
+	position: relative; /* needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.4em;
+	border-bottom: solid white .2em;
+	width: 70px;
+	text-align: right;
+}
+
+table.checklist {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: none;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.checklist th {
+	border-width: 1px;
+	padding: 2px;
+	border-top-style: none;
+	border-bottom-style: solid;
+   border-left-style: none;
+   border-right-style: none;
+   border-color: black;
+	background-color: white;
+}
+table.checklist td {
+	border-width: 0px;   <!-- 1px; -->
+	padding: 2px;
+	border-top-style:none;   <!-- solid; -->
+	border-color: black;
+	background-color: white;
+}
+  </style>
+  <title>Energy Efficiency Evaluation Report</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1-->
+
+<!-- *************** This is the table for the rating scale ******************** -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>  
+    
+     <!--<td class="style6"> -->
+	<td align="left"> 
+	   <img alt="" src="ecoENERGY_eng.jpg" width="120" height="70">
+    <!-- ecoENERGY
+      <br>
+      <span class="style5">
+        Retrofit Homes
+      </span>
+      <br><br> -->
+    </td>
+    <td align="right">
+      [:custlogo1:] [:custlogo2:] [:provlogo:]
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">
+      <b>Property Owner:</b><br><br>
+      [:ClientName:]<br>
+      [:ClientAddress:]<br>
+      [:CityName:], [:ProvName:]<br>
+      [:PostalCode:]
+    </td>
+	   <!--The column width of 468px is measured for the 450px rating banner, 
+	   plus a 9px horizontal buffer. The 9px buffer allow the arrow GIFs 
+	   (and the text above them) to point at the very beginning of the banner 
+	   itself instead of being offset. The arrow GIFs, having a width of 20px 
+	   with the point of the arrow right in the middle of that 20, require a 
+	   buffer, and with some trial and error, 9px was determined to be exactly 
+	   the right size.-->
+    <td width="468" align="right" class="style5">
+      <b>Energy Efficiency Evaluation Report</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc11">
+        File number: [:FileID:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc4"><br>
+        EnerGuide Rating
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	   <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+  <tr>
+    <td width="468" class="fc6">
+	  <span style="text-indent:[:EnerUpgPos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]uparrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerUpgTPos:]px;position:absolute;">
+
+	    <span style="top:3px;position:relative;">
+	      <b>[:UpgCheersRate:]</b>
+	    </span>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_En.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;">
+	 </td>
+  </tr>
+</table>
+<!-- **************** Rating scale table ends here ********************* -->
+
+<br>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="45%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+
+    <td width="25%" valign="top" class="fc2">
+	   <b>House type:</b>         [:HouseType:]<br><br>
+	   <b>No. of storeys:</b>     [:NumStories:]<br><br>    
+	   <b>No. of RO windows:</b>  [:NumROWin:]<br>
+      <span class="fc10l">RO = rough opening</span><br><br>
+      <b>Air conditioner:</b> [:AirCondYesNo:]
+    </td>
+    <td width="30%" valign="top" class="fc2">
+	  <b>Heating system:</b> [:HeatSyst:]<br><br>
+      <b>Domestic hot water:</b> [:DomHotWat:]<br><br>
+      <b>Air leakage rate @ 50 Pa:</b> [:AirLeakRate:] ACH<br>
+      <span class="fc10l">ACH = number of air changes per hour</span><br><br>
+      <b>Equivalent Leakage Area:</b> [:EquLeakArea:] cm<sup>2</sup><br>
+    </td>
+  </tr>
+</table>
+
+<p class="fc1">
+The results of your pre-retrofit energy evaluation show that your house rates 
+[:CheersRate:] points on the EnerGuide scale.  If you  implement all of the 
+recommendations in this report, you could reduce your energy consumption by up to 
+[:PercentSavings:]% and increase your home's energy efficiency rating to 
+[:UpgCheersRate:] points.  The average energy efficiency rating for a house of 
+this age in [:ProvName:] is [:AvgRatingByAgeProv:] 
+whereas the highest rating achieved by the most energy-efficient houses in this 
+category is [:TopRatingByAgeProv:].</p>
+<p class="fc1">
+The sooner you start your renovations, the sooner you will benefit from the energy savings.  And let's not 
+forget how reduced energy consumption helps protect the environment.</p>
+<p class="fc1">
+Did you know that when you reduce the amount of energy used in your home, you also 
+reduce the production of greenhouse gases (GHG) such as carbon dioxide?  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1Murb-->
+
+<!-- The indent for the ecoENERGY logo to line up with the "R" of 
+     "Retrofit Homes" is 58 pixels-->
+<!-- <p style="margin-left: -58px"><img src="[:ImagePath:]retrofit_ecoenergy_e.gif" width="251" height="94"></p> -->
+
+<!-- *************** This is the table for the rating scale ******************** -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"> 
+	   <img alt="" src="ecoENERGY_eng.jpg" width="120" height="70">
+    </td>
+    <td align="right">
+      [:custlogo1:] [:custlogo2:] [:provlogo:]
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">
+      <b>Property Owner:</b><br><br>
+      [:ClientName:]<br>
+      [:ClientAddress:]<br>
+      [:CityName:], [:ProvName:]<br>
+      [:PostalCode:]
+    </td>
+	   <!--The column width of 468px is measured for the 450px rating banner, 
+	   plus a 9px horizontal buffer. The 9px buffer allow the arrow GIFs 
+	   (and the text above them) to point at the very beginning of the banner 
+	   itself instead of being offset. The arrow GIFs, having a width of 20px 
+	   with the point of the arrow right in the middle of that 20, require a 
+	   buffer, and with some trial and error, 9px was determined to be exactly 
+	   the right size.-->
+    <td width="468" align="right" class="style5">
+      <b>Energy Efficiency Evaluation Report</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc11">
+        File number: [:FileID:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc4"><br>
+        EnerGuide Rating
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	   <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+  <tr>
+    <td width="468" class="fc6">
+	  <span style="text-indent:[:EnerUpgPos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]uparrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerUpgTPos:]px;position:absolute;">
+
+	    <span style="top:3px;position:relative;">
+	      <b>[:UpgCheersRate:]</b>
+	    </span>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_En.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;">
+	 </td>
+  </tr>
+</table>
+<!-- **************** Rating scale table ends here ********************* -->
+
+<br>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="45%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+
+    <td width="25%" valign="top" class="fc2">
+	   <b>Building type:</b>         [:HouseType:]<br>[:Mixed:]<br>
+	   <b>No of units :</b> [:NumUnits:]<br><br>
+	   <b>No. of storeys:</b>     [:NumStories:]<br><br>    
+	   <b>No. of RO windows:</b>  [:NumROWin:]<br>
+      <span class="fc10l">RO = rough opening</span><br><br>
+      <b>Air conditioner:</b> [:AirCondYesNo:]
+    </td>
+    <td width="30%" valign="top" class="fc2">
+	  <b>Central Heating system:</b> [:HeatSyst:]<br><br>
+      <b>Central hot water:</b> [:DomHotWat:]<br><br>
+      <b>Air leakage rate @ 50 Pa:</b> [:AirLeakRate:] ACH<br>
+      <span class="fc10l">ACH = number of air changes per hour</span><br><br>
+      <b>Equivalent Leakage Area:</b> [:EquLeakArea:] cm<sup>2</sup><br>
+    </td>
+  </tr>
+</table>
+
+<p class="fc1">
+The results of your pre-retrofit energy evaluation show that your building rates 
+[:CheersRate:] points on the EnerGuide scale.  If you  implement all of the 
+recommendations in this report, you could reduce your energy consumption by up to 
+[:PercentSavings:]% and increase your building's energy efficiency rating to 
+[:UpgCheersRate:] points.  </p>
+<p class="fc1">
+Did you know that when you reduce the amount of energy used in your building, you also 
+reduce the production of greenhouse gases (GHG) such as carbon dioxide?  
+
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:GHGSavedBlock-->
+By improving your [:HomeBuildingText:]'s energy efficiency rating to [:UpgCheersRate:] points, you 
+will reduce its GHG emissions by [:GHGSaved:] tonnes per year!</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:GHGNotSavedBlock-->
+Small improvements by all of us will help Canada's efforts to combat climate 
+change and protect the environment. Your [:HomeBuildingText:]'s current GHG emissions are 
+[:GHGBase:] tonnes per year.</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:LastParagraphMainBlock-->
+<p class="fc1">
+The ecoENERGY Retrofit - Homes program stopped accepting bookings for pre-retrofit 
+evaluations as of March 31, 2010.  If there is a complimentary grant program offered by a province,
+territory, municipality, utility or other organization, your file will be transferred to them in accordance with 
+your consent.
+</p>
+<p class="fc1">
+<em>Note: If you notice any discrepancies with the above description of your [:HomeBuildingText:], 
+contact your service organization immediately.</em>
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:SignatureBlock-->
+<table width="100%"  border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td width="40%" align="top">
+      <span class="fc0">
+        <b>Service Organization:</b> [:AdvisorComp:]<br>
+        <b>Telephone:</b> [:AdvisorTel:]
+      </span>
+    </td>
+    <td width="60%" align="top">
+      <span class="fc0">
+        <b>Certified Energy Advisor:</b> [:AdvisorName:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <span class="fc0">
+        <b>Date of evaluation:</b> [:DateEval:]<br>
+        <b>Date of report:</b> [:DateReport:]
+      </span>
+    </td>
+    <td width="50%" align="left">
+      <span class="fc10l">
+        ___________________________________________________________________<br>
+        Certified Energy Advisor Signature
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;
+      
+    </td>
+    <td width="50%" align="right">
+      <span class="fc10">HOT2000v[:HOTVER:]</span>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CHEEAPChecklist-->
+<p class="fc4u">1. YOUR HOME ENERGY ACTION CHECKLIST</p>
+<p class="fc1">
+This is your checklist of recommended retrofits to improve the energy efficiency 
+of your [:HomeBuildingText:].  Included is information on the potential for energy savings and EnerGuide rating 
+improvement. <strong>For more information on implementing the recommended retrofits,
+read carefully the 'Recommended Energy-Saving Measures' 
+section of this report. Any reference in this report regarding the eligibility for, or availability
+of, grants under the ecoENERGY Retrofit - Homes program should be disregarded.</strong>
+</p>
+<p class="fc1">Before undertaking upgrades or renovations, find out about the appropriate products 
+and installation techniques, and ensure that all renovations meet local 
+building codes and by-laws. NRCan does not endorse the services of any contractor, nor any specific product, and accepts no liability 
+in the selection of materials, products, contractors or performance of workmanship.
+</p>
+<p class="fc1">
+Note: Some provinces, territories, municipalities and utilities offer complimentary grants and 
+other incentives for reducing energy use. For information on other energy-saving programs, 
+visit ecoaction.gc.ca and follow the links to 
+ecoENERGY Retrofit's "Grants and Rebates" Web page for consumers or call 1 800 O-Canada 
+(1-800-622-6232).
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculitePresenceBlock-->
+[:VermiculiteText:]
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CHEEAPChecklist2-->
+
+<table class="checklist" width="100%" border="0" cellpadding="2" cellspacing="0" bordercolor="#000000">
+  <tr valign="top" class="fc11">
+    <th width="65%" align="left" scope="col">
+      <p>
+        Retrofits
+      </p>
+      <p>
+        
+      </p>
+    </th>
+    <th width="225" align="center" scope="col">
+      Potential<br>
+      for Energy<br>
+      Savings *
+    </th>
+    <th width="225" align="center" scope="col">
+      Potential<br>
+      Rating<br>
+      Improvement
+    </th>
+  </tr>
+  <tr valign="top">
+    <td width="65%" align="left">
+      <p class="fc2">
+        * One (1) star = lowest savings / five (5) stars = highest savings
+      </p>
+    </td>
+  </tr>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CheckListHeadings-->
+  <tr bordercolor="#000000" class="fc1">
+    <td width="65%" align="left" valign="top" scope="col"><br><b>[:CheckListGroup:]</b></td>
+    <td width="225" align="center" scope="col"><img src="[:ImagePath:][:Stars:]" style="position:relative;top:5px;"></td>
+    <td width="225" align="center" scope="col"><br>[:PointRating:] points</td>
+  </tr>  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CheckListItems-->
+  <tr bordercolor="#000000" class="fc1">
+    <td width="65%" align="left" valign="top" scope="col">[:ChecklistRecommendations:]</td>
+    <td width="225" align="center" scope="col">&nbsp;</td>
+    <td width="225" align="center" scope="col">&nbsp;</td>
+  </tr>  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock: Section2to4-->
+</table>
+
+<p class="fc1">
+<strong>When replacing ANY of the equipment listed in this report, the new equipment should have an 
+efficiency rating higher than that of the original equipment.  
+</strong>
+</p>
+
+
+<p class="fc4u">2. THE ENERGUIDE RATING SYSTEM</p>
+<!--EndTemplateBlock-->
+<!--TemplateBlock:EnerguideHouseBlock-->
+<p class="fc1">
+The EnerGuide rating system is a standardized method of evaluation that lets homeowners 
+compare their house's energy efficiency rating to similar sized houses in similar regions. 
+The EnerGuide rating considers the house's estimated annual energy consumption based on 
+an in-depth evaluation of the house's characteristics such as location, size, equipment 
+and systems, insulation levels, air tightness, etc. In addition, standardized conditions 
+are used when calculating the rating in order to compare the efficiency of one house to 
+another. These conditions include: a complete air change approximately every three hours; 
+four occupants; a fixed thermostat setting of 21°C on main floors and 19°C in the 
+basement; average hot water consumption of 225 litres per day; average national 
+electricity consumption of 24 kWh per day; and regional weather data that
+is averaged over the last 30 years.
+</p>
+<p class="fc1">
+Figures 1 through 3 show the results of your energy evaluation based on the standardized 
+conditions.  The results may not entirely reflect your household since your actual energy 
+consumption and future savings are influenced by the number of occupants, their day-to-day 
+habits and lifestyles.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnerguideBuildingBlock-->
+<p class="fc1">
+The EnerGuide rating system is a standardized method of evaluation that lets property owners 
+compare their building's energy efficiency rating to similar sized buildings in similar regions. 
+The EnerGuide rating considers the building's estimated annual energy consumption based on 
+an in-depth evaluation of its characteristics such as location, size, equipment 
+and systems, insulation levels, air tightness, etc. In addition, standardized conditions 
+are used when calculating the rating in order to compare the efficiency of one building to 
+another. These conditions include: a complete air change approximately every three hours; 
+4 occupants for a duplex, 7 occupants for a triplex, 9 occupants for 4 units,
+and 3 occupants per unit for a building of more than 4 units;
+a fixed thermostat setting of 21°C 
+for all living spaces and 19°C for all common areas; an average hot water consumption of 140 litres per dwelling unit per day; 
+an average electricity consumption of 11.8 kWh per dwelling unit per day; and regional weather data that
+is averaged over the last 30 years.
+</p>
+<p class="fc1">
+Figures 1 through 4 show the results of your energy evaluation based on the standardized conditions. 
+The results may not entirely reflect your building since the actual energy consumption and future 
+savings are influenced by the number of occupants, their day-to-day habits and lifestyles. 
+</p>
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock:EnerguideMixedBlock-->
+<p class="fc1">
+The EnerGuide rating system is a standardized method of evaluation that lets property owners 
+compare their building's energy efficiency rating to similar sized buildings in similar regions. 
+The EnerGuide rating considers the building's estimated annual energy consumption based on 
+an in-depth evaluation of its characteristics such as location, size, equipment 
+and systems, insulation levels, air tightness, etc. In addition, standardized conditions 
+are used when calculating the rating in order to compare the efficiency of one building to 
+another. These conditions include: a complete air change approximately every three hours; 
+4 occupants for a duplex, 7 occupants for a triplex, 9 occupants for 4 units,
+and 3 occupants per unit for a building of more than 4 units;
+a fixed thermostat setting of 21°C 
+for all living spaces and 19°C for all common areas; an average hot water consumption of 140 litres per dwelling unit per day; 
+an average electricity consumption of 11.8 kWh per dwelling unit per day; and regional weather data that
+is averaged over the last 30 years.
+
+</p>
+<p class="fc1">
+Figures 1 through 4 show the results of your energy evaluation based on the standardized conditions explained above. 
+Your building has been identified as a mixed-use building, which includes residential and non-residential spaces.
+Non-residential spaces in mixed-use buildings are modeled as dwelling units. 
+Therefore, the results may not entirely reflect your building since they do not take into consideration the energy 
+use or internal heat gain associated with non-residential equipment and the occupancy of spaces for non-residential use. 
+The actual energy consumption and future savings are also influenced by the number of occupants, 
+their day-to-day habits and lifestyles. 
+</p>
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock: Section2to4Continued-->
+<p class="fc4u">3. ENERGY CONSUMPTION</p>
+<p class="fc1">
+[:HousesBuildingText:] lose heat to the outdoors during the heating season primarily through air leakage
+and conduction, such as the transfer of heat through the basement and exterior walls, 
+upper floor ceilings, windows and doors (the 'building envelope'). Canada's demanding climate and 
+modifications made to the [:HouseBuildingText:], such as drilling holes in walls for new wiring, pipes and 
+lights, all play a part in reducing the efficiency of the building envelope over time. 
+[:HousesBuildingText:] need to be regularly maintained and upgraded to ensure greater energy efficiency, 
+comfort and savings.
+</p>
+<p class="fc1">
+Figure 1 breaks down your [:HouseBuildingText:]'s estimated annual energy consumption for space heating, hot water and
+lights and appliances.
+</p>
+
+<!-- Figure 1. Estimated Breakdown of Energy Consumption 
+     Title included in graphic -->
+<center>
+  <img alt="" src="[:HeatAnnualEstimImagePath:]" width="700" height="200">
+</center>
+
+<br>
+<p class="fc4u">4. SPACE HEATING ANALYSIS</p>
+<p class="fc1">
+Figure 2 shows the estimated percentage of energy used for the space heating of your [:HomeBuildingText:].
+</p>
+<ul type="round" class="fc1">
+<li>The right side of the top bar shows the percentage of energy you could save if you 
+were to implement all of the upgrades recommended in this report, excluding changes to 
+the space heating equipment. You could save up to [:HSysSave1:] percent by performing 
+all of the recommended non-space heating system upgrades.
+<li>The right side of the bottom bar shows the percentage of energy you could save if you 
+were to implement all of the upgrades recommended in this report, including any space 
+heating system upgrades. You could save up to [:HSysSave2:] percent by performing all 
+of the recommended upgrades.
+</ul>
+
+<!-- Figure 2. Estimated Percentage of Potential Energy Savings
+     Title included in graphic -->
+<center>
+  <img alt="" src="[:HeatSystemImagePath:]" width="700" height="200">
+</center>
+
+<br>
+
+<p class="fc1">
+Figure 3 shows where the energy used for space heating is lost from your [:HomeBuildingText:].  This 
+energy is measured in gigajoules (GJ), where 1 GJ is equivalent to 278 kilowatt-hours 
+(kWh) or 948,000 Btu.
+</p>
+<p class="fc1">
+The red bars show the areas where you are losing energy now.  The longer 
+the bar, the more energy you are losing.  The green bars show the estimated energy loss 
+after you complete your renovations. The larger the difference between the red and the 
+green bars, the greater the potential for energy savings and comfort improvements.
+</p>
+
+<!-- Figure 3. Breakdown of Heat Loss through Building Envelope
+     Title included in graphic -->
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+     <td>
+        <img alt="" src="[:HeatImagePath:]" width="600" height="400">
+     </td>
+     <td>
+        <img alt="" src="AnnualHeatLossLegend.jpg" width="100" height="40">
+     </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DesignLoads-->
+<p class="fc6">
+Your Home's Estimated Design Heating and Cooling Loads
+</p>
+<p class="fc1">
+If you were to implement ALL of the building envelope retrofits recommended 
+in the section of this report entitled 'Your Home Energy Action Checklist', 
+it is estimated that your home's design heat loss would be 
+[:DesignHLLoss_IP:] Btu/hour ([:DesignHLLoss_SI:] Watts) 
+and its design cooling load would be 
+[:DesignCL_IP:] Btu/hour ([:DesignCL_SI:] tons). 
+If you are considering replacing your space heating and/or cooling system, 
+it is recommended that you provide this information to your heating/cooling 
+contractor to help ensure a properly-sized system. However, this is only 
+an estimate based on the data that was collected on your home at the time 
+of the pre-retrofit evaluation. The design heat loss and cooling load can 
+vary depending on different factors, such as the retrofits that you 
+implement and other changes you may make to your home. Prior to having a 
+new heating/cooling system installed, it is recommended that your 
+heating/cooling contractor perform a heat loss/heat gain calculation on 
+your home to determine the capacity and distribution flows for the new 
+equipment. The contractor should hold current certification for Heat 
+Loss/Heat Gain Calculations from the Heating, Refrigeration and Air 
+Conditioning Institute of Canada (HRAI). For a list of certified 
+contractors, visit www.hrai.ca and click on "Homeowners and Building Owners" 
+and "Skill<em>Tech</em> Academy Canadian Certification Listing", or call 1-800-267-2231.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DesignLoadsMURB-->
+<p class="fc6">
+Your Building's Estimated Design Heating and Cooling Loads
+</p>
+<p class="fc1">
+If you were to implement ALL of the building envelope retrofits recommended 
+in the section of this report entitled 'Your Home Energy Action Checklist', 
+it is estimated that your building's design heat loss would be 
+[:DesignHLLoss_IP:] Btu/hour ([:DesignHLLoss_SI:] Watts) 
+and its design cooling load would be 
+[:DesignCL_IP:] Btu/hour ([:DesignCL_SI:] tons). 
+Please note that these estimated figures are for the entire building[:LoadsMixed1:]. 
+If you are considering replacing your space heating and/or cooling systems, 
+it is recommended that you provide this information to your heating/cooling 
+contractor to help ensure properly-sized systems. However, this is only 
+an estimate based on the data that was collected on your building at the time 
+of the pre-retrofit evaluation. The design heat loss and cooling load can 
+vary depending on different factors, such as [:LoadsMixed2:]the use of the building or parts of it for non-residential purposes,
+the retrofits that you implement and other changes you may make to the building. Prior to having a 
+new heating/cooling system installed, it is recommended that your 
+heating/cooling contractor perform a heat loss/heat gain calculation on 
+your building to determine the capacity and distribution flows for the new 
+equipment. The contractor should hold current certification for Heat 
+Loss/Heat Gain Calculations from the Heating, Refrigeration and Air 
+Conditioning Institute of Canada (HRAI). For a list of certified 
+contractors, visit www.hrai.ca and click on “Homeowners and Building Owners” and 
+"Skill<em>Tech</em> Academy Canadian Certification Listing", or call 1-800-267-2231.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteBlock-->
+[:VermiculiteText:]
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:UnitGraphBlock-->
+<p class="fc1">
+   Figure 4 shows a profile of the estimated annual space heating energy use for each
+   individual unit in your building, before and after the recommended retrofits. The differences in energy use between 
+   various units are mainly due to:
+</p>
+<ul type="round" class="fc1">
+
+   <li>Exposed exterior wall and window areas;</li>
+   <li>Different air change rates of individual units;</li>
+   <li>Size of units;</li>
+   <li>Location of the unit in the building; and</li>
+   <li>Recommended retrofits.</li>
+</ul>
+
+<!-- Figure 4. Estimate of Annual Energy Consumption by Individual Unit -->
+<center>
+  <img alt="" src="[:UnitHeatImagePath:]" width="600" height="250">
+</center>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:UpgradeHeader-->
+<!-- This is the start of the house Upgrades section -->
+<p class="fc4u">5. RECOMMENDED ENERGY-SAVING MEASURES</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Upgrade-->
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr><td align="left"><span class="fc6">[:UpgradeTitle:]</span></td></tr>
+  <tr><td class="fc1">[:UpgradeText:]<br><br></td></tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsHeader-->
+<p class="fc4u">6. ENERGY-SAVING TIPS</p>
+<p class="fc1">Although these actions may not be eligible for an incentive, 
+they will help you save energy and money:</p>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top" class="fc1">
+	 <ul type="round" class="fc1">
+<!--EndTemplateBlock-->
+	
+<!--TemplateBlock:Recommendations-->
+	<li>[:RecDesc:]</li>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsFooter-->
+	</ul></td>
+  </tr>
+</table>
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:InformationResources-->
+<p class="fc4u">7. INFORMATION RESOURCES</p>
+
+<p class="fc1"><span class="fc6">Home Energy Efficiency</span><br>
+Natural Resources Canada (NRCan) publishes a variety of publications that can help you improve 
+the energy efficiency of your home.  These publications are available online at 
+oee.nrcan.gc.ca/publications or by calling the order desk at 1-800-387-2000.</p>
+[:InfoReso1:]
+[:InfoReso2:]
+<p class="fc1"><span class="fc6">Renovation Publications</span><br>
+Canada Mortgage and Housing Corporation (CMHC) publishes a large number of renovation 
+planning fact sheets that are available at no cost. There are also some excellent 
+in-depth publications for sale.  Visit cmhc-schl.gc.ca or call 1-800-668-2642 to order 
+your material of interest.</p>
+
+<p class="fc1"><span class="fc6">Hiring a Contractor</span><br>
+Before you have any work done, request quotations in writing from professional 
+contractors and obtain a written contract.  CMHC has a very useful fact sheet on 
+this subject, <em>Hiring a Contractor</em>, which includes a draft contract. 
+Visit cmhc-schl.gc.ca or call 1-800-668-2642 to order.</p>
+
+<p class="fc1"><span class="fc6">Mold</span><br>
+If you suspect mold growth in your home, it is recommended that the mold damaged 
+area(s) be cleaned thoroughly or removed and properly disposed of.  To control and 
+reduce the potential for mold growth, maintain indoor humidity at appropriate levels, 
+and remedy water infiltration and leakage issues.  Refer to the CMHC fact sheet 
+<em>About Your House: Fighting Mold - The Homeowner's Guide</em> for information on 
+proper mold identification and cleaning procedures.  Visit cmhc-schl.gc.ca or call 
+1-800-668-2642 to order.
+</p>
+
+<p class="fc1"><span class="fc6">Radon</span><br>
+Radon is a radioactive gas that is colourless, odourless and tasteless. 
+Radon is formed by the breakdown of uranium, a natural radioactive material found in soil, 
+rock and groundwater. When radon is released from the ground into the outdoor air, 
+it gets diluted to low concentrations and is not a concern. However, in enclosed spaces, 
+like houses, it can sometimes accumulate to high levels, which can be a risk to the health 
+of you and your family. For more information, refer to the CMHC publication <em>Radon 
+– A Guide for Canadian Homeowners</em> or visit the Health Canada web site at 
+http://www.hc-sc.gc.ca/ewh-semt/radiation/radon/index-eng.php.
+</p>
+
+<p class="fc1"><span class="fc6">Humidity Control</span><br>
+A relative humidity (RH) level of between 30 and 55 percent is recommended in the home. 
+If you have a humidifier or dehumidifier, ensure that it is regularly cleaned and 
+maintained, and that the humidistat is set at an appropriate humidity level. You can 
+use a hygrometer to measure relative humidity and the CMHC fact sheet 
+<em>Measuring Humidity in Your Home</em> gives good advice. In addition, dehumidifiers 
+can help reduce moisture levels especially in basements.</p>
+
+<p class="fc4u">GET STARTED TODAY!</p>
+<p class="fc1">
+Now that you have the tools to improve your [:HomeBuildingText:]'s energy efficiency, you [:OccupantsText:] can look 
+forward to enjoying the added comfort of your ecoENERGY improved [:HomeBuildingText:]. Not only will 
+you benefit from increased comfort, you will also save on your energy bills year after 
+year. And let's not forget your reduction of greenhouse gases!
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+<br>
+<span class="fc6" style="border-style:none; border-width:1px;border-bottom-style:solid;width:700px;">
+  [:CommentHeader:]<br>
+</span>
+<span class="fc1">
+  <br>[:Comments:]<br>
+</span>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+<p class="fc8">
+<!--Payment of the grants indicated above is subject to the availability of funds. 
+All grants are paid at the rate effective at the time of the E evaluation.-->
+</p>
+</body>
+</html>
+<!--EndTemplateBlock-->

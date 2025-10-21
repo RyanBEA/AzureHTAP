@@ -1,0 +1,671 @@
+ONEPOINTFIVETONPREVIOUSGHGDATASETHOUSELOCATEDINONTARIO(11-7B23)
+
+                    ****************************************
+                    *                                      *
+                    *              HOT2000                 *
+                    *           Version 11.8               *
+                    *              CANMET                  *
+                    *      Natural Resources CANADA        *
+                    *            Aug 25, 2016              *
+                    ****************************************
+
+ File = OnePointFiveTonPreviousGHGDataSetHouseLocatedInOntario(11-7b23).hdf
+
+ Application type : General
+
+ Weather Library  : D:\!PowCow\h2k\HOT2000\Hot\Release\Dat\Wth110.dir
+ Weather Data for : OTTAWA, ONTARIO
+
+ Builder Code =                                
+ Data Entry by:                                     Date of entry  28/09/2017
+ Company:                                 
+
+ Client name:      ,                             
+ Street address:                                 
+ City:                                   Region: ONTARIO                         
+ Postal code:                            Telephone:             
+
+s                    *** GENERAL HOUSE CHARACTERISTICS ***
+
+ House type:              Single detached
+ Number of storeys:       One storey
+ Plan shape:              Rectangular
+ Front orientation:       South
+ Year House Built:         2002
+ Wall colour: Default      0.40                Absorptivity: 0.400
+ Roof colour: Default      0.40                Absorptivity: 0.400
+
+ Soil Condition: Normal conductivity: dry sand, loam, clay
+
+ Water Table Level: Normal  (7-10 m, 23-33 Ft)
+
+pHouse Thermal Mass Level: (A) Wood frame construction, 12.5 mm (0.5 in.)
+                               gyproc walls and ceiling, wooden floor
+
+ Effective mass fraction     1.000
+
+pOccupants :  2 Adults   for  50.0 % of the time
+              1 Children for  50.0 % of the time
+              0 Infants  for   0.0 % of the time
+
+ Sensible Internal Heat Gain From Occupants              =   2.00 kWh/day
+
+
+s                          *** HOUSE TEMPERATURES ***
+
+ Heating Temperatures 
+         Main Floor      Daytime Setpoint          = 21.0 C
+                         Nightime Setpoint         = 18.0 C
+                         Nightime Setback Duration =  8.0 Hours
+                         24 Hour Average           = 20.0 C
+         Basement        Setpoint                  = 19.0 C
+                         TEMP. Rise from 20.0 C    =  5.5 C
+
+pBasement is- Heated: Yes   Cooled: No     Separate T/S: No 
+ Fraction of internal gains released in basement : 0.150
+
+pIndoor design temperatures for equipment sizing
+                         Heating                   = 22.0 C
+                         Cooling                   = 24.0 C
+
+s                            *** WINDOW CHARACTERISTICS ***
+
+    Label             Location         #  Overhang Header  Tilt Curtain Shutter
+                                           Width   Height  deg   Factor   RSI
+                                             m       m 
+
+ South     
+   South0001         Main floor        1    0.41     0.20  90.0   1.00    0.00
+   South0002         Foundation - 1    1    0.41     2.97  90.0   1.00    0.00
+
+pEast      
+   East0001          Main floor        1    0.41     0.20  90.0   1.00    0.00
+   East0002          Foundation - 1    1    0.41     2.97  90.0   1.00    0.00
+
+pNorth     
+   North0001         Main floor        1    0.41     0.20  90.0   1.00    0.00
+   North0002         Foundation - 1    1    0.41     2.97  90.0   1.00    0.00
+
+pWest      
+   West0001          Main floor        1    0.41     0.20  90.0   1.00    0.00
+   West0002          Foundation - 1    1    0.41     2.97  90.0   1.00    0.00
+
+
+p Label             Type                   Window     Total Window  SHGC  ER*
+                                     #  Width  Height  Area   RSI
+                                           m      m     m2
+
+pSouth     
+ South0001         202002            1   2.04   2.42   4.94   0.304 0.707   5.1
+ South0002         202002            1   0.29   0.34   0.10   0.307 0.433 -10.1
+
+pEast      
+ East0001          202002            1   1.23   1.46   1.80   0.303 0.674   3.0
+ East0002          202002            1   0.29   0.34   0.10   0.307 0.433 -10.1
+
+pNorth     
+ North0001         202002            1   2.00   2.38   4.75   0.304 0.706   5.0
+ North0002         202002            1   0.29   0.34   0.10   0.307 0.433 -10.1
+
+pWest      
+ West0001          202002            1   1.23   1.46   1.80   0.303 0.674   3.0
+ West0002          202002            1   0.29   0.34   0.10   0.307 0.433 -10.1
+
+p ER* Window Energy Rating (ER 2009) estimated for actual dimensions,
+  and Air tightness type: CSA - A1;  Leakage rate =   1.86 L/s.m2
+
+  Above grade fraction of wall area occupied by windows:  9.9 %
+
+                        ______________________________
+s                        *** Window Code Schedule ***
+
+ Name             Internal               Description
+                    Code    ( Glazings,  Coatings, Fill, Spacer, Type, Frame )
+
+ 202002            202002  Double/Double with 1 coat, Clear,  6 mm Air,
+                           Metal, Picture, Wood,
+                           ER* =   3.0, Eff. RSI=  0.30
+
+p* Window Standard Energy Rating (ER 2009) estimated for assumed dimensions,
+   and Air tightness type: CSA - A1;  Leakage rate =   1.86 m3/hr/m
+                        ______________________________
+
+
+
+s                      *** BUILDING PARAMETER DETAILS ***
+
+  CEILING COMPONENTS
+
+                   Construction     Code         Roof     Heel    Section   R-
+                       Type         Type         Slope     Ht.      Area  Value
+                                                           m         m2    RSI
+
+ Ceiling01         Attic/Hip    User specified   4.00/12   0.13   95.00    6.36
+
+p MAIN WALL COMPONENTS
+
+  Label                  Lintel  Fac. Number of   Height Perim.    Area     R-
+                          Type   Dir  Corn. Inter.                        Value
+                                                   m      m         m2     RSI
+
+ Main floor      
+   Type: User specified    100   N/A    4    4    2.77    39.0   107.99    2.31
+
+p DOORS
+
+ Label                             Type            Height Width   Gross     R-
+                                                                   Area   value
+                                                     m      m       m2     RSI
+
+ Door-01                         
+   Loc: Main floor  Steel Medium density spray fo   2.05   0.89    1.82    1.14
+ Door-02                         
+   Loc: Main floor  Steel Medium density spray fo   2.05   0.89    1.82    1.14
+
+s *** FOUNDATIONS ***
+ 
+ Foundation - 1
+   Foundation type  : Basement            Volume               :   224.3 m3 
+   Data Type        : Library             Opening to main floor:    1.56 m2 
+                                          Thermal break R-value:    0.00 RSI
+
+   Total wall height:   2.49 m            Non-rectangular
+   Depth below grade:   1.93 m            Floor perimeter      :  37.97 m 
+                                          Floor area           :  90.10 m2 
+
+   Interior wall type: 0000000                         R-value :   2.10 RSI
+   Exterior wall type: User specified                  R-value :   0.00 RSI
+   Number of corners :   4
+   Lintel  type: 100                             
+   Added to slab type : N/A                            R-value :   0.00 RSI
+   Floors above found.: 4231000660                     R-value :   0.71 RSI
+
+ Exposed areas for : Foundation - 1
+
+ Exposed Perimeter =     37.97  m 
+
+pConfiguration: BCIN_1
+   - concrete walls and floor
+   - interior surface of wall insulated over full-height
+   - any first storey construction type
+
+p                         --------------------------
+                           Foundation Code Schedule
+
+
+   Floors above Foundation
+
+ Name               Internal               Description
+                      Code     (Structure, type/size, Spacing, Layer 1, Layer 2, Interior
+                                Sheathing, Exterior, Drop  Floors)
+
+ 4231000660        4231000660  Wood frame, 38 x 235 mm (2 x 10 in),
+                               400 mm (16 in), None, None, None,
+                               Plywood/Particle board 15.5 mm (5/8 in), Wood,
+                               No
+
+p FOUNDATION FLOOR HEADER COMPONENTS
+
+  Label                  Lintel  Fac. Number of   Height Perim.    Area     R-
+                          Type   Dir  Corn. Inter.                        Value
+                                                   m      m         m2     RSI
+
+ BW hdr-01       ( Location: Foundation # 1 - Foundation - 1)
+   Type: 0000000000        N/A   N/A    4    4    0.23    38.0      8.73   2.31
+
+p                            Lintel Code Schedule
+
+ Name                                        Description
+                                ( Type, Material, Insulation )
+
+ 100                               Double, Wood, None
+
+p                             Roof Cavity Inputs
+
+ Gable Ends                                Total Area          0.0 m2
+ Sheathing Material: Plywood/Part. bd  9.5 mm (3/8 in)        0.08 RSI
+ Exterior  Material: Hollow metal/vinyl cladding              0.11 RSI
+
+ Sloped Roof                               Total Area        100.1 m2
+ Sheathing Material: Plywood/Part. bd 12.7 mm (1/2 in)        0.11 RSI
+ Roofing   Material: Asphalt shingles                         0.08 RSI
+
+ Total cavity volume     77.2 m3            Ventilation rate  0.50 ACH/hr
+
+
+
+s                     *** BUILDING ASSEMBLY DETAILS ***
+
+  FLOORS ABOVE BASEMENTS
+
+ Label               Construction              Nominal   System  Effective
+                         Code                    RSI       RSI      RSI     
+
+ Foundation - 1     4231000660                  0.00      0.71     0.71
+
+
+s                     *** BUILDING PARAMETERS SUMMARY ***
+
+ Component                        Area (m2 )   Effective  Heat Loss  % Annual
+                                Gross     Net       RSI       MJ     Heat Loss
+ -----------------------------------------------------------------------------
+
+pZONE 1 : ABOVE GRADE
+
+ Ceiling                        95.00    95.00      6.36     5434.9       6.44
+ Main Walls                    107.99    91.04      2.31    16434.1      19.48
+ Doors                           3.65     3.65      1.14     1443.7       1.71
+ South windows                   4.94     4.94      0.30     7338.5       8.70
+ East windows                    1.80     1.80      0.30     2686.5       3.18
+ North windows                   4.75     4.75      0.30     7056.7       8.36
+ West windows                    1.80     1.80      0.30     2686.5       3.18
+                                                          =========    =======
+                                      ZONE 1 Totals:        43080.9      51.06
+
+ INTER-ZONE Heat Transfer : Floors Above Basement
+                                90.10    90.10      0.71     9771.7
+
+
+pZONE 2 : BASEMENT
+
+ Walls above grade              21.26    20.86         -     4738.4       5.62
+ South windows                   0.10     0.10      0.31      132.2       0.16
+ East windows                    0.10     0.10      0.31      132.2       0.16
+ North windows                   0.10     0.10      0.31      132.2       0.16
+ West windows                    0.10     0.10      0.31      132.2       0.16
+ Basement floor header           8.73     8.73      2.31     1803.1       2.14
+ Below grade foundation        163.38   163.38         -    16763.0      19.87
+                                                          =========    =======
+                                      ZONE 2 Totals:        23833.4      28.25
+
+pVentilation
+ -----------
+                            House           Air           Heat Loss  % Annual
+                            Volume         Change             MJ     Heat Loss
+                           ---------------------------------------------------
+
+                            508.17 m3    0.161 ACH          17464.3      20.70
+
+s                 *** AIR LEAKAGE AND VENTILATION ***
+
+ Building Envelope Surface Area                            =   396.4 m2      
+ Air Leakage Test Results at 50 Pa.(0.2 in H2O)            =    5.42 ACH
+ Equivalent Leakage Area @ 10 Pa.                          =  1028.5 cm2
+
+ "CGSB" Blower Door C, n 5.35074E-02   0.6800
+
+
+ Terrain Description                                     Height           m 
+ @ Weather Station :  Open flat terrain, grass           Anemometer      10.0
+ @ Building site   :  Suburban, forest                   Bldg. Eaves      3.6
+
+ Local Shielding-  Walls: Heavy
+                   Flue : Light local shielding
+
+ Leakage Fractions - Ceiling:    0.300   Walls:    0.500   Floors:    0.200
+
+pNormalized Leakage Area @ 10 Pa.                          =  2.5947 cm2/m2 
+ Estimated Airflow to cause a  5 Pa Pressure Difference    =     163 L/s
+ Estimated Airflow to cause a 10 Pa Pressure Difference    =     256 L/s
+
+s                    *** F326 VENTILATION REQUIREMENTS ***
+
+        Kitchen,living,dining:         3 rooms @  5.0 L/s   = 15.0 L/s
+        Utility rooms:                 1 rooms @  5.0 L/s   =  5.0 L/s
+        Bedrooms:                      1 rooms @ 10.0 L/s   = 10.0 L/s
+        Bedrooms:                      2 rooms @  5.0 L/s   = 10.0 L/s
+        Bathrooms:                     2 rooms @  5.0 L/s   = 10.0 L/s
+        Other habitable rooms:         2 rooms @  5.0 L/s   = 10.0 L/s
+        Basement Rooms:                                        0.0 L/s
+
+p             *** SECONDARY FANS & OTHER EXHAUST APPLIANCES ***
+
+                                   Control        Supply         Exhaust
+                                                 (  L/s)         (  L/s)
+ Other Fans                       Continuous        0.00            0.00
+ Dryer                            Continuous        -               1.49
+
+ Dryer is vented outdoors
+ Rated Fan Power                    0.0 watts
+
+                      *** NEW ERS VENTILATION DATA ***
+
+ Supplementary Systems
+
+ System #   1   Type: Dryer
+ Manufacturer:  
+ Model       :  
+ Airflow Supply Rate   0.0 L/s Exhaust  38.0 L/s Fan Power    0.0 Watts
+ Operation schedule:     56.5 min/day
+
+s                *** AIR LEAKAGE AND VENTILATION SUMMARY ***
+
+ F326 Required continuous ventilation rate             =   60.0 L/s ( 0.43 ACH)
+ Other Continuous Supply  Flow Rates                   =    0.0 L/s ( 0.00 ACH)
+ Other Continuous Exhaust Flow Rates                   =    0.0 L/s ( 0.00 ACH)
+ Total house ventilation is Balanced
+
+pGross Air Leakage and Ventilation Energy Load            = 15624.2 MJ      
+ Seasonal Heat Recovery Ventilator Efficiency             =     0.0 %
+ Estimated Ventilation Electrical Load: Heating Hours     =     0.0 MJ      
+ Estimated Ventilation Electrical Load: Non-Heating Hours =     0.0 MJ      
+ Net Air Leakage and Ventilation Energy Load              = 17464.3 MJ      
+
+
+s                        *** SPACE HEATING SYSTEM ***
+
+ PRIMARY Heating Fuel           : Electricity
+ Equipment                      : Forced air furnace
+ Manufacturer                   : Wizard SPH man                
+ Model                          :                               
+ Calculated* Output Capacity    =      12.0 kW      
+ * Design Heat loss * 1.10 + 0.5 kW
+
+ Steady State Efficiency        = 100.0 %
+
+ Fan Mode : Auto                        ECM motor: No 
+ Fan Power (Calculated)         =  233. watts
+
+s                   *** DOMESTIC WATER HEATING SYSTEM ***
+
+ PRIMARY Water Heating Fuel   : Electricity
+ Water Heating Equipment      : Conventional tank
+ Energy Factor                :   0.822
+
+ Manufacturer                 : Wizard DHW man                
+ Model                        : Wizard DHW mod                
+ Fraction of DHW load provided by the Primary system  1.0000
+ Tank Capacity =  189.3 Litres      Tank Blanket Insulation    0.0 RSI
+ Tank Location : Basement
+
+s                    *** ANNUAL SPACE HEATING SUMMARY ***
+
+ Gross Space Heat Loss                                  =  84379. MJ      
+
+ Gross Space Heating Load                               =  81993. MJ      
+ Usable Internal Gains                                  =  22750. MJ      
+ Usable Internal Gains Fraction                         =    27.0 %
+ Usable Solar Gains                                     =  13611. MJ      
+ Usable Solar Gains Fraction                            =    16.1 %
+ Auxiliary Energy Required                              =  45631. MJ      
+
+ Space Heating System Load                              =  45631. MJ      
+ Furnace/Boiler Seasonal efficiency                     =    98.9 %
+ Furnace/Boiler Annual Energy Consumption               =  44763. MJ      
+
+
+s              *** DESIGN SPACE HEATING AND COOLING LOADS ***
+
+ Design Heat Loss* at -25.0 C     =   20.83 Watts/m3    =  10588. Watts   
+ Design Cooling Load* for Jul at  30.0 C                =   3129. Watts   
+
+ * Please refer to notes at the end of this report.
+
+s                *** ANNUAL DOMESTIC WATER HEATING SUMMARY ***
+
+ Daily Hot Water Consumption                            =   189.8 Litres  /day
+ Hot Water Temperature                                  =    55.0 C
+ Estimated Domestic Water Heating Load                  =  13553. MJ      
+
+ PRIMARY Domestic Water Heating Energy Consumption      =  16950. MJ      
+ PRIMARY System Seasonal Efficiency                     =    80.0 %
+
+
+s                         *** BASE LOADS SUMMARY ***
+
+                                              kwh/day     Annual kWh
+ Interior Lighting                               2.6          949.0
+          Appliances                             6.3         2299.4
+          Other                                  9.7         3540.5
+ Exterior use                                    0.9          328.5
+
+ HVAC fans
+     HRV/Exhaust                                 0.0            0.0
+     Space Heating                               0.7          241.2
+     Space Cooling                               0.0            0.0
+
+ Total Average Electrical Load                  20.2         7358.6
+
+s                 *** FAN OPERATION SUMMARY (kWh) ***
+
+ Hours      HRV/Exhaust Fans         Space Heating     Space Cooling
+
+ Heating            0.0                    241.2               0.0
+ Neither            0.0                      0.0               0.0
+ Cooling            0.0                      0.0               0.0
+
+ Total              0.0                    241.2               0.0
+
+s                  *** ENERGY CONSUMPTION SUMMARY REPORT ***
+
+ Estimated Annual Space Heating Energy Consumption   =  45631. MJ = 12675.3 kWh
+ Ventilator Electrical Consumption: Heating Hours    =      0. MJ =     0.0 kWh
+ Estimated Annual DHW Heating Energy Consumption     =  16950. MJ =  4708.4 kWh
+
+ ESTIMATED ANNUAL SPACE + DHW ENERGY CONSUMPTION     =  62581. MJ = 17383.7 kWh
+
+ Estimated Greenhouse Gas Emissions    1.078 tonnes/Year
+
+s                *** ESTIMATED ANNUAL FUEL CONSUMPTION SUMMARY ***
+
+ Fuel                  Space     Space      DHW   Appliances  Ventil-    Total
+                      Heating   Cooling   Heating              ation
+
+ Electricity (kWh)    12675.3      0.0   4708.4   7117.4        0.0    24501.1
+
+
+s               *** ESTIMATED ANNUAL FUEL CONSUMPTION COSTS ***
+
+ Fuel Costs Library = Embedded
+
+         Electricity Natural Gas         Oil     Propane        Wood       Total
+ RATE     (Ottawa97)  (Ottawa08)  (Ottawa08)  (Ottawa08)  ( Sth Ont)
+
+    $        1929.08        0.00        0.00        0.00        0.00     1929.08
+
+s                   *** MONTHLY ENERGY PROFILE ***
+
+ Month  Energy Load  Internal Gains  Solar Gains  Aux. Energy  HRV Eff.
+             MJ            MJ             MJ           MJ         %
+ ----------------------------------------------------------------------
+
+ Jan      15323.5         2355.1        1754.8      11213.7       0.0
+ Feb      12808.9         2123.5        2050.7       8634.6       0.0
+ Mar      10889.3         2358.9        2335.5       6195.0       0.0
+ Apr       6739.7         2298.5        1603.8       2837.5       0.0
+ May       3626.1         2343.9        1069.5        212.7       0.0
+ Jun       1304.5         1160.3         144.2          0.0       0.0
+ Jul        621.0          611.7           9.3          0.0       0.0
+ Aug        808.1          781.0          27.1          0.0       0.0
+ Sep       2254.0         1610.4         643.6          0.0       0.0
+ Oct       5690.8         2417.9        1381.8       1891.1       0.0
+ Nov       8698.4         2317.6        1205.2       5175.6       0.0
+ Dec      13228.3         2371.4        1385.9       9470.9       0.0
+
+ Annual   81992.6        22750.1       13611.4      45631.1       0.0
+
+s                     *** FOUNDATION ENERGY PROFILE ***
+
+ Month                       Heat Loss (MJ)        
+           Crawl Space    Slab       Basement      Walkout       Total
+ ------------------------------------------------------------------------------
+
+ Jan            0.0        0.0        2242.5           0.0      2242.5
+ Feb            0.0        0.0        1729.4           0.0      1729.4
+ Mar            0.0        0.0        1240.7           0.0      1240.7
+ Apr            0.0        0.0         568.3           0.0       568.3
+ May            0.0        0.0          42.5           0.0        42.5
+ Jun            0.0        0.0           0.0           0.0         0.0
+ Jul            0.0        0.0           0.0           0.0         0.0
+ Aug            0.0        0.0           0.0           0.0         0.0
+ Sep            0.0        0.0           0.0           0.0         0.0
+ Oct            0.0        0.0         378.7           0.0       378.7
+ Nov            0.0        0.0        1036.6           0.0      1036.6
+ Dec            0.0        0.0        1897.0           0.0      1897.0
+
+ Annual         0.0        0.0        9135.7           0.0      9135.7
+
+s           *** FOUNDATION TEMPERATURES & VENTILATION PROFILE ***
+
+ Month           Temperature (Deg C)            Air Change Rate  Heat Loss
+           Crawl     Basement     Walkout       Natural   Total   (MJ)
+           Space
+ ------------------------------------------------------------------------------
+
+ Jan         0.0       18.4         0.0         0.268    0.279      3959.5
+ Feb         0.0       18.1         0.0         0.254    0.265      3160.4
+ Mar         0.0       17.9         0.0         0.214    0.225      2360.7
+ Apr         0.0       18.1         0.0         0.161    0.172      1159.3
+ May         0.0       18.7         0.0         0.100    0.110       429.0
+ Jun         0.0       20.1         0.0         0.064    0.074       139.8
+ Jul         0.0       21.3         0.0         0.045    0.055        50.3
+ Aug         0.0       20.8         0.0         0.049    0.059        84.7
+ Sep         0.0       19.4         0.0         0.087    0.098       328.1
+ Oct         0.0       18.7         0.0         0.140    0.150       908.6
+ Nov         0.0       18.6         0.0         0.189    0.200      1709.3
+ Dec         0.0       18.6         0.0         0.243    0.253      3174.7
+
+ Annual      0.0       19.1         0.0         0.151    0.161     17464.3
+
+s                *** SPACE HEATING SYSTEM PERFORMANCE ***
+
+ Month Space Heating Furnace   Pilot   Indoor  Heat Pump    Total     System
+           Load       Input    Light   Fans     Input      Input       Cop
+            kWh         kWh     kWh      kWh      kWh        kWh  
+ -------------------------------------------------------------------------
+ Jan      3114.9      3055.6     0.0     59.3      0.0     3114.9    1.000
+ Feb      2398.5      2352.9     0.0     45.6      0.0     2398.5    1.000
+ Mar      1720.8      1688.1     0.0     32.7      0.0     1720.8    1.000
+ Apr       788.2       773.2     0.0     15.0      0.0      788.2    1.000
+ May        59.1        58.0     0.0      1.1      0.0       59.1    1.000
+ Jun         0.0         0.0     0.0      0.0      0.0        0.0    0.000
+ Jul         0.0         0.0     0.0      0.0      0.0        0.0    0.000
+ Aug         0.0         0.0     0.0      0.0      0.0        0.0    0.000
+ Sep         0.0         0.0     0.0      0.0      0.0        0.0    0.000
+ Oct       525.3       515.3     0.0     10.0      0.0      525.3    1.000
+ Nov      1437.7      1410.3     0.0     27.4      0.0     1437.7    1.000
+ Dec      2630.8      2580.8     0.0     50.1      0.0     2630.8    1.000
+
+ Ann     12675.3     12434.1     0.0    241.2      0.0    12675.3    0.989
+
+
+s         *** MONTHLY ESTIMATED ENERGY CONSUMPTION BY DEVICE ( MJ ) ***
+
+            Space Heating          DHW Heating      Lights &  HRV &     Air
+        Primary   Secondary   Primary   Secondary  Appliances  FANS  Conditioner
+
+ Jan    11000.3        0.0     1551.9        0.0     2176.2    213.4      0.0
+ Feb     8470.3        0.0     1419.8        0.0     1965.6    164.3      0.0
+ Mar     6077.1        0.0     1556.7        0.0     2176.2    117.9      0.0
+ Apr     2783.5        0.0     1460.0        0.0     2106.0     54.0      0.0
+ May      208.6        0.0     1439.5        0.0     2176.2      4.0      0.0
+ Jun        0.0        0.0     1328.9        0.0     2106.0      0.0      0.0
+ Jul        0.0        0.0     1326.6        0.0     2176.2      0.0      0.0
+ Aug        0.0        0.0     1309.5        0.0     2176.2      0.0      0.0
+ Sep        0.0        0.0     1283.8        0.0     2106.0      0.0      0.0
+ Oct     1855.1        0.0     1375.7        0.0     2176.2     36.0      0.0
+ Nov     5077.1        0.0     1393.7        0.0     2106.0     98.5      0.0
+ Dec     9290.7        0.0     1504.0        0.0     2176.2    180.2      0.0
+
+ Total  44762.7        0.0    16950.1        0.0    25622.6    868.4      0.0
+
+
+s                    *** ESTIMATED FUEL COSTS (Dollars) ***
+
+          Electricity Natural Gas       Oil     Propane        Wood       Total
+
+ Jan         308.79        0.00        0.00        0.00        0.00      308.79
+ Feb         251.81        0.00        0.00        0.00        0.00      251.81
+ Mar         211.02        0.00        0.00        0.00        0.00      211.02
+ Apr         142.29        0.00        0.00        0.00        0.00      142.29
+ May          92.08        0.00        0.00        0.00        0.00       92.08
+ Jun          84.40        0.00        0.00        0.00        0.00       84.40
+ Jul          85.73        0.00        0.00        0.00        0.00       85.73
+ Aug          85.40        0.00        0.00        0.00        0.00       85.40
+ Sep          83.53        0.00        0.00        0.00        0.00       83.53
+ Oct         123.56        0.00        0.00        0.00        0.00      123.56
+ Nov         186.59        0.00        0.00        0.00        0.00      186.59
+ Dec         273.87        0.00        0.00        0.00        0.00      273.87
+
+ Total      1929.08        0.00        0.00        0.00        0.00     1929.08
+
+
+p                       *** FUEL COSTS LIBRARY LISTING ***
+
+  File Name= Embedded
+
+
+s           Record #   1        Fuel: Electricity
+
+            Rate Id= Ottawa97   Hydro Rate Block              
+
+            RATE BLOCK                 Dollars        Charge
+                             kWhr      Per kWhr         ($)
+
+              Minimum           0.0                   10.000
+                 1            250.0     0.0999
+                 2          99999.0     0.0702
+
+
+s           Record #   2        Fuel: Natural Gas
+
+            Rate Id= Ottawa08   Gas Rate Block                
+
+            RATE BLOCK                 Dollars        Charge
+                             m3        Per m3           ($)
+
+              Minimum           0.0                   14.000
+                 1             30.0     0.5338
+                 2             85.0     0.5277
+                 3            170.0     0.5229
+                 4          99999.0     0.5194
+
+
+s           Record #   3        Fuel: Oil        
+
+            Rate Id= Ottawa08   Oil Rate Block                
+
+            RATE BLOCK                 Dollars        Charge
+                             Litre     Per Litre        ($)
+
+              Minimum           0.0                    0.000
+                 1          99999.0     1.1750
+
+
+s           Record #   4        Fuel: Propane    
+
+            Rate Id= Ottawa08   Propane Rate Block            
+
+            RATE BLOCK                 Dollars        Charge
+                             Litre     Per Litre        ($)
+
+              Minimum           0.0                    0.000
+                 1          99999.0     0.7200
+
+
+s           Record #   5        Fuel: Wood       
+
+            Rate Id= Sth Ont    Cord Rate                     
+
+            RATE BLOCK                 Dollars        Charge
+                             Cord      Per Cord         ($)
+
+              Minimum           0.0                    0.000
+                 1          99999.0   210.0000
+
+p                            ********************
+
+
+    Energy units: MJ = Megajoules (3.6 MJ = 1 kWh)
+
+    The calculated heat losses and energy consumptions are only
+    estimates, based upon the data entered and assumptions 
+    within the program. Actual energy consumption and heat 
+    losses will be influenced by construction practices, 
+    localized weather, equipment characteristics and the 
+    lifestyle of the occupants.
+
+    Note: The Design Heating and Cooling loads are based on
+    the inputs shown in this report, including the ventilation
+    system, and the indicated flow rates.
+ Text report deleted Feb 21, 2018

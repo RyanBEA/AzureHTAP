@@ -1,0 +1,108 @@
+  130   14   32Wth110.Dat
+BRITISH COLUMBIA                ALBERTA                         SASKATCHEWAN                    
+MANITOBA                        ONTARIO                         QUEBEC                          
+NEW BRUNSWICK                   NOVA SCOTIA                     PRINCE EDWARD ISLAND            
+NEWFOUNDLAND AND LABRADOR       YUKON                           NORTHWEST TERRITORIES             
+NUNAVUT                         OTHER                           
+    1    1    1    1    1    1    1    1    1    1    1    1    1    2    2
+    2    2    2    2    3    3    3    3    3    3    4    4    4    4    4
+    5    5    5    5    5    5    5    5    5    5    5    5    5    6    6
+    6    6    6    6    6    6    6    7    7    7    7    8    8    8    8
+    8    9    9   10   10   10   10   10   11   13   12   13   12   12   13
+   12   14   14   14   14   14   14   14   14   14   14   14   14   14   14
+   11    1    1    1    1    1    1    1    2    2    2    2    2    2    3
+    3    3    3    4    4    5    5    5    5    5    5    5    6    6    6
+    6    6    6    7   10   10   10   10   13   13
+ABBOTSFORD                      CASTLEGAR                       FORT NELSON                     
+FORT ST. JOHN                   KAMLOOPS                        PORT HARDY                      
+PRINCE GEORGE                   PRINCE RUPERT                   SMITHERS                        
+SUMMERLAND                      VANCOUVER                       VICTORIA                        
+WILLIAMS LAKE                   CALGARY                         EDMONTON                        
+FORT MCMURRAY                   LETHBRIDGE                      ROCKY MOUNTAIN HOUSE            
+SUFFIELD                        ESTEVAN                         PRINCE ALBERT                   
+REGINA                          SASKATOON                       SWIFT CURRENT                   
+URANIUM CITY                    BRANDON                         CHURCHILL                       
+THE PAS                         THOMPSON                        WINNIPEG                        
+BIG TROUT LAKE                  KINGSTON                        LONDON                          
+MUSKOKA                         NORTH BAY                       OTTAWA                          
+SAULT STE. MARIE                SIMCOE                          SUDBURY                         
+THUNDER BAY                     TIMMINS                         TORONTO                         
+WINDSOR                         BAGOTVILLE                      KUUJJUAQ                        
+MONTREAL                        KUUJJUARAPIK                    QUEBEC                          
+SCHEFFERVILLE                   SEPT ILES                       SHERBROOKE                      
+VAL D'OR                        CHATHAM                         FREDERICTON                     
+MONCTON                         SAINT JOHN                      GREENWOOD                       
+HALIFAX                         SYDNEY                          TRURO                           
+YARMOUTH                        CHARLOTTETOWN                   SUMMERSIDE                      
+BONAVISTA                       GANDER                          GOOSE BAY                       
+SAINT JOHN'S                    STEPHENVILLE                    WHITEHORSE                      
+BAKER LAKE                      FORT SMITH                      IQALUIT                         
+INUVIK                          NORMAN WELLS                    RESOLUTE                        
+YELLOWKNIFE                     BERLIN, GERMANY                 BISMARCK, NORTH DAKOTA          
+COPENHAGEN, DENMARK             DENVER, COLORADO                FRANKFURT, GERMANY              
+GLASGOW, SCOTLAND               LONDON, ENGLAND                 LYON, FRANCE                    
+MIAMI, FLORIDA                  PARIS, FRANCE                   SAPPORO, JAPAN                  
+STOCKHOLM, SWEDEN               VIENNA, AUSTRIA                 WASHINGTON, D.C.                
+DAWSON CITY                     COMOX                           CRANBROOK                       
+QUESNEL                         SANDSPIT                        TERRACE                         
+TOFINO                          WHISTLER                        COLD LAKE                       
+CORONATION                      GRANDE PRAIRIE                  MEDICINE HAT                    
+PEACE RIVER                     RED DEER                        BROADVIEW                       
+MOOSE JAW                       NORTH BATTLEFORD                YORKTON                         
+DAUPHIN                         PORTAGE LA PRAIRIE              GORE BAY                        
+KAPUSKASING                     KENORA                          SIOUX LOOKOUT                   
+TORONTO MET RES STN             TRENTON                         WIARTON                         
+BAIE-COMEAU                     LA GRANDE RIVIERE               MONT-JOLI                       
+MONTREAL MIRABEL                ST-HUBERT                       STE-AGATHE-DES-MONTS            
+CHARLO                          CARTWRIGHT                      DANIELS HARBOUR                 
+DEER LAKE                       WABUSH LAKE                     CORAL HARBOUR                   
+HALL BEACH                      
+COLOMBIE-BRITANNIQUE            ALBERTA                         SASKATCHEWAN        
+MANITOBA                        ONTARIO                         QUÉBEC              
+NOUVEAU-BRUNSWICK               NOUVELLE-ÉCOSSE                 ÎLE-DU-PRINCE-ÉDOUARD
+TERRE-NEUVE-ET-LABRADOR         YUKON                           TERRITOIRES DU NORD-OUEST
+NUNAVUT                         AUTRE
+ABBOTSFORD                      CASTLEGAR                       FORT NELSON
+FORT ST. JOHN                   KAMLOOPS                        PORT HARDY
+PRINCE GEORGE                   PRINCE RUPERT                   SMITHERS
+SUMMERLAND                      VANCOUVER                       VICTORIA            
+WILLIAMS LAKE                   CALGARY                         EDMONTON
+FORT MCMURRAY                   LETHBRIDGE                      ROCKY MOUNTAIN HOUSE
+SUFFIELD                        ESTEVAN                         PRINCE ALBERT
+REGINA                          SASKATOON                       SWIFT CURRENT       
+URANIUM CITY                    BRANDON                         CHURCHILL           
+THE PAS                         THOMPSON                        WINNIPEG            
+BIG TROUT LAKE                  KINGSTON                        LONDON              
+MUSKOKA                         NORTH BAY                       OTTAWA              
+SAULT-STE.-MARIE                SIMCOE                          SUDBURY             
+THUNDER BAY                     TIMMINS                         TORONTO             
+WINDSOR                         BAGOTVILLE                      KUUJJUAQ            
+MONTRÉAL                        KUUJJUARAPIK                    QUÉBEC              
+SCHEFFERVILLE                   SEPT-ILES                       SHERBROOKE          
+VAL-D'OR                        CHATHAM                         FREDERICTON         
+MONCTON                         SAINT-JEAN                      GREENWOOD           
+HALIFAX                         SYDNEY                          TRURO               
+YARMOUTH                        CHARLOTTETOWN                   SUMMERSIDE          
+BONAVISTA                       GANDER                          GOOSE BAY           
+SAINT JOHN'S                    STEPHENVILLE                    WHITEHORSE          
+BAKER LAKE                      FORT SMITH                      IQALUIT             
+INUVIK                          NORMAN WELLS                    RESOLUTE            
+YELLOWKNIFE                     BERLIN, ALLEMAGNE               BISMARCK, NORTH DAKOTA          
+COPENHAGUE, DANEMARK            DENVER, COLORADO                FRANCFORT, ALLEMAGNE
+GLASGOW, ÉCOSSE                 LONDRES, ANGLETERRE             LYON, FRANCE        
+MIAMI, FLORIDE                  PARIS, FRANCE                   SAPPORO, JAPON      
+STOCKHOLM, SUÈDE                VIENNE, AUTRICHE                WASHINGTON, D.C.    
+DAWSON CITY                     COMOX                           CRANBROOK           
+QUESNEL                         SANDSPIT                        TERRACE             
+TOFINO                          WHISTLER                        COLD LAKE           
+CORONATION                      GRANDE PRAIRIE                  MEDICINE HAT        
+PEACE RIVER                     RED DEER                        BROADVIEW           
+MOOSE JAW                       NORTH BATTLEFORD                YORKTON             
+DAUPHIN                         PORTAGE LA PRAIRIE              GORE BAY            
+KAPUSKASING                     KENORA                          SIOUX LOOKOUT       
+TORONTO MET RES STN             TRENTON                         WIARTON             
+BAIE-COMEAU                     LA GRANDE RIVIÉRE               MONT-JOLI           
+MONTRÉAL MIRABEL                ST-HUBERT                       STE-AGATHE-DES-MONTS
+CHARLO                          CARTWRIGHT                      DANIELS HARBOUR     
+DEER LAKE                       WABUSH LAKE                     CORAL HARBOUR       
+HALL BEACH          

@@ -1,0 +1,338 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+    A {text-decoration:none}
+    A IMG {border-style:none; border-width:0;}
+    DIV {position:absolute; z-index:25;}
+    .box { float: left; }
+    #boxContent { border: none; background: #FFFFFF; border-color:000000;border-style:solid;border-width:1px; padding=10;position: relative; left: -4px; top: -4px; } 
+    #boxContainer { position: relative; background: #666; margin: 8px; } 
+    .fc0 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc1 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;FONT-STYLE:NORMAL;}
+    .fc2 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc5 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc6 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc7 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;TEXT-DECORATION:UNDERLINE;}
+    .fc8 { COLOR:000000;FONT-SIZE:16PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc9 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+    .fc11 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc12 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+	.style5 {FONT-SIZE:16PT; FONT-FAMILY:Arial; FONT-WEIGHT:BOLD; color: 000000;}
+    
+body {
+	margin-left: 60px;
+	margin-right: 60px; 
+	margin-bottom: 50px;
+	margin-top: 2px
+}
+        
+div.cat {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: 2px dotted gray;
+	COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;
+	position:relative;
+}
+
+div.head {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: solid white .2em;
+	margin-top: .9em;
+	COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;
+	position:relative;
+}
+
+
+.itemname	{
+	float: left;
+	position: relative; /*needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.3em;
+	border-bottom: solid white .2em;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.num	{
+	float: right;
+	position: relative; /* needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.4em;
+	border-bottom: solid white .2em;
+	width: 70px;
+	text-align: right;
+}
+
+table.checklist {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: none;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.checklist th {
+	border-width: 0px;
+	padding: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+}
+table.checklist td {
+	border-width: 1px;
+	padding: 2px;
+	border-top-style:solid;
+	border-color: black;
+	background-color: white;
+}
+  .style6 {
+	font-size: 24pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: 000000;
+	font-weight: bold;
+}
+  .fc13 {COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+  </style>
+  <title>Energy Efficiency Evaluation Report</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1-->
+
+<!-- The indent for the ecoENERGY logo to line up with the "R" of "Retrofit - Homes" is 58 pixels-->
+<!-- <p style="margin-left: -58px"><img src="[:ImagePath:]retrofit_ecoenergy_e.gif" width="251" height="94"></p> -->
+
+    
+<!--<p class="style6">ecoENERGY</p>
+<p class="style5">Retrofit - Homes</p> -->
+  
+<!--This is the table for the rating scale-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"> 
+	   <img alt="" src="ecoENERGY_eng.jpg" width="120" height="70">
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">[:ClientName:],<br>
+     [:ClientAddress:],<br>
+     [:CityName:], [:ProvName:],<br>
+    [:PostalCode:]</td>
+	<!--The column width of 468px is measured for the 450px rating banner, plus a 9px horizontal buffer
+	The 9px buffer allow the arrow GIFs (and the text above them) to point at the very beginning of the banner itself 
+	instead of being offset. The arrow GIFs, having a width of 20px with the point of the arrow right in the middle of 
+	that 20, require a buffer, and with some trial and error, 9px was determined to be exactly the right size.-->
+	<td width="468" align="right" class="style5">Energy Efficiency Evaluation Report</td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0"><span class="fc11">House file number: [:FileID:]</span></td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0"><span class="fc3"><br>EnerGuide rating</span></td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	  <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_En.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+  
+</table>
+<!--Rating scale table ends here-->
+
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="45%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+    <td width="55%" valign="top" class="fc1">
+	<ul type="round" class="fc1">
+	<li>Your house currently rates [:CheersRate:].</li>      
+	<li>The average energy efficiency rating for a house of this age in Canada is [:AvgRatingByAge:].</li>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:PercentBlock-->
+	<li>Your home rates in the top [:RatingPercent:]% of this group of houses.</li>
+<!--EndTemplateBlock-->
+	</ul>
+
+	<!--TemplateBlock:NegativeGHGBox-->
+	</td>
+  </tr>
+</table>
+
+
+<br>
+<p class="fc3">A Broader Outlook</p>
+<p class="fc1">
+By reducing the amount of energy you use in your house, you reduce the production of greenhouse gases such as CO2. Small improvements by all 
+of us will help Canada's efforts to combat climate change and protect the environment. Together we can do it!
+</p>
+
+<br>
+<p class="fc3">Standard Operating Conditions</p>
+<p class="fc1">The energy advisor has estimated your house's annual energy consumption based on its general characteristics, its energy-using equipment and the following standard conditions: a complete air change approximately every three hours; four occupants; a fixed thermostat setting of 21°C on main floors and 19°C in the basement; average water consumption values; average electric consumption values; and, average weather data. <br><br>
+
+These conditions standardize the rating so you can compare your house's rating to similar size houses built in similar regions. However, the conditions may not entirely reflect your household. Your house's actual energy consumption and your future savings may be significantly influenced by the number of occupants, their day-to-day habits and their overall lifestyle. 
+</p>
+
+<!--EndTemplateBlock-->
+<!--TemplateBlock:RecommendationsHeader-->
+
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<br>
+<p class="fc3">Energy Savings Tips</p>
+<p class="fc1">These actions  will help you save energy and money:</p>
+
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top" class="fc1">
+	<ul type="round" class="fc1">
+	<!--EndTemplateBlock-->
+	
+	<!--TemplateBlock:Recommendations-->
+	<li>[:RecDesc:]</li>
+	<!--EndTemplateBlock-->
+	
+	<!--TemplateBlock:Page4-->
+	</ul></td>
+  </tr>
+</table>
+
+
+
+<br>
+<p class="fc3">Estimated Heat Loss</p>
+    
+<p class="fc1">
+Figure 1 shows how the energy used for space heating actually gets used in the heating of your home. A long red bar indicates where you are losing more energy; a short red bar indicates areas where you are not losing as much energy. <span class="fc13">When, in time, you decide to renovate your home, look at the long bars on this graph and ask yourself whether this is an area you might improve upon. Think of your house as a system, in which a change made to one component of the house can affect other components. The health and safety of occupants as well as the long-term integrity of the structure must be primary considerations. </span></p>
+
+<p class="fc5">Figure 1.&nbsp;&nbsp;Estimated Annual Heat Loss</p>
+
+<center>
+  <img alt="" src="[:HeatImagePath:]" width="600" height="250">
+</center>
+
+  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:StartOfPage5-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ThingsToKnowBlock-->
+<br>
+<p class="fc3">Things you should know</p>
+
+<p class="fc1"><span class="fc6">Home Energy Efficiency Publications</span><br>
+Natural Resources Canada publishes a variety of publications that can help you improve the energy efficiency of your home. These publications are available online at <u>http://oee.nrcan.gc.ca/publications</u>. You can also obtain a copy from your energy advisor or by calling 1-800-387-2000.</p>
+
+<p class="fc1"><span class="fc6">Hiring a Contractor</span><br>  
+Before you have any work done by a contractor, you should request quotations in writing from professional contractors and obtain a written contract. Canada Mortgage and Housing Corporation (CMHC) has a very useful fact sheet on this subject, <em>Hiring a Contractor</em>, which includes a draft contract. This publication is available online at <u>http://www.cmhc-schl.gc.ca/en/co/renoho/refash/refash_009.cfm</u> or you can order it by calling 1-800-668-2642. The CMHC Web site is a useful renovation resource. It has a number of renovation planning fact sheets available online at no cost. A number of excellent in depth publications are also for sale.</p>
+
+<p class="fc1"><span class="fc6">House as a System</span><br>  
+Your energy advisor has recommended an approach for improving your house's energy performance based on the principle of a "house as a system." This principle recognizes that a change made to one component of a house can affect other components and that the comfort, health and safety of occupants, as well as the long-term integrity of the structure, must be primary considerations any renovation. For example, it is recommended to replace your heating equipment after the insulation retrofits have been implemented to avoid having an oversized heating appliance that will not operate at its optimum efficiency.</p> 
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:HRVPresentBlock-->
+
+<p class="fc1"><span class="fc6">Ventilation System</span><br>
+It is important that you periodically maintain your heat recovery ventilator (HRV) to avoid problems, ensure its effectiveness and prolong its life. Natural Resources Canada's publication <em>Operating and Maintaining your Heat Recovery Ventilator</em> has a chapter on how to maintain an HRV. 
+</p> 
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ThingsToKnowBlock2-->
+
+<p class="fc1"><span class="fc6">Insulation</span><br>
+Protect and cover all foam insulation with a minimum of 12.5 mm (½") drywall on the interior to reduce flame spread and smoke generation in the case of a fire. To reduce skin and eye irritation from fibres and dust when working with all insulation materials, wear loose-fitting clothes with long sleeves and tight cuffs, work gloves, a hard hat and proper footwear. To avoid inhaling dust and fibres, use goggles and a half-mask respirator with a particulate filter while handling insulation. Wash your clothing separately after use.</p>
+
+<p class="fc1"><span class="fc6">Humidification</span><br>
+Health Canada recommends a relative humidity (RH) level of between 30 and 55 percent. If you have a furnace with a humidifier, ensure that 
+it is regularly cleaned and maintained, and that the humidistat is set at an appropriate humidity level. You can use a hygrometer to measure relative humidity. CMHC has a fact sheet that explains how to calibrate such equipment. This publication is available from CMHC Web site or by calling CMHC. See the <em>Hiring a Contractor</em> section above for coordinates.</p>
+
+<p class="fc1"><span class="fc6">Mould</span><br>
+If you suspect mould growth is in your home, it is recommended that the mould damaged area(s) be cleaned thoroughly or removed and properly disposed of. To control and reduce the potential for mould growth, maintain indoor humidity levels at appropriate levels, and remedy water infiltration and leakage issues. Refer to the Canada Mortgage and Housing Corporation fact sheet <em>About Your House: Fighting Mold — The Homeowners' Guide</em> at <u>http://www.cmhc-schl.gc.ca/en/co/maho/yohoyohe/momo/momo_005.cfm</u> for information regarding proper mould identification 
+and cleaning procedures.</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:WoodHeatBlock-->
+
+<p class="fc1"><span class="fc6">Burn it Smart!</span><br> 
+"Burn it Smart!", a program of the Government of Canada, provides information to help you use your wood heating system safely and efficiently while reducing the wood smoke emissions that can affect the environment and your health. For information, go to <u>http://www.burnitsmart.org</u>.</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteWarning-->
+
+<p class="fc1"><span class="fc6">Vermiculite</span><br>
+ Vermiculite insulation has been detected in your home. Some older vermiculite insulation that was used to insulate homes may contain amphibole asbestos. It is important that you read the Health Canada article entitled <em>It’s Your Health - Vermiculite Insulation Containing Asbestos</em> that has been included with your report. For more information, you can also visit Health Canada’s web site at <u>http://www.hc-sc.gc.ca</u> or call 1-800-O-Canada.</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteRenovations-->
+
+<p class="fc1"><span class="fc6">Vermiculite and Renovation</span><br>
+Older vermiculite insulation installed in homes may contain amphibole asbestos. If the insulation is in the walls or attic spaces and is not disturbed, it poses very little risk to the health of the occupants. However, if vermiculite is found during a renovation, or if you suspect it might be in your home and you plan to renovate (including insulation or air sealing work), contact professionals who are qualified to handle asbestos before you proceed with the renovation. For a listing of qualified professionals, look in the Yellow Pages&#153; under "Asbestos Abatement and Removal.”</p>
+	
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsFooter-->
+
+	<!--13-Oct-03 JTB: Still required! -->
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+
+<br>
+<p class="fc1"><span class="fc6">[:CommentHeader:]</span><br>
+	[:Comments:]</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ReportVersionBlock-->
+<br><br>
+<p class="fc10" align="right">H2Kv[:HOTVER:]</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+</body>
+</html>
+<!--EndTemplateBlock-->
+

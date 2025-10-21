@@ -1,0 +1,697 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+<title>H2K</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+P {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;		
+
+		}
+		
+TD {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;}
+
+P.SectionHead {	font-family:Arial, Helvetica, sans-serif;
+		font-size:13pt;
+		font-style:italic;
+		font-weight:bold;
+				margin-top:0pt;
+		}
+HR.A{		height:0.5pt;
+		margin-top:0pt;
+		margin-bottom:0pt;
+		padding:0pt;
+		border-width:0pt}
+		
+TABLE {page-break-inside:avoid}
+
+DIV.KeepTogether {page-break-inside:avoid}
+		
+.fc0 { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!--EndTemplateBlock-->	
+
+<!--TemplateBlock:Main-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="50%">
+	<p align="left">
+	<span style="COLOR:000000;FONT-SIZE:14PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">Liste du fichier des données climatiques <br></td>
+	<td width="50%">
+	<p align="right">
+	<span style="COLOR:000000;FONT-SIZE:24PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;font-style:italic;">
+	HOT2000<br></span>
+	<span style="COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">
+	  Ressources naturelles CANADA<br>
+	Version [:HOTVER:]</span>
+	</p>
+	</td>
+	<td align="right">
+	<img src="[:ImagePath:]h2k_logo.gif" width =159 height=82>
+	</td></tr>
+</table>
+<hr>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="300px">
+	<b>Fichier: </b>[:USEWTH:]
+	</td></tr>
+	<tr><td width="450px">
+	<b>Données climatiques pour [:CTYNAM:], [:USEPRV:]</b>
+	</td></tr>
+</table>
+<br>
+<table width="400px" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="300px"><b>Latitude (Degrés):</b> </td>
+    <td align = "right">[:CTYLAT:]</td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr> 
+    <td width="300px"><b>Degrés-jours annuels de chauffage ([:RMTMP:] [:DEG:]):</b> </td>
+    <td align = "right">[:DEGDAY:]</td>
+  </tr>
+  <tr> 
+    <td width="300px"><b> Temp. de calcul du chauffage  ([:DEG:]):</b> </td>
+    <td align = "right">[:DHDBT:]</td>
+  </tr>
+  <tr> 
+    <td width="300px"><b> Temp. moy. du sol en profondeur ([:DEG:]):</b> </td>
+    <td align = "right">[:DGT:]</td>
+  </tr>
+   <tr> 
+    <td width="300px"><b> Temp. sèche de calcul du climat ([:DEG:]):</b> </td>
+    <td align = "right">[:DCDBT:]</td>
+  </tr>
+   <tr> 
+    <td width="300px"><b> Temp. humide de calcul du climat ([:DEG:]):</b> </td>
+    <td align = "right">[:DCWBT:]</td>
+  </tr>
+   <tr> 
+    <td width="300px"><b> Valeur-f de l'indice solaire  :</b> </td>
+    <td align = "right">[:FINDEX:]</td>
+  </tr>
+  </table>
+
+<p>&nbsp;</p>
+
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+  <tr bgcolor="#000000"> 
+    <td width="67">&nbsp;</td>
+    <td width="121"> 
+      <div align="center"><b><font color="#FFFFFF">Temp. sèche ([:DEG:])</font></b></div>
+    </td>
+    <td width="101"> 
+      <div align="center"><b><font color="#FFFFFF">Temp. humide ([:DEG:])</font></b></div>
+    </td>
+    <td width="145"> 
+      <div align="center"><b><font color="#FFFFFF">Amplitude ([:DEG:])</font></b></div>
+    </td>
+    <td width="80"> 
+      <div align="center"><font color="#FFFFFF"><b>Dév. norm  ([:DEG:])</b></font></div>
+    </td>
+    <td width="121"> 
+      <div align="center"> <font color="#FFFFFF"><b>Vit. vent ([:KPH:])</b></font> </div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>jan</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)1:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)1:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)1:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)1:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)1:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>fév</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)2:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)2:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)2:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)2:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)2:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>mar</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)3:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)3:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)3:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)3:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)3:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>avr</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)4:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)4:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)4:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)4:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)4:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>mai</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)5:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)5:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)5:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)5:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)5:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>jun</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)6:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)6:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)6:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)6:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)6:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>jul</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)7:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)7:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)7:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)7:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)7:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>aoû</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)8:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)8:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)8:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)8:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)8:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>sep</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)9:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)9:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)9:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)9:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)9:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>oct</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)10:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)10:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)10:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)10:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)10:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>nov</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)11:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)11:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)11:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)11:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)11:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>déc</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)12:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)12:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)12:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)12:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)12:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#99CCFF"> 
+    <td width="67"><b>Annuel</b></td>
+    <td width="121"> 
+      <div align="center">[:EC(1)13:]</div>
+    </td>
+    <td width="101"> 
+      <div align="center">[:EC(2)13:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:EC(3)13:]</div>
+    </td>
+    <td width="90"> 
+      <div align="center">[:EC(4)13:]</div>
+    </td>
+    <td width="108"> 
+      <div align="center">[:EC(5)13:]</div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;
+</p>
+<hr>
+<p class="SectionHead">Rayonnement solaire [:SUnits:]</p>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+  <tr bgcolor="#000000"> 
+      <td width="67"> 
+      <div align="left"><font color="#FFFFFF"><b>&nbsp;</b></font></div>
+    </td>
+    <td width="67"> 
+      <div align="center"><font color="#FFFFFF"><b>Global</b></font></div>
+    </td>
+    <td width="121"> 
+      <div align="center"> <font color="#FFFFFF"><b>Diffus </b></font> </div>
+    </td>
+    <td width="91"> 
+      <div align="center"><font color="#FFFFFF"><b>Sud </b></font> </div>
+    </td>
+    <td width="81"> 
+      <div align="center"><font color="#FFFFFF"><b>SE/SO </b></font> </div>
+    </td>
+    <td width="86"> 
+      <div align="center"><font color="#FFFFFF"><b>Est/Ouest</b></font> </div>
+    </td>
+    <td width="86"> 
+      <div align="center"><font color="#FFFFFF"><b>NE/NO </b></font> </div>
+    </td>
+    <td width="86"> 
+      <div align="center"><font color="#FFFFFF"><b>Nord</b></font> </div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>jan</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)1:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)1:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)1:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)1:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)1:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)1:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)1:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>fév</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)2:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)2:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)2:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)2:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)2:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)2:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)2:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>mar</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)3:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)3:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)3:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)3:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)3:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)3:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)3:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>avr</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)4:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)4:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)4:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)4:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)4:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)4:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)4:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>mai</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)5:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)5:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)5:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)5:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)5:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)5:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)5:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>jun</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)6:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)6:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)6:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)6:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)6:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)6:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)6:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>jul</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)7:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)7:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)7:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)7:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)7:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)7:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)7:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>aoû</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)8:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)8:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)8:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)8:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)8:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)8:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)8:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>sep</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)9:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)9:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)9:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)9:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)9:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)9:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)9:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>oct</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)10:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)10:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)10:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)10:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)10:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)10:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)10:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#EEEEEE"> 
+    <td width="67"><b>nov</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)11:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)11:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)11:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)11:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)11:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)11:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)11:]</div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="67"><b>déc</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)12:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)12:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)12:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)12:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)12:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)12:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)12:]</div>
+    </td>
+  </tr>
+  <tr bgcolor="#99CCFF"> 
+    <td width="67"><b>Annuel</b></td>
+    <td width="121"> 
+      <div align="center">[:FC(1)13:]</div>
+    </td>
+    <td width="91"> 
+      <div align="center">[:FC(2)13:]</div>
+    </td>
+    <td width="81"> 
+      <div align="center">[:FC(3)13:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(4)13:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(5)13:]</div>
+    </td>
+    <td width="86"> 
+      <div align="center">[:FC(6)13:]</div>
+    </td>
+    <td width="109"> 
+      <div align="center">[:FC(7)13:]</div>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->

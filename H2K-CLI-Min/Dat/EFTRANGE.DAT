@@ -1,0 +1,86 @@
+Minimum Furnace efficencies - EGH
+100.    100.    100.    100.    0.      0.      0.      0.      0.      0.      0.      0.      Electricity
+75.     75.     75.     78.     88.     0.      0.      0.      0.      0.      0.      0.      Natural Gas
+66.     66.     76.     82.     91.     85.     0.      0.      0.      0.      0.      0.      Oil
+75.     75.     75.     78.     88.     0.      0.      0.      0.      0.      0.      0.      Propane
+70.     70.     50.     50.     60.     70.     70.     35.     70.     70.     50.     0.      Wood
+Minimum DHW Energy factors - EGH
+.8      .85     .9      1.4     1.4     0.      0.      0.      0.      0.      0.      0.      Electricity
+.53     .53     .46     .8      .78     .55     .56     .56     .56     .84     0.8     0.      Natural Gas
+.51     .38     0.      0.      0.      0.      0.      0.      0.      0.      0.      0.      Oil
+.53     .53     .46     .81     .78     .55     .56     .56     .56     .84     0.81    0.      Propane
+.3      .3      .3      .3      .3      0.      0.      0.      0.      0.      0.      0.      Wood
+Minimum Furnace efficencies - EGNH
+100.    100.    100.    100.    0.      0.      0.      0.      0.      0.      0.      0.      Electricity
+75.     75.     75.     78.     88.     0.      0.      0.      0.      0.      0.      0.      Natural Gas
+66.     66.     76.     82.     91.     85.     0.      0.      0.      0.      0.      0.      Oil
+75.     75.     75.     78.     88.     0.      0.      0.      0.      0.      0.      0.      Propane
+70.     70.     50.     50.     60.     70.     70.     35.     70.     70.     50.     0.      Wood
+Minimum DHW Energy factors - EGNH
+.8      .85     .9      1.4     1.4     0.      0.      0.      0.      0.      0.      0.      Electricity
+.53     .53     .46     .8      .78     .55     .56     .56     .56     .84     0.8     0.      Natural Gas
+.51     .38     0.      0.      0.      0.      0.      0.      0.      0.      0.      0.      Oil
+.53     .53     .46     .81     .78     .55     .56     .56     .56     .84     0.81    0.      Propane
+.3      .3      .3      .3      .3      0.      0.      0.      0.      0.      0.      0.      Wood
+ 1700 2003 2001   Year built EGH, EGNH, R2000
+  247 1.       99999.    0.        99999.    1.        99999.     Floorarea
+  248 0.       600.      0.        600.      0.        600.       Footprint area
+   63 0.       5.0       0.        5.0       0.        5.0        HP COP
+  249 0.       25.       4.        25.       5.        25.        Ceiling Insulation
+  252 0.       10.       0.        10.       0.        10.        Foundation walls insulation
+  253 0.       10.       2.        10.       2.        10.        Main walls insulation
+    5 0.       30.       0.        30.       0.        30.        TBSMNT
+    4 0.       30.       0.        30.       0.        30.        TMAIN
+   12 100.     99999.    100.      99999.    100.      99999.     HSEVOL
+   22 0.4      50.       0.1       15.       0.1       1.5        Air50P
+  259 8760.    99999.    8760.     99999.    8760.     99999.     EGHFCONELEC
+  263 55000.   99999999. 55000.    99999999. 45000.    99999999.  EGHFCONTOTAL
+  269 750.     10500.    750.      8000.     0.        0.         EGHFCOSTTTOTAL
+  271 -1.      -1.       0.14      99.9      0.14      99.4       EGHCritTotACH
+  307 -100.    100.      63.       100.      78.       100.       EGHRATING
+  281 0.       4.        0.        0.        0.        0.         UGRHPCOP
+  288 0.       25.       5.        25.       0.        0.         UGR Ceiling Insulation
+  289 0.       10.       0.        10.       0.        0.         UGR Foundation walls insulation
+  290 0.       10.       3.        10.       0.        0.         UGR Main walls insulation
+  291 8760.    999999.   8760.     999999.   0.        0.         UGRFCONELEC
+  295 55000.   9999999.  55000.    9999999.  0.        0.         UGRFCONTOTAL
+  300 750.     9000.     750.      9000.     0.        0.         UGRFCOSTTTOTAL
+  301 0.4      30.       0.1       99.9      0.        0.         UGR Air50P
+  308 1.       100.      63.       100.      0.        0.         UGR RATING
+  323 0.14     9.99      0.        0.        0.        0.         UGRCritTotACH
+  357 0.       90.       0.        90.       50.       90.        HRV efficiency @ 0 C
+  445 0.       5694.     0.        5694.     0.        5694.      Basecase Photovoltaic credit kWh
+  446 0.       6570.     0.        6570.     0.        6570.      Basecase Windpower credit kWh
+  447 0.       5694.     0.        5694.     0.        5694.      UGR Photovoltaic credit kWh
+  448 0.       6570.     0.        6570.     0.        6570.      UGR Basecase Windpower credit kWh
+  449 0.       .011      0.        .011      0.        .011       Electronic thermostat credit kWh (fraction of space heating energy)
+  450 0.       668.      582.      .0        0.        0.         Ventilation system credit kWh (See Note 1)
+  451 0.       .02       0.        .02       0.        .02        Attached garage credit kWh (fraction of space heating energy)
+  454 0.       1000.     0.        1000.     0.        1000.      Other credit 1 and 2 kWh (per credit)
+    1 2.0      0.        0.        0.        0.        0.         "r" factor used in house volume check Oct 30/08
+00000
+===============================================================================x
+For use with HOT2XP v 2.74, HOT2000 v 9.32  Oct 2005
+
+Notes:
+
+1.  Ventilation system credit kWh
+
+The value in the "EGH" max column is for Electric heat, the value in the
+"EGNH" min colum is the maximum allowed for all other space heating fuels.
+These maxima apply to all modes.
+
+2. "r" factor used in the following check
+
+c  HSEVOL > (number of floors + 1)*(footprint)* 2.44 * r
+
+A warning message is presented when the house volume appears to be too large.
+
+
+
+B. Bradley
+October 19, 2005
+September 10, 2008 (COP)
+October 30, 2008
+March 25, 2009 - Added DHW Instantaneous (condensing)
+

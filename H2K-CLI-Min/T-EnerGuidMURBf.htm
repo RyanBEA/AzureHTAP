@@ -1,0 +1,587 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+    A {text-decoration:none}
+    A IMG {border-style:none; border-width:0;}
+    DIV {position:absolute; z-index:25;}
+    .box { float: left; }
+    #boxContent { border: none; background: #FFFFFF; border-color:000000;border-style:solid;border-width:1px; padding=10;position: relative; left: -4px; top: -4px; } 
+    #boxContainer { position: relative; background: #666; margin: 8px; } 
+    .fc0 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc1 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;FONT-STYLE:NORMAL;}
+    .fc2 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc5 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc6 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc7 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;TEXT-DECORATION:UNDERLINE;}
+    .fc8 { COLOR:000000;FONT-SIZE:16PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc9 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+    .fc11 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc12 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .style5 {FONT-SIZE:16PT; FONT-FAMILY:Arial; FONT-WEIGHT:BOLD; color: 000000;}
+    
+body {
+	margin-left: 60px;
+	margin-right: 60px; 
+	margin-bottom: 50px;
+	margin-top: 2px
+}
+        
+div.cat {
+	width: 100%; 
+	line-height: 1.1em;
+	border-bottom: 2px dotted gray;
+	COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;
+	position:relative;
+}
+
+div.head {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: solid white .2em;
+	margin-top: .9em;
+	COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;
+	position:relative;
+}
+
+
+.itemname	{
+	float: left;
+	position: relative; /*needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.3em;
+	border-bottom: solid white .2em;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.num	{
+	float: right;
+	position: relative; /* needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.4em;
+	border-bottom: solid white .2em;
+	width: 75px;
+	text-align: right;
+}
+table.checklist {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: none;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.checklist th {
+	border-width: 0px;
+	padding: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+}
+table.checklist td {
+	border-width: 1px;
+	padding: 2px;
+	border-top-style:solid;
+	border-color: black;
+	background-color: white;
+}
+  .style6 {
+	font-size: 24pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: 000000;
+	font-weight: bold;
+}
+
+  </style>
+  <title>
+    Rapport d'évaluation de l'efficacité énergétique (IRLM)
+  </title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1-->
+<!-- The indent for the ecoENERGY logo to line up with the "R" of "Retrofit - Homes" is 58 pixels-->
+<!-- <p style="margin-left: -58px"><img src="[:ImagePath:]retrofit_ecoenergy_e.gif" width="251" height="94"></p> -->
+
+    
+<!--<p class="style6">écoÉNERGIE</p>
+<p class="style5">Rénovation - Maisons</p> -->
+  
+<!--This is the table for the rating scale-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"> 
+	   <img alt="" src="ecoENERGY_fre.jpg" width="120" height="70">
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">[:ClientName:],<br>
+     [:ClientAddress:],<br>
+     [:CityName:], [:ProvName:],<br>
+    [:PostalCode:]</td>
+	<!--The column width of 468px is measured for the 450px rating banner, plus a 9px horizontal buffer
+	The 9px buffer allow the arrow GIFs (and the text above them) to point at the very beginning of the banner itself 
+	instead of being offset. The arrow GIFs, having a width of 20px with the point of the arrow right in the middle of 
+	that 20, require a buffer, and with some trial and error, 9px was determined to be exactly the right size.-->
+	<td width="468" align="right" class="style5">Rapport d'évaluation de l'efficacité énergétique</td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0"><span class="fc11">Numéro de dossier de l'immeuble : [:FileID:]</span></td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0"><span class="fc3"><br>Cote ÉnerGuide</span></td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&nbsp;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20">
+	  </span>
+	  &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	  <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+  
+  
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_Fr.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;">
+	</td>
+  </tr>
+  
+</table>
+<!--Rating scale table ends here-->
+
+
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="45%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+    <td width="55%" valign="top" class="fc1">
+	<ul type="round" class="fc1">
+	<li>La cote de votre immeuble est [:CheersRate:].</li>         
+	<li>La cote d'efficacité énergétique moyenne d'un immeuble du même âge au Canada est [:AvgRatingByAge:].</li>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:PercentBlock-->
+	<li>Votre immeuble se classe dans le [:RatingPercent:]e centile supérieur ([:RatingPercent:] p. 100) des immeubles de ce type.</li>
+<!--EndTemplateBlock-->
+	</ul>
+<!--TemplateBlock:NegativeGHGBox-->
+	</td>
+  </tr>
+</table>
+
+
+<br>
+<p class="fc3">Une vision élargie</p>
+<p class="fc1">	En diminuant la quantité d'énergie que vous consommez dans votre bâtiment, vous réduisez la production de gaz à effet de serre, notamment de CO2. De petites améliorations appliquées par chacun de nous contribuent aux efforts du Canada visant à contrer le changement climatique et à protéger l'environnement. Ensemble, nous pouvons y arriver!</p>
+	
+	<!--</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="10%" class="fc1">&nbsp;</td>
+    <td width="90%" class="fc0" valign="top">
+      <div class="box" id="boxContainer" style="width:532px;height:53px;">
+        <div class="box" id="boxContent" style="width:530px;height:54px"> 
+		    En diminuant la quantité d'énergie que vous consommez dans votre bâtiment, vous 
+          réduisez la production de gaz à effet de serre, notamment de CO2. De 
+          petites améliorations appliquées par chacun de nous contribuent aux 
+          efforts du Canada visant à contrer le changement climatique et à protéger 
+          l'environnement. Ensemble, nous pouvons y arriver!
+        </div>
+	   </div>
+    </td>
+  </tr>
+</table>-->
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:GHGBox-->
+<!--<br>
+<p class="fc3">Une vision élargie</p>
+<p class="fc1">
+En diminuant la quantité d’énergie consommée dans le bâtiment, vous réduisez la production de gaz à effet de serre, notamment de CO2. De petites améliorations appliquées par chacun de nous contribuent aux efforts du Canada visant à contrer le changement climatique et à protéger l’environnement. Ensemble, nous pouvons y arriver!<br><br> 
+
+En améliorant l'efficacité énergétique de votre immeuble pour atteindre la cote potentielle indiquée au début de ce rapport, vous réduirez sa production de gaz à effet de serre de <span class="fc3">[:GHG:] tonnes</span> par année.
+</p>-->
+<!--
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="10%" class="fc1">&nbsp;</td>
+    <td width="90%" class="fc0" valign="top">
+      <div class="box" id="boxContainer" style="width:562px;height:63px;">
+        <div class="box" id="boxContent" style="width:560px;height:64px"> 
+		    En diminuant la quantité d'énergie que vous consommez dans votre bâtiment, vous 
+          réduisez la production de gaz à effet de serre, notamment de CO2. De 
+          petites améliorations appliquées par chacun de nous contribuent aux 
+          efforts du Canada visant à contrer le changement climatique et à protéger 
+          l'environnement. Ensemble, nous pouvons y arriver! En améliorant 
+          l'efficacité énergétique de votre bâtiment pour atteindre la cote 
+          potentielle indiquée ci haut, vous réduirez la production de gaz à 
+          effet de serre de votre bâtiment de [:GHG:] tonnes par année.
+		  </div>
+	    </div>
+    </td>
+  </tr>
+</table>
+-->
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsHeader-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<br>
+<p class="fc3">Conseils d'économie d'énergie</p>
+<p class="fc1">Les mesures suivantes vous aideront à économiser l'énergie et de l'argent :</p>
+
+
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top" class="fc1">
+	<ul type="round" class="fc1">
+	<!--EndTemplateBlock-->
+	
+	<!--TemplateBlock:Recommendations-->
+	<li>[:RecDesc:]</li>
+	<!--EndTemplateBlock-->
+	<!--TemplateBlock:Page2-->
+	  </ul></td>
+  </tr>
+</table>
+
+<!--TemplateBlock:Page2-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<p class="fc1">&nbsp;</p>
+
+<p class="fc3">Estimation de la consommation annuelle d'énergie</p>
+
+<p class="fc1">
+   Un conseiller en efficacité énergétique a évalué la consommation annuelle 
+   d'énergie de votre bâtiment en se fondant sur ses caractéristiques générales, 
+   ses appareils qui consomment de l'énergie et les conditions d'utilisation 
+   suivantes : 
+</p>
+<ul type="round" class="fc1">
+   <li>Un renouvellement d'air complet environ tous les trois heures;</li>
+   <li>Un occupant pour les studios, deux occupants pour les unités d'une chambre 
+       à coucher, trois occupants pour les unités de deux chambres à coucher et 
+       quatre occupants pour les unités de trois chambres à coucher ou plus; </li>
+   <li>Le réglage du thermostat à 21&deg;C pour les pièces de séjour et 19 &deg;C 
+       pour les espaces collectifs; </li>
+   <li>Une consommation d'eau moyenne; </li>
+   <li>Une consommation d'électricité moyenne; </li>
+   <li>Des données météorologiques moyennes pour votre région. </li>
+</ul>
+
+<p class="fc1">
+  On obtient ainsi une cote normalisée qui vous permet de comparer le rendement de 
+  votre bâtiment avec celui de bâtiments de taille semblable construits dans le 
+  même type de région. Cependant, les conditions ne reflètent peut-être pas 
+  parfaitement votre situation.  La consommation réelle d'énergie de votre 
+  bâtiment et vos économies éventuelles peuvent être grandement influencées par 
+  le nombre d'occupants, leurs habitudes quotidiennes et leur style de vie. 
+</p>
+<!--    
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="60%" class="fc1">
+     Ce bâtiment, selon sa cote actuelle, a une consommation énergétique annuelle 
+     estimée à environ [:TotalEn:] [:TotalUnit:]*. Tel qu'indiqué au tableau 1, le conseiller estime 
+     qu'en effectuant les rénovations suggérées dans la section " améliorations 
+     recommandées ", votre bâtiment devrait consommer environ [:TotalEnI:] [:TotalUnit:] 
+     d'énergie.<br>
+      <br>
+	</td>
+    <td width="40%" class="fc1" valign="top">
+	  <div class="box" id="boxContainer" style="width:340px;height:90px;"> 
+        <div class="box" id="boxContent" style="width:340px;height:90px">
+		  * Un [:TotalUnit:] correspond à la quantité d'énergie consommée par 
+        [:ConsumptionSentence:]<br>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+  
+<p class="fc5">
+  Table 1.&nbsp;&nbsp;Estimation de la consommation annuelle d'énergie
+</p>
+
+<table width="100%" border="2" cellspacing="0" cellpadding="4" bordercolor="#000000">
+  <tr>
+    <td class="fc2">&nbsp;</td>
+    <td class="fc2" align="center">Electricité<br>[:kWh:]</td>
+    <td class="fc2" align="center">Gaz naturel<br>[:GasUnit:]</td>
+    <td class="fc2" align="center">&nbsp;&nbsp;Mazout&nbsp;&nbsp;<br>[:OilUnit:]</td>
+    <td class="fc2" align="center">Propane<br>[:PropaneUnit:]</td>
+    <td class="fc2" align="center">Bois<br>[:WoodUnit:]</td>
+    <td class="fc2" align="center">Total<br>[:TotalUnit:]</td>
+  </tr>
+  <tr>
+    <td class="fc2" align="left">Évaluation actuelle</td>
+    <td class="fc0" align="center">[:ElectricEn:]</td>
+    <td class="fc0" align="center">[:NatGasEnCubicMeters:]</td>
+    <td class="fc0" align="center">[:OilEnLitres:]</td>
+    <td class="fc0" align="center">[:PropaneEnLitres:]</td>
+    <td class="fc0" align="center">[:WoodEnCords:]</td>
+    <td class="fc0" align="center">[:TotalEn:]</td>
+  </tr>
+  <tr>
+    <td class="fc2" align="left">Après améliorations</td>
+    <td class="fc0" align="center">[:ElectricEnI:]</td>
+    <td class="fc0" align="center">[:NatGasEnCubicMetersI:]</td>
+    <td class="fc0" align="center">[:OilEnLitresI:]</td>
+    <td class="fc0" align="center">[:PropaneEnLitresI:]</td>
+    <td class="fc0" align="center">[:WoodEnCordsI:]</td>
+    <td class="fc0" align="center">[:TotalEnI:]</td>
+  </tr>
+  <tr>
+    <td class="fc2" align="left">Économies</td>
+    <td class="fc0" align="center">[:ElectricEnS:]</td>
+    <td class="fc0" align="center">[:NatGasEnCubicMetersS:]</td>
+    <td class="fc0" align="center">[:OilEnLitresS:]</td>
+    <td class="fc0" align="center">[:PropaneEnLitresS:]</td>
+    <td class="fc0" align="center">[:WoodEnCordsS:]</td>
+    <td class="fc0" align="center">[:TotalEnS:]</td>
+  </tr>
+  <tr>
+    <td class="fc2" align="left">Pourcentage d'économies</td>
+    <td class="fc0" align="center">[:ElectricEnSPer:]</td>
+    <td class="fc0" align="center">[:NatGasEnCubicMetersSPer:]</td>
+    <td class="fc0" align="center">[:OilEnLitresSPer:]</td>
+    <td class="fc0" align="center">[:PropaneEnLitresSPer:]</td>
+    <td class="fc0" align="center">[:WoodEnCordsSPer:]</td>
+    <td class="fc0" align="center">[:TotalEnSPer:]</td>
+  </tr>
+</table>
+
+<p class="fc2">
+  kWh=kilowattheure; [:Table1Note:]; [:Table1Note2:]
+</p>-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page3-->
+
+<p class="fc1">
+   La figure 1 démontre un profil typique de l'estimation de la consommation 
+   annuelle de chauffage pour les unités individuelles du bâtiment. Les différences de consommation 
+   entre les unités sont principalement dues à :
+</p>
+<ul type="round" class="fc1">
+   <li>Les murs principaux exposés à l'extérieur et les fenêtres;</li>
+   <li>Des taux de changement d'air différents pour chaque unité;</li>
+   <li>Les dimensions de l'unité;</li>
+   <li>Ou l'unité est située dans le bâtiment;</li>
+   <li>Réfections suggérées.</li>
+</ul>
+
+<center>
+<p class="fc5">
+  Figure 1.&nbsp;&nbsp;L'estimation de la consommation annuelle d'énergie par unité.
+</p>
+  <img alt="" src="[:UnitHeatImagePath:]" width="600" height="250">
+</center>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page4-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+
+<p class="fc1">&nbsp;</p>
+
+<p class="fc3">Consommation d'énergie par type d'utilisation finale</p>
+    
+<p class="fc1">
+  Les bâtiments perdent de la chaleur durant la saison de chauffage par le biais 
+  de la ventilation (p. ex. , Par le ventilateur de la salle de bain et la hotte 
+  de cuisine) et du transfert de chaleur par le sous-sol, les murs, le toit, les 
+  fenêtres et les portes. Plus le bâtiment prend de l'âge dans le climat rigoureux 
+  du Canada, et en raison des propriétaires qui, au fil du temps, effectuent 
+  eux-mêmes des changements, comme percer des trous dans les murs pour installer 
+  de la nouvelle tuyauterie et de nouveaux appareils, de minuscules fissures 
+  apparaissent avec le temps dans l'enveloppe du bâtiment. Comme pour tout ce à 
+  quoi vous accordez de la valeur, le bâtiment doit être entretenu avec soin et 
+  réparé dès que des problèmes surviennent. Un bâtiment bien entretenu vous 
+  rapportera grâce à une meilleure efficacité énergétique et un plus grand confort.<br>
+</p>
+
+<p class="fc1">
+  La figure 2 montre l'estimation de la consommation d'énergie de votre bâtiment 
+  par type d'utilisation finale : chauffage de l'air ambiant, chauffage de l'eau, 
+  éclairage et appareils ménagers. Elle indique également que l'on pourrait réduire 
+  de [:PercentSavings:] p. 100 la consommation d'énergie telle qu'évaluée actuellement si l'on 
+  effectuait les améliorations recommandées plus loin dans ce rapport.
+</p>
+
+<p class="fc1">&nbsp;</p>
+
+<p class="fc5">
+  Figure 2.&nbsp;&nbsp;Estimation de la consommation d'énergie par type d'utilisation finale
+</p>
+
+<p class="fc5">Évaluation actuelle</p>
+
+<center>
+  <img alt="" src="[:EnImagePath:]" width="550" height="220">
+</center>
+ <!--   
+<p class="fc5">Après améliorations</p>
+
+<center>
+  <img alt="" src="[:EnUImagePath:]" width="600" height="220">
+</center>
+-->
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page5-->
+
+<p class="fc1">&nbsp;</p>
+
+<p class="fc3">Évaluation des pertes de chaleur</p>
+    
+<p class="fc1">
+La figure 3 illustre la répartition réelle de l'énergie consommée pour chauffer votre bâtiment. Les zones où vous perdez le plus d'énergie sont indiquées par une barre rouge longue; à l'inverse, les barres rouges courtes indiquent les zones où la perte d'énergie n'est pas très importante. Quand finalement vous décidez de rénover votre bâtiment, notez les plus longues barres de cette figure et essayez de déterminer si ce sont des endroits où vous pouvez faire de l'amélioration. Pensez de votre bâtiment comme un système dans lequel un changement à une composante peut affecter les autres. La santé et la sécurité des occupants ainsi que l'intégrité à long terme de la structure devaient être parmi vos plus importantes considérations.
+</p>
+
+<p class="fc5">Figure 3.&nbsp;&nbsp;Évaluation des pertes de chaleur</p>
+
+<center>
+  <img alt="" src="[:HeatImagePath:]" width="600" height="250">
+</center>
+
+<p style="page-break-after:always;font-size:0pt;margin-bottom:0pt;margin-top:0pt">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:StartOfPage6-->
+<!--<br>
+<p class="fc3">Complément d'information sur les rénovations</p>
+    -->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Upgrade-->
+<!--
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr><td align="left"><span class="fc6">[:UpgradeTitle:]</span></td></tr>
+  <tr><td class="fc1">[:UpgradeText:]<br><br></td></tr>
+</table>
+-->
+<!-- <span class="fc0"></span> -->
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ThingsToKnowBlock-->
+
+<br>
+<p class="fc3">Conseils utiles</p>
+
+<p class="fc1"><span class="fc6">Publications sur l'efficacité énergétique des habitations</span><br>
+Ressources Naturelles Canada met à votre disposition une série de publications qui peuvent vous aider à améliorer l'efficacité énergétique de votre immeuble. Ces publications sont disponibles en ligne à l'adresse suivante : <u>http://www.oee.nrcan.gc.ca/publications/</u>. Vous pouvez également en obtenir un exemplaire auprès de votre conseiller en efficacité énergétique ou en composant le 1-800-387-2000.</p>
+
+<p class="fc1"><span class="fc6">Choix d'un entrepreneur</span><br>  
+Avant de faire exécuter des travaux par un entrepreneur, vous devez demander des devis par écrit auprès de plusieurs d'entre eux et obtenir un contrat écrit. La Société canadienne d'hypothèques et de logement (SCHL) propose une fiche d'information très utile à ce sujet, <em>Le choix d'un entrepreneur</em>, qui comprend un modèle de contrat. Cette publication est disponible en ligne à l'adresse <u>http://www.cmhc-schl.gc.ca/fr/co/relo/fedore/fedore_009.cfm</u>. Vous pouvez en commander un exemplaire en composant le 1-800-668-2642. Le site de la SCHL est une ressource très utile pour les rénovations. Il comporte de nombreuses fiches d'information disponibles gratuitement en ligne sur les rénovations. Certaines publications plus détaillées et très complètes sont également en vente.</p>
+
+<p class="fc1"><span class="fc6">Le bâtiment en tant que système</span><br>  
+Votre conseiller en efficacité énergétique vous a recommandé une approche qui consiste à améliorer le rendement énergétique de votre immeuble en s'appuyant sur le principe de « bâtiment en tant que système ». Ce principe reconnaît le fait que les modifications apportées à un élément de l'immeuble peuvent avoir des répercussions sur d'autres éléments. Le confort, la santé et la sécurité des occupants, ainsi que l'intégrité à long terme de la structure, doivent être pris en compte avant de procéder à une rénovation. Par exemple, il est recommandé de remplacer votre équipement de chauffage après avoir procédé à des rénovations de l'isolation, pour éviter d'avoir un appareil de chauffage surdimensionné qui ne fonctionnerait pas à son rendement optimal.</p> 
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:HRVPresentBlock-->
+
+<p class="fc1"><span class="fc6">Système de ventilation</span><br>
+Il importe d'entretenir périodiquement votre ventilateur récupérateur de chaleur (VRC) afin d'éviter tout problème, de vous assurer de son efficacité et d'en prolonger la durée de vie. La publication <em>Guide d'utilisation et d'entretien des ventilateurs-récupérateurs de chaleur</em> de Ressources naturelles Canada comprend un chapitre qui traite de l'entretien des VRC. 
+</p> 
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ThingsToKnowBlock2-->
+
+<p class="fc1"><span class="fc6">Isolation</span><br>
+Protégez et recouvrez les mousses isolantes d'une cloison sèche d'une épaisseur minimale de 12,5 mm (½") placée à l'intérieur, afin de réduire la propagation des flammes et le dégagement de fumée en cas d'incendie. Pour réduire l'irritation des yeux et de la peau causée par les fibres et les poussières à l'occasion de travaux d'isolation, portez des vêtements amples à manches longues et resserrés aux poignets, des gants de travail, un casque de protection et des chaussures appropriées. Pour éviter d'inhaler des fibres et des poussières, portez des lunettes de protection et un demi masque respiratoire muni d'un filtre à particules avant d'exécuter des travaux d'isolation. Lavez vos vêtements séparément après usage.</p>
+
+<p class="fc1"><span class="fc6">Humidification</span><br>
+Santé Canada recommande un niveau d'humidité relative (HR) compris entre 30 et 55 p. 100. Si vous disposez d'un générateur d'air chaud muni d'un humidificateur, assurez vous que ce dernier est nettoyé et entretenu périodiquement et que l'humidostat est réglé au bon niveau d'humidité. Vous pouvez utiliser un hygromètre pour mesurer le niveau d'humidité relative. La SCHL propose une fiche d'information qui explique comment étalonner un hygromètre. Cette publication est disponible sur le site Web de la SCHL ou par téléphone, aux coordonnées précisées plus haut sous « Choix d'un entrepreneur ».</p>
+
+<p class="fc1"><span class="fc6">Moisissure</span><br>
+Si vous pensez que de la moisissure se développe dans votre immeuble, il est recommandé de bien nettoyer les zones endommagées ou d'éliminer les éléments atteints, et de s'en débarrasser convenablement. Afin de surveiller et de limiter le potentiel de développement de la moisissure, maintenez des niveaux d'humidité appropriés dans votre immeuble, et réparez toute infiltration d'eau ou tout problème de fuite. Consultez la fiche d'information <em>Votre maison : Combattre la moisissure — Guide pour les propriétaires occupants</em> de la Société canadienne d'hypothèques et de logement au <u>http://www.cmhc-schl.gc.ca/fr/co/enlo/vosavoma/humo/humo_005.cfm</u> pour obtenir de l'information sur les types de moisissure et les méthodes de nettoyage.
+</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:WoodHeatBlock-->
+
+<p class="fc1"><span class="fc6">Chauffage au bois : Soyons responsable</span><br> 
+Le programme du gouvernement du Canada « Chauffage au bois : Soyons responsable » offre de l'information pour vous aider à utiliser de manière sécuritaire et efficace vos appareils de chauffage au bois, tout en réduisant les émissions de fumée qui peuvent avoir des répercussions sur l'environnement et votre santé. Pour en savoir plus, consultez le site <u>http://www.burnitsmart.org/</u>.</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteWarning-->
+
+<p class="fc1"><span class="fc6">Vermiculite</span><br>
+On a détecté de la vermiculite dans votre immeuble. Il se peut que certains des isolants de vermiculite qui ont été utilisés pour isoler des immeubles contiennent de l’amiante de type amphibole. Il est donc important de lire l’article de Santé Canada intitulé <em>C’est votre santé - Isolant de vermiculite contenant de l’amiante</em> qui est inclus à votre rapport. Pour obtenir de plus amples renseignements, vous pouvez visiter le site Web de Santé Canada à <u>http://www.hc-sc.gc.ca</u> ou vous pouvez composer le 1-800-O-Canada.
+</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteRenovations-->
+
+<p class="fc1"><span class="fc6">Vermiculite et rénovation</span><br>
+Les anciens isolants de vermiculite peuvent contenir de l'amiante d'amphibole. Si l'isolant est dans les murs ou le grenier et qu'il n'est pas déplacé, les risques sanitaires encourus par les occupants de la immeuble sont très faibles. Cependant, si un isolant de vermiculite est découvert à l'occasion de travaux de rénovation, ou si vous soupçonnez sa présence dans votre immeuble et que vous songez à des travaux de rénovation (en particulier à des travaux d'isolation et d'étanchéité à l'air), contactez des professionnels qualifiés pour manipuler l'amiante avant de procéder aux rénovations. Pour obtenir une liste de professionnels qualifiés, consultez les Pages Jaunes™ à la rubrique « Amiante – Réduction & Enlèvement ».</p>
+	
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock:RecommendationsFooter-->
+
+	<!--13-Oct-03 JTB: Still required! -->
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+<br>
+<span class="fc6" style="border-style:none; border-width:1px;border-bottom-style:solid;width:700px;">
+  [:CommentHeader:]<br>
+</span>
+<span class="fc1">
+  <br>[:Comments:]<br>
+</span>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+<br><br>
+<p class="fc10" align="right">
+  H2Kv10
+</p>
+
+</body>
+</html>
+<!--EndTemplateBlock-->
+

@@ -1,0 +1,838 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+  <style type="text/css">
+    A {text-decoration:none}
+    A IMG {border-style:none; border-width:0;}
+    DIV {position:absolute; z-index:25;}
+    .box { float: left; }
+    #boxContent { border: none; background: #FFFFFF; border-color:000000;border-style:solid;border-width:1px; padding=10;position: relative; left: -4px; top: -4px; } 
+    #boxContainer { position: relative; background: #666; margin: 8px; } 
+    .fc0 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc1 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;FONT-STYLE:NORMAL;}
+    .fc1bc { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:NORMAL;TEXT-ALIGN:CENTER;}
+    .fc2 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;}
+    .fc3 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc4u { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:NORMAL;TEXT-DECORATION:UNDERLINE;}
+    .fc5 { COLOR:000000;FONT-SIZE:9PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+    .fc6 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc7 { COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;TEXT-DECORATION:UNDERLINE;}
+    .fc8 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;FONT-STYLE:ITALIC;}
+    .fc9 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc10 { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:RIGHT;}
+    .fc10l { COLOR:000000;FONT-SIZE:6PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;TEXT-ALIGN:LEFT;}
+    .fc11 { COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+    .fc12 { COLOR:000000;FONT-SIZE:12PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;TEXT-ALIGN:CENTER;}
+	 .style5 {FONT-SIZE:14PT; FONT-FAMILY:Arial; FONT-WEIGHT:NORMAL; color: 000000;}
+        
+body {
+	margin-left: 40px;
+	margin-right: 40px; 
+	margin-bottom: 50px;
+	margin-top: 2px
+}
+        
+div.cat {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: 2px dotted gray;
+	COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:NORMAL;
+	position:relative;
+}
+
+div.head {
+	width: 100%; 
+	line-height: 1em;
+	border-bottom: solid white .2em;
+	margin-top: .9em;
+	COLOR:000000;FONT-SIZE:11PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;
+	position:relative;
+}
+
+.itemname	{
+	float: left;
+	position: relative; /*needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.3em;
+	border-bottom: solid white .2em;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.num	{
+	float: right;
+	position: relative; /* needed by IE6*/
+	top: 5px;
+	background-color: white;
+	margin-bottom: -.4em;
+	border-bottom: solid white .2em;
+	width: 70px;
+	text-align: right;
+}
+
+table.checklist {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: none;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.checklist th {
+	border-width: 1px;
+	padding: 2px;
+	border-top-style: none;
+	border-bottom-style: solid;
+   border-left-style: none;
+   border-right-style: none;
+   border-color: black;
+	background-color: white;
+}
+table.checklist td {
+	border-width: 0px;   <!-- 1px; -->
+	padding: 2px;
+	border-top-style:none;   <!-- solid; -->
+	border-color: black;
+	background-color: white;
+}
+  </style>
+  <title>Rapport d'évaluation de l'efficacité énergétique</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1-->
+
+<!-- *************** This is the table for the rating scale ******************** -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <!--<td class="style6"> -->
+	<td align="left">
+	  <img alt="" src="ecoENERGY_fre.jpg" width="120" height="70"/>
+     <!-- écoÉNERGIE
+      <br/>
+      <span class="style5">
+        Rénovation - Maisons
+      </span>
+      <br/><br/> -->
+    </td>
+    <td align="right">
+      [:custlogo1:] [:custlogo2:] [:provlogo:]
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">
+      <b>Propriétaire :</b><br/><br/>
+      [:ClientName:]<br/>
+      [:ClientAddress:]<br/>
+      [:CityName:], [:ProvName:]<br/>
+      [:PostalCode:]
+    </td>
+	   <!--The column width of 468px is measured for the 450px rating banner, 
+	   plus a 9px horizontal buffer. The 9px buffer allow the arrow GIFs 
+	   (and the text above them) to point at the very beginning of the banner 
+	   itself instead of being offset. The arrow GIFs, having a width of 20px 
+	   with the point of the arrow right in the middle of that 20, require a 
+	   buffer, and with some trial and error, 9px was determined to be exactly 
+	   the right size.-->
+    <td width="468" align="right" class="style5">
+      <b>Rapport d'évaluation de l'efficacité énergétique</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc11">
+        Numéro de dossier : [:FileID:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc4"><br/>
+        Cote ÉnerGuide
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&#160;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20"/>
+	  </span>
+	  &#160;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	   <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;"/>
+	</td>
+  </tr>
+  <tr>
+    <td width="468" class="fc6">
+	  <span style="text-indent:[:EnerUpgPos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]uparrow.gif" width="20" height="20"/>
+	  </span>
+	  &#160;
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&#160;
+      <span style="text-indent:[:EnerUpgTPos:]px;position:absolute;">
+
+	    <span style="top:3px;position:relative;">
+	      <b>[:UpgCheersRate:]</b>
+	    </span>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_Fr.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;"/>
+	 </td>
+  </tr>
+</table>
+<!-- **************** Rating scale table ends here ********************* -->
+
+<br/>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="45%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+
+    <td width="25%" valign="top" class="fc2">
+	   <b>Type de maison :</b> [:HouseType:]<br/><br/>
+	   <b>Nombre d'étages :</b> [:NumStories:]<br/><br/>    
+	   <b>Nombre de fenêtres et d'OB :</b> [:NumROWin:]<br/>
+      <span class="fc10l">OB = ouvertures brutes</span><br/><br/>
+      <b>Climatisation :</b> [:AirCondYesNo:]
+    </td>
+    <td width="30%" valign="top" class="fc2">
+	  <b>Système de chauffage :</b> [:HeatSyst:]<br/><br/>
+      <b>Eau chaude domestique :</b> [:DomHotWat:]<br/><br/>
+      <b>Taux de fuites d'air à 50 Pa :</b> [:AirLeakRate:] CAH<br/>
+      <span class="fc10l">CAH = nombre de changements d'air à l'heure</span><br/><br/>
+      <b>Surface de fuite équivalente :</b> [:EquLeakArea:] cm<sup>2</sup><br/>
+    </td>
+  </tr>
+</table>
+
+<p class="fc1">
+Les résultats de l'évaluation écoÉNERGIE, avant la réalisation de vos rénovations, 
+indiquent que votre maison a une cote de [:CheersRate:] points selon l'échelle 
+du Système de cotation ÉnerGuide (SCÉ). Si vous mettez en &#339;uvre toutes les recommandations du présent rapport, 
+vous pourriez réduire votre consommation d'énergie jusqu'à concurrence de 
+[:PercentSavings:] p. 100 et ainsi augmenter la cote d'efficacité énergétique à [:UpgCheersRate:]. La cote moyenne 
+d'une maison du même âge en [:ProvName:] est de 
+[:AvgRatingByAgeProv:] alors que la cote la plus élevée des maisons éconergétiques de 
+cette catégorie s'élève à [:TopRatingByAgeProv:].</p>
+<p class="fc1">
+Lorsque vous réduisez la quantité d'énergie consommée dans votre maison, vous diminuez aussi la production de gaz à effet de serre (GES), tels que le dioxyde de carbone.
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Page1Murb-->
+
+<!-- The indent for the ecoENERGY logo to line up with the "R" of 
+     "Retrofit Homes" is 58 pixels-->
+<!-- <p style="margin-left: -58px"><img src="[:ImagePath:]retrofit_ecoenergy_e.gif" width="251" height="94"/></p> -->
+
+<!-- *************** This is the table for the rating scale ******************** -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"> 
+	   <img alt="" src="ecoENERGY_fre.jpg" width="120" height="70"/>
+    </td>
+    <td align="right">
+      [:custlogo1:] [:custlogo2:] [:provlogo:]
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="fc1">
+      <b>Propriétaire :</b><br/><br/>
+      [:ClientName:]<br/>
+      [:ClientAddress:]<br/>
+      [:CityName:], [:ProvName:]<br/>
+      [:PostalCode:]
+    </td>
+	   <!--The column width of 468px is measured for the 450px rating banner, 
+	   plus a 9px horizontal buffer. The 9px buffer allow the arrow GIFs 
+	   (and the text above them) to point at the very beginning of the banner 
+	   itself instead of being offset. The arrow GIFs, having a width of 20px 
+	   with the point of the arrow right in the middle of that 20, require a 
+	   buffer, and with some trial and error, 9px was determined to be exactly 
+	   the right size.-->
+    <td width="468" align="right" class="style5">
+      <b>Rapport d'évaluation de l'efficacité énergétique</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc11">
+        Numéro de dossier : [:FileID:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" align="right" class="fc0">
+      <span class="fc4"><br/>
+        Cote ÉnerGuide
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&#160;
+      <span style="text-indent:[:EnerBaseTPos:]px;position:absolute;">
+	    <b>[:CheersRate:]</b>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+      <span style="text-indent:[:EnerBasePos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]arrow.gif" width="20" height="20"/>
+	  </span>
+	  &#160;
+    </td>
+  </tr>
+  <tr>
+    <td width="468">
+	   <img src="[:ImagePath:]Rating scale.jpg" alt="" width="450" height="31" hspace="9" style="position:relative;top:2px;"/>
+	</td>
+  </tr>
+  <tr>
+    <td width="468" class="fc6">
+	  <span style="text-indent:[:EnerUpgPos:]px;position:absolute;" class="fc0">
+	    <img alt="" src="[:ImagePath:]uparrow.gif" width="20" height="20"/>
+	  </span>
+	  &#160;
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc1">&#160;
+      <span style="text-indent:[:EnerUpgTPos:]px;position:absolute;">
+
+	    <span style="top:3px;position:relative;">
+	      <b>[:UpgCheersRate:]</b>
+	    </span>
+	  </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="468" class="fc0"><img src="[:ImagePath:]Scale text_Fr.jpg" alt="" width="450" height="29" hspace="9" style="position:relative;top:2px;"/>
+	 </td>
+  </tr>
+</table>
+<!-- **************** Rating scale table ends here ********************* -->
+
+<br/>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="40%">
+      <center>
+        [:HousePicture:]
+      </center>
+    </td>
+
+    <td width="30%" valign="top" class="fc2">
+	   <b>Type de bâtiment :</b> [:HouseType:]<br/>[:Mixed:]<br/>
+	   <b>Nombre d'unités :</b> [:NumUnits:]<br/><br/>
+	   <b>Nombre d'étages :</b> [:NumStories:]<br/><br/>    
+	   <b>Nombre de fenêtres et d'OB :</b> [:NumROWin:]<br/>
+      <span class="fc10l">OB = ouvertures brutes</span><br/><br/>
+      <b>Climatisation :</b> [:AirCondYesNo:]
+    </td>
+    <td width="30%" valign="top" class="fc2">
+	  <b>Système de chauffage central :</b> [:HeatSyst:]<br/><br/>
+      <b>Eau chaude domestique centrale :</b> [:DomHotWat:]<br/><br/>
+      <b>Taux de fuites d'air à 50 Pa :</b> [:AirLeakRate:] CAH<br/>
+      <span class="fc10l">CAH = nombre de changements d'air à l'heure</span><br/><br/>
+      <b>Surface de fuite équivalente :</b> [:EquLeakArea:] cm<sup>2</sup><br/>
+    </td>
+  </tr>
+</table>
+
+<p class="fc1">
+Les résultats de l'évaluation écoÉNERGIE, avant la réalisation de vos rénovations, 
+indiquent que votre bâtiment a une cote de [:CheersRate:] points selon l'échelle du Système de cotation ÉnerGuide (SCÉ). Si vous mettez en &#339;uvre toutes les recommandations du présent rapport, 
+vous pourriez réduire votre consommation d'énergie jusqu'à concurrence de 
+[:PercentSavings:] p. 100 et ainsi augmenter la cote d'efficacité énergétique à [:UpgCheersRate:].</p>
+<p class="fc1">
+Lorsque vous réduisez la quantité d'énergie consommée dans votre bâtiment, vous diminuez aussi la production de gaz à effet de serre (GES), tels que le dioxyde de carbone. 
+<!--EndTemplateBlock-->
+
+
+
+
+
+
+<!--TemplateBlock:GHGSavedBlock-->
+En augmentant la cote d'efficacité énergétique de votre [:HomeBuildingText:] à [:UpgCheersRate:] 
+points, vous pourriez diminuer les émissions de GES de [:GHGSaved:] tonnes par année.</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:GHGNotSavedBlock-->
+De petites améliorations appliquées par chacun de nous contribuent aux 
+efforts du Canada visant à contrer le changement climatique et à protéger 
+l’environnement. Les émissions actuelles de GES de votre [:HomeBuildingText:] sont 
+[:GHGBase:] tonnes par année.</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:LastParagraphMainBlock-->
+<p class="fc1">
+<strong>Vous avez jusqu’au 31 mars 2012 pour effectuer vos rénovations et obtenir une évaluation après-rénovations afin d'être admissible à une subvention écoÉNERGIE Rénovation – Maisons du gouvernement fédéral. Les programmes complémentaires peuvent avoir des dates limites distinctes.</strong> Le plus tôt que vous débutez vos rénovations et que vous investissez dans des améliorations éconergétiques, le plus rapidement vous profiterez des économies d'énergie.</p>
+<p class="fc1">
+<em>N.B. : Si vous remarquez des erreurs dans la description de votre [:HomeBuildingText:], 
+veuillez communiquer immédiatement avec votre organisme de services. </em>
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:SignatureBlock-->
+<table width="100%"  border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td width="40%" align="top">
+      <span class="fc0">
+        <b>Organisme de services :</b> [:AdvisorComp:]<br/>
+        <b>Nº de téléphone :</b> [:AdvisorTel:]
+      </span>
+    </td>
+    <td width="60%" align="top">
+      <span class="fc0">
+        <b>Conseiller en efficacité énergétique accrédité :</b> [:AdvisorName:]
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <span class="fc0">
+        <b>Date de l'évaluation :</b> [:DateEval:]<br/>
+        <b>Date du rapport :</b> [:DateReport:]
+      </span>
+    </td>
+    <td width="50%" align="left">
+      <span class="fc10l">
+        ___________________________________________________________________<br/>
+        Signature du conseiller en efficacité énergétique accrédité
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">&#160;
+      
+    </td>
+    <td width="50%" align="right">
+      <span class="fc10">HOT2000v[:HOTVER:]</span>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CHEEAPChecklist-->
+<p class="fc4u">
+  1. LISTE DES MESURES ÉCONERGÉTIQUES SUGGÉRÉES 
+</p>
+<p class="fc1">
+Voici la liste des rénovations recommandées en vue d'améliorer l'efficacité énergétique de votre [:HomeBuildingText:]. Ci-dessous sont les montants des subventions fédérales que vous pourriez recevoir du programme écoÉNERGIE Rénovation – Maisons ainsi que de l'information au sujet des économies d'énergie potentielles et l'augmentation possible de votre cote ÉnerGuide. Vous pouvez aussi choisir d’autres mesures du <em>Tableau des subventions</em> (<a href="http://oee.rncan.gc.ca/renovation/maisons/tableau">http://oee.rncan.gc.ca/renovation/maisons/tableau</a>) même si elles n’apparaissent pas sur votre liste. Le plus de rénovations que vous effectuez, le plus élevées seront la subvention et vos économies d’énergie potentielles.
+</p>
+<p class="fc1">
+Vous seul êtes responsable de vous renseigner à propos des modalités du programme, de choisir des produits admissibles et de conserver tous vos reçus pendant trois ans. Dans plusieurs cas, les produits doivent apparaître sur les listes d’admissibilité spécifiées dans le <em>Tableau des subventions</em>. Pour plus d’information au sujet des critères du programme, visitez <a href="http://ecoaction.gc.ca/maisons">http://ecoaction.gc.ca/maisons</a> ou appelez au 1 800 O-Canada.
+</p>
+<p class="fc1">
+RNCan transfère votre information aux programmes complémentaires de certaines provinces et territoires. Ceux-ci peuvent avoir des règlements et dates limites distinctes. Pour obtenir plus de renseignements au sujet de ces programmes, visitez <a href="http://oee.rncan.gc.ca/renovation/maisons/regionaux">http://oee.rncan.gc.ca/renovation/maisons/regionaux</a> ou appelez au 1 800 O-Canada.
+</p>
+<p class="fc1">
+Avant d'effectuer vos rénovations, informez-vous au sujet des produits appropriés et des techniques d'installation et assurez-vous que tous les travaux sont effectués en respectant les codes du bâtiment de la localité et les règlements municipaux. RNCan n’endosse pas les services des entrepreneurs ou des produits particuliers et donc n’accepte aucune responsabilité à l’égard de la sélection des matériaux, des produits, des entrepreneurs ou de la qualité des travaux.
+</p>
+<p class="fc1">
+<em>N.B. : L’amélioration potentielle de la cote selon chacune des rénovations listées ci-dessous est une estimation qui peut ne pas refléter la cote finale qu’une maison recevra. Pour plus d’information, veuillez discuter avec votre conseiller certifié en efficacité énergique.</em>
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculitePresenceBlock-->
+[:VermiculiteText:]
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CHEEAPChecklist2-->
+
+<table class="checklist" width="100%" border="0" cellpadding="2" cellspacing="0" bordercolor="#000000">
+  <tr valign="top" class="fc11">
+    <th width="65%" align="left" scope="col">
+      <p>
+        Rénovations
+      </p>
+      <p class="fc2">
+        <b>Mesures admissibles à une subvention fédérale <br/>
+        (jusqu'à un total de 5 000 $) : </b>
+      </p>
+    </th>
+    <th width="150" align="center" scope="col">
+      Incitatif
+      fédéral
+    </th>
+    <th width="150" align="center" scope="col">
+      Économies
+      d'énergie
+      potentielles*
+    </th>
+    <th width="150" align="center" scope="col">
+      Augmentation
+      possible<br/>
+      de la cote
+    </th>
+  </tr>
+  <tr valign="top">
+    <td width="65%" align="left">
+      <p class="fc2">
+        * Une (1) étoile = économies d'énergie minimales / cinq (5) étoiles = économies d'énergie optimales
+      </p>
+    </td>
+  </tr>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CheckListHeadings-->
+  <tr bordercolor="#000000" class="fc1">
+    <td width="65%" align="left" valign="top" scope="col"><br/><b>[:CheckListGroup:]</b></td>
+    <td width="150" align="center" scope="col">&#160;</td>
+    <td width="150" align="center" scope="col"><img src="[:ImagePath:][:Stars:]" style="position:relative;top:5px;"/></td>
+    <td width="150" align="center" scope="col"><br/>[:PointRating:] points</td>
+  </tr>  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CheckListItems-->
+  <tr bordercolor="#000000" class="fc1">
+    <td width="65%" align="left" valign="top" scope="col">[:ChecklistRecommendations:]</td>
+    <td width="150" align="center" scope="col">[:Incentive:] $</td>
+    <td width="150" align="center" scope="col">&#160;</td>
+    <td width="150" align="center" scope="col">&#160;</td>
+  </tr>  
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock: Section2to4-->
+</table>
+
+<!-- Using different font for this in French -->
+<p class="fc1">
+<strong>TOUT nouvel appareil doit avoir une efficacité supérieure à celle de l’appareil qu’il remplace. Si deux systèmes de chauffage sont remplacés, les deux systèmes doivent être dans la même &laquo;&nbsp catégorie &raquo; dans le <em>Tableau des subventions</em>. Visitez <a href="http://ecoaction.gc.ca/maisons">http://ecoaction.gc.ca/maisons</a> pour les renseignements à jour ainsi que pour d’autres exigences.</strong>
+</p>
+<p class="fc1">
+<strong>RNCan se réserve le droit de modifier les montants des subventions ainsi que les critères d’admissibilité. Les subventions seront payées aux montants en vigueur lors de l'évaluation après les rénovations. Le paiement des subventions est sujet à la disponibilité des fonds.</strong>
+</p>
+<p class="fc4u">2. SYSTÈME DE COTATION ÉNERGUIDE (SCÉ)</p>
+<!--EndTemplateBlock-->
+<!--TemplateBlock:EnerguideHouseBlock-->
+<p class="fc1">
+Le SCÉ est une méthode uniformisée d'évaluation qui permet 
+aux propriétaires de comparer la cote d'efficacité énergétique de leur maison à celle 
+de maisons de taille similaire, dans des régions aux températures semblables. La 
+cote ÉnerGuide tient compte de l'estimation de la consommation annuelle d'énergie 
+qui se fonde sur une évaluation approfondie des caractéristiques de la maison, telles 
+que son emplacement, sa taille, l'équipement et les systèmes mécaniques, les niveaux d'isolation et l'étanchéité. De plus, des conditions de fonctionnement normalisées servent 
+au calcul de la cote dans le but de comparer l'efficacité énergétique d'une maison 
+à celle d'une autre. Ces conditions comprennent le renouvellement complet de l'air intérieur environ à toutes les trois heures, quatre occupants, un thermostat réglé à une température fixe de 21 ºC à l’étage principal et de 19 ºC au sous-sol, une consommation moyenne d'eau chaude de 225 litres par jour; une consommation moyenne d'électricité nationale de 24 kWh par jour et les données météorologiques moyennes de la région au cours des trente dernières années.
+</p>
+<p class="fc1">
+Les figures 1, 2 et 3 présentent les résultats de votre évaluation énergétique en fonction 
+de ces conditions de fonctionnement normalisées. Les résultats peuvent ne pas refléter 
+fidèlement votre ménage puisque votre consommation d'énergie actuelle et les économies 
+à réaliser à l'avenir peuvent être influencées par le nombre d'occupants, leurs habitudes 
+et leurs modes de vie respectifs.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnerguideBuildingBlock-->
+<p class="fc1">
+Le SCÉ est une méthode uniformisée d'évaluation qui permet 
+aux propriétaires de comparer la cote d'efficacité énergétique de leur immeuble à celle 
+d'immeubles de taille similaire, dans des régions aux températures semblables. La 
+cote ÉnerGuide tient compte de l'estimation de la consommation annuelle d'énergie 
+qui se fonde sur une évaluation approfondie des caractéristiques du bâtiment, telles 
+que son emplacement, sa taille, l'équipement et les systèmes mécaniques, les niveaux d'isolation et l'étanchéité. De plus, des conditions de fonctionnement normalisées servent 
+au calcul de la cote dans le but de comparer l'efficacité énergétique d'un bâtiment 
+à celle d'un autre. Ces conditions comprennent le renouvellement complet de l'air intérieur environ à toutes les trois heures; quatre occupants pour les duplex, 
+sept occupants pour les triplex, neuf occupants pour les immeubles de quatre 
+unités de logement et trois occupants par unité pour les immeubles de plus de quatre unités;
+un thermostat réglé à une température fixe de 21°C pour les pièces de séjour et 19 °C pour les espaces 
+collectifs; une consommation moyenne d'eau chaude de 140 litres par jour par unité;
+une consommation moyenne d'électricité de 11,8 kWh par jour par unité;  
+et les données météorologiques moyennes de la région au cours des trente dernières 
+années.
+</p>
+<p class="fc1">
+Les figures 1 à 4 présentent les résultats de votre évaluation énergétique en fonction 
+de ces conditions de fonctionnement normalisées. Les résultats peuvent ne pas refléter 
+fidèlement votre réalité puisque votre consommation d'énergie actuelle et les économies 
+à réaliser à l'avenir peuvent être influencées par le nombre d'occupants, leurs habitudes 
+et leurs modes de vie respectifs.
+</p>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnerguideMixedBlock-->
+<p class="fc1">
+Le SCÉ est une méthode uniformisée d'évaluation qui permet 
+aux propriétaires de comparer la cote d'efficacité énergétique de leur immeuble à celle 
+d'immeubles de taille similaire, dans des régions aux températures semblables. La 
+cote ÉnerGuide tient compte de l'estimation de la consommation annuelle d'énergie 
+qui se fonde sur une évaluation approfondie des caractéristiques du bâtiment, telles 
+que son emplacement, sa taille, l'équipement et les systèmes mécaniques, les niveaux d'isolation et l'étanchéité. De plus, des conditions de fonctionnement normalisées servent 
+au calcul de la cote dans le but de comparer l'efficacité énergétique d'un bâtiment 
+à celle d'un autre. Ces conditions comprennent le renouvellement complet de l'air intérieur environ à toutes les trois heures; quatre occupants pour les duplex, 
+sept occupants pour les triplex, neuf occupants pour les immeubles de quatre 
+unités de logement et trois occupants par unité pour les immeubles de plus de quatre unités;
+un thermostat réglé à une température fixe de 21°C pour les pièces de séjour et 19 °C pour les espaces 
+collectifs; une consommation moyenne d'eau chaude de 140 litres par jour par unité;
+une consommation moyenne d'électricité de 11,8 kWh par jour par unité;  
+et les données météorologiques moyennes de la région au cours des trente dernières 
+années.
+</p>
+<p class="fc1">
+Les figures 1 à 4 présentent les résultats de votre évaluation énergétique en fonction 
+de ces conditions de fonctionnement normalisées. Votre immeuble a été identifié comme un
+immeuble à usage mixte, qui contient des espaces résidentiels et non-résidentiels.
+Les espaces non-résidentiels dans les immeubles à usage mixte sont modélisés comme des unités de logement.
+Par conséquent, les résultats peuvent ne pas refléter fidèlement votre réalité 
+puisque ceux-ci ne prennent pas en considération l'utilisation de l'énergie
+ou les gains de chaleur interne associés à l’équipement non-résidentiel
+et l’usage de l’immeuble pour des fins non-résidentiels. Votre 
+consommation d'énergie actuelle et les économies à réaliser à l'avenir peuvent aussi être 
+influencées par le nombre d'occupants, leurs habitudes et leurs modes de vie respectifs. 
+</p>
+
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock: Section2to4Continued-->
+<p class="fc4u">3. CONSOMMATION D'ÉNERGIE</p>
+<p class="fc1">
+La chaleur des [:HousesBuildingText:] s'échappe vers l'extérieur durant la saison de chauffage, surtout 
+en raison des fuites d'air et de la conduction, telles que le transfert de la chaleur à 
+travers l’enveloppe du bâtiment (murs du sous-sol, murs extérieurs, plafonds, portes et fenêtres). Les modifications apportées à la [:LaMaisonText:], telles que le perçage de trous dans les murs pour le passage de nouveaux câbles et de tuyaux, et pour la pose de systèmes d'éclairage, ont un impact sur la réduction de l'efficacité énergétique de l'enveloppe du bâtiment au fil du temps. Les [:HousesBuildingText:] doivent être [:EntretenusText:] et améliorées régulièrement pour garantir une meilleure efficacité énergétique, un haut niveau de confort et des économies d’énergie.
+</p>
+<p class="fc1">
+La figure 1 démontre la répartition de la consommation d'énergie estimée de votre [:HouseBuildingText:] pour le chauffage des pièces, le chauffage de l'eau domestique, l'éclairage et les appareils électroménagers.
+</p>
+
+<!-- Figure 1. Estimated Breakdown of Energy Consumption 
+     Title included in graphic -->
+<center>
+  <img alt="" src="[:HeatAnnualEstimImagePath:]" width="700" height="200"/>
+</center>
+
+<br/>
+<p class="fc4u">4. ANALYSE PORTANT SUR LE CHAUFFAGE</p>
+<p class="fc1">
+La figure 2 démontre l'estimation du pourcentage d'énergie utilisée pour le chauffage 
+des pièces de votre [:HouseBuildingText:].
+</p>
+<ul type="round" class="fc1">
+<li>Le côté droit de la ligne du haut indique le pourcentage d’énergie que vous économiseriez si vous réalisiez toutes les améliorations recommandées dans le présent 
+rapport, à l'exception des modifications apportées aux équipements de chauffage. Vous pourriez donc réaliser des économies jusqu'à concurrence de [:HSysSave1:] p. 100 en effectuant 
+toutes les améliorations recommandées, à l'exception des modifications qui touchent le 
+système de chauffage.
+<li>Le côté droit de la ligne du bas indique le pourcentage d’énergie que vous économiseriez si vous réalisiez toutes les recommandations du présent 
+rapport, y compris les améliorations à apporter au système de chauffage. Vous pourriez 
+réaliser des économies jusqu'à concurrence de [:HSysSave2:] p. 100 en effectuant toutes les améliorations recommandées.
+</ul>
+
+<!-- Figure 2. Estimated Percentage of Potential Energy Savings
+     Title included in graphic -->
+<center>
+  <img alt="" src="[:HeatSystemImagePath:]" width="700" height="200"/>
+</center>
+
+<br/>
+
+<p class="fc1">
+La figure 3 démontre où se perd l'énergie que vous utilisez pour le chauffage de votre 
+[:HouseBuildingText:]. Cette énergie est calculée en gigajoules (GJ); 1 GJ équivaut à 278 kilowattheures 
+(kWh) ou 948 000 Btu.
+</p>
+<p class="fc1">
+Les lignes rouges indiquent les endroits où vous perdez actuellement de l’énergie. Plus la ligne rouge est longue, plus vous perdez d'énergie. 
+Les lignes vertes indiquent la perte d'énergie estimée après la réalisation de vos rénovations. Plus l'écart est important entre les lignes rouges et les 
+vertes, plus les économies potentielles et l’amélioration du confort de votre [:HouseBuildingText:] sont importantes.
+</p>
+
+<!-- Figure 3. Breakdown of Heat Loss through Building Envelope
+     Title included in graphic -->
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+     <td>
+        <img alt="" src="[:HeatImagePath:]" width="600" height="400"/>
+     </td>
+     <td>
+        <img alt="" src="AnnualHeatLossLegend-f.jpg" width="100" height="40"/>
+     </td>
+  </tr>
+</table>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DesignLoads-->
+<p class="fc6">
+Estimation de la perte de chaleur et de la charge de refroidissement de votre maison
+</p>
+<p class="fc1">
+Si vous deviez effectuer TOUS les travaux de rénovation à l'enveloppe 
+du bâtiment recommandés dans la section de ce rapport intitulée <em>La liste des mesures éconergétiques suggérées</em>, on estime que la perte de chaleur 
+de votre maison serait de
+[:DesignHLLoss_IP:] Btu/heure ([:DesignHLLoss_SI:] Watts) 
+et que sa charge de refroidissement serait de  
+[:DesignCL_IP:] Btu/heure ([:DesignCL_SI:] tonnes). 
+Si vous envisagez de remplacer votre système de chauffage et/ou de refroidissement, il est recommandé de fournir cette information, pour fins de comparaison, à votre entrepreneur en chauffage/refroidissement 
+pour l'aider à déterminer la capacité du système qui vous convient. Toutefois, ces chiffres ne sont qu'une estimation basée sur les données recueillies sur votre maison au moment de l'évaluation avant rénovations. La perte de chaleur et la charge de refroidissement peuvent varier en fonction de différents facteurs, notamment les travaux de rénovation et autres changements que vous pouvez apporter à votre maison. Il est recommandé, avant d'installer un nouveau système de chauffage/refroidissement, que l'entrepreneur fasse un calcul des pertes et des gains de chaleur de votre maison pour déterminer la capacité et les débits de distribution requis pour le nouveau système. Il est recommandé d’embaucher un entrepreneur qui est accrédité en calcul des pertes et des gains de chaleur par un organisme qui est reconnu par l’industrie, tel que l’Institut canadien du chauffage, de la climatisation et de la réfrigération (ICCCR), et votre autorité locale. Pour obtenir la liste des entrepreneurs accrédités par l’ICCCR, visitez le site Web <a href="www.hrai.ca">www.hrai.ca</a> (site en anglais seulement) et dans la section &laquo;&nbsp Home & Building Owners &raquo;, cliquez sur &laquo;&nbsp Find a Contractor &raquo;. Cliquez sur &laquo;&nbsp 3. Locate an HRAI Member Company contractor &raquo; et procurez les renseignements requis, puis cliquez sur &laquo;&nbsp Search The Database &raquo;, ou composez le 1-800-267-2231.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DesignLoadsMURB-->
+<p class="fc6">
+Estimation de la perte de chaleur et de la charge de refroidissement de votre bâtiment
+</p>
+<p class="fc1">
+Si vous deviez effectuer TOUS les travaux de rénovation à l'enveloppe 
+du bâtiment recommandés dans la section de ce rapport intitulée <em>La liste des mesures éconergétiques suggérées</em>, on estime que la perte de chaleur 
+de votre bâtiment serait de
+[:DesignHLLoss_IP:] Btu/heure ([:DesignHLLoss_SI:] Watts) 
+et que sa charge de refroidissement serait de  
+[:DesignCL_IP:] Btu/heure ([:DesignCL_SI:] tonnes).
+Veuillez noter que ces données estimées sont pour le bâtiment au complet[:LoadsMixed1:].  
+Si vous envisagez de remplacer vos systèmes de chauffage et/ou de refroidissement, il est 
+recommandé de fournir cette information, pour fins de comparaison, à votre entrepreneur en chauffage/refroidissement pour l'aider à déterminer la capacité des systèmes convenable pour votre bâtiment. Toutefois, ces chiffres ne sont qu'une estimation basée sur les données recueillies sur votre bâtiment au 
+moment de l'évaluation avant rénovations. La perte de chaleur et la charge de refroidissement peuvent varier en fonction de différents 
+facteurs, notamment [:LoadsMixed2:]les travaux de rénovation et autres changements que vous pouvez 
+apporter au bâtiment. Il est recommandé, avant d'installer un nouveau système de chauffage/refroidissement, que l'entrepreneur fasse un calcul des pertes et des gains de chaleur de votre bâtiment pour déterminer la capacité et les débits de distribution requis pour le nouveau système. Il est recommandé d’embaucher un entrepreneur qui est accrédité en calcul des pertes et des gains de chaleur par un organisme qui est reconnu par l’industrie, tel que l’Institut canadien du chauffage, de la climatisation et de la réfrigération (ICCCR), et votre autorité locale. Pour obtenir la liste des entrepreneurs accrédités par l’ICCCR, visitez le site Web <a href="www.hrai.ca">www.hrai.ca</a> (site en anglais seulement) et dans la section &laquo;&nbsp Home & Building Owners &raquo;, cliquez sur &laquo;&nbsp Find a Contractor &raquo;. Cliquez sur &laquo;&nbsp 3. Locate an HRAI Member Company contractor &raquo; et procurez les renseignements requis, puis cliquez sur &laquo;&nbsp Search The Database &raquo;, ou composez le 1-800-267-2231.
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VermiculiteBlock-->
+[:VermiculiteText:]
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:UnitGraphBlock-->
+
+<p class="fc1">
+   La figure 4 démontre un profil de l'estimation de la consommation 
+   annuelle de chauffage pour les unités individuelles du bâtiment et pour ces mêmes 
+   unités après les réfections recommandées. Les différences de consommation 
+   entre les unités sont principalement dues à :
+
+</p>
+<ul type="round" class="fc1">
+   <li>Les murs principaux exposés à l'extérieur et les fenêtres;</li>
+   <li>Des taux de changement d'air différents pour chaque unité;</li>
+   <li>Les dimensions de l'unité;</li>
+   <li>Ou l'unité est située dans le bâtiment; et</li>
+   <li>Réfections suggérées.</li>
+
+</ul>
+
+<!-- Figure 4. Estimates of Annual Energy Consumption by Individual Unit -->
+<center>
+
+  <img alt="" src="[:UnitHeatImagePath:]" width="600" height="250"/>
+</center>
+
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:UpgradeHeader-->
+
+<!-- This is the start of the house Upgrades section -->
+<p class="fc4u">5. RECOMMANDATIONS - MESURES D'ÉCONOMIE D'ÉNERGIE</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Upgrade-->
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr><td align="left"><span class="fc6">[:UpgradeTitle:]</span></td></tr>
+  <tr><td class="fc1">[:UpgradeText:]<br/><br/></td></tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsHeader-->
+<p class="fc4u">6. TRUCS ET ASTUCES POUR ÉCONOMISER DE L'ÉNERGIE</p>
+<p class="fc1">Bien que les mesures suivantes ne permettent peut-être pas de recevoir une subvention, elles peuvent vous aider à économiser de l'énergie et de l'argent :</p>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top" class="fc1">
+	 <ul type="round" class="fc1">
+<!--EndTemplateBlock-->
+	
+<!--TemplateBlock:Recommendations-->
+	<li>[:RecDesc:]</li>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RecommendationsFooter-->
+	</ul></td>
+  </tr>
+</table>
+<p style="font-size:0pt;margin-bottom:0pt;margin-top:0pt">&#160;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:InformationResources-->
+<p class="fc4u">7. SOURCES D'INFORMATION</p>
+
+<p class="fc1"><span class="fc6">Efficacité énergétique de la maison</span><br/>
+Ressources naturelles Canada (RNCan) publie une variété de documents qui peuvent vous aider à améliorer l'efficacité énergétique de votre maison. Ces publications sont disponibles en ligne à l'adresse <a href="http://oee.rncan.gc.ca/publications">http://oee.rncan.gc.ca/publications</a>; il est possible de les commander en composant le 1-800-387-2000.</p>
+
+<p class="fc1">Par exemple, <em>Emprisonnons la chaleur</em> (<a href="http://oee.rncan.gc.ca/renovation/maisons/emprisonnons">http://oee.rncan.gc.ca/renovation/maisons/emprisonnons</a>) est un livret au sujet des principes de base de la science du bâtiment et fournit des conseils pour effectuer des projets de rénovation de maisons, tels que l’amélioration de l'isolation et les travaux d'étanchéisation.</p>
+[:InfoReso1:]
+[:InfoReso2:]
+
+<p class="fc1"><span class="fc6">Santé et Sécurité</span><br/>
+RNCan publie aussi un dépliant intitulé <em>Planification de rénovations éconergétiques pour votre maison</em> (<a href="http://oee.rncan.gc.ca/renovation/maisons/planification">http://oee.rncan.gc.ca/renovation/maisons/planification</a>) qui contient de l’information importante quant aux questions de santé et sécurité, ainsi que des hyperliens à des documents de Santé Canda et de la Société canadienne d’hypothèques et de logement (SCHL).</p>
+
+<p class="fc1"><span class="fc6">Publications portant sur les rénovations</span><br/>
+La Société canadienne d'hypothèques et de logement (SCHL) publie un grand nombre de fiches d'information concernant la planification des travaux de rénovation qui sont disponibles sans frais. Il est également possible d'acheter quelques publications qui explorent le sujet plus en profondeur. Consulter le site Internet à l'adresse <a href="www.cmhc-schl.gc.ca">www.cmhc-schl.gc.ca</a> ou composer le 1-800-668-2642 pour commander les publications qui vous intéressent.</p>
+
+<p class="fc1"><span class="fc6">Faire appel aux services d'un entrepreneur</span><br/>
+Avant la réalisation des travaux, demandez des soumissions par écrit auprès de plusieurs entrepreneurs qualifiés et exigez un contrat écrit. La SCHL propose une fiche d'information utile sur le sujet intitulée <em>Le choix d'un entrepreneur</em>, incluant un exemple de contrat. Consulter le site Internet à l'adresse <a href="www.cmhc-schl.gc.ca">www.cmhc-schl.gc.ca</a> ou composer le 1-800-668-2642 pour en commander une copie.</p>
+
+<p class="fc1"><span class="fc6">Contrôle de l'humidité</span><br/>
+Le niveau d'humidité relative (HR) recommandé se situe entre 30 et 55 p. 100. Si vous possédez un humidificateur ou un déshumidificateur, vous devez vous assurer que ce dernier soit nettoyé et entretenu périodiquement et que l’humidimètre soit réglé au bon niveau d'humidité. Vous pouvez utiliser un hygromètre pour mesurer l’humidité relative ainsi que la fiche d’information de la SCHL <em>Mesurer l'humidité dans votre maison</em> (<a href="http://www.cmhc-schl.gc.ca/fr/co/enlo/vosavoma/humo/humo_002.cfm">http://www.cmhc-schl.gc.ca/fr/co/enlo/vosavoma/humo/humo_002.cfm</a>). De plus, les déshumidificateurs peuvent réduire les niveaux d’humidité, surtout dans les sous-sols.</p>
+
+<p class="fc1"><span class="fc6">Moisissure</span><br/>
+Si vous croyez que de la moisissure se développe dans votre maison, il est recommandé de bien nettoyer les zones endommagées ou d'éliminer les éléments atteints, et de s'en débarrasser convenablement. Afin de surveiller et de limiter le potentiel de développement de la moisissure, maintenez des niveaux d'humidité appropriés dans votre maison (voir la section ci-dessus intitulée &laquo;&nbsp Contrôle de l’humidité &raquo;) et réparez toute infiltration d'eau ou tout problème de fuite. Consulter la fiche d'information <em>Votre maison : Combattre la moisissure - Guide pour les propriétaires occupants</em> de la Société canadienne d'hypothèques et de logement pour obtenir des renseignements sur les types de moisissure et les méthodes de nettoyage. Pour commander, consulter le site Internet à l'adresse <a href="www.cmhc-schl.gc.ca">www.cmhc-schl.gc.ca</a> ou téléphoner en composant le 1-800-668-2642.</p>
+
+<p class="fc1"><span class="fc6">Radon</span><br/>
+Le radon est un gaz radioactif incolore, inodore et sans goût qui provient de la désintégration naturelle de l'uranium présent dans les sols, les roches et l'eau souterraine. Le radon présent dans le sol est libéré dans l'atmosphère où il se mélange à l'air frais, produisant des concentrations trop faibles pour être préoccupantes. Toutefois, lorsque le radon s'infiltre dans un espace clos tel qu'une maison, il peut parfois s'accumuler à des concentrations élevées susceptibles de poser un risque pour la santé. Pour de plus amples renseignements, consulter la publication de la SCHL intitulée <em>Le Radon : guide à l'usage des propriétaires canadiens</em> ou consulter le site Internet de Santé Canada à <a href="http://www.hc-sc.gc.ca/ewh-semt/radiation/radon/index-fra.php">http://www.hc-sc.gc.ca/ewh-semt/radiation/radon/index-fra.php</a>.</p>
+
+<p class="fc4u">COMMENCEZ DÈS AUJOURD'HUI!</p>
+<p class="fc1">
+Maintenant que vous disposez de tous les outils pour améliorer l'efficacité 
+énergétique de votre [:HomeBuildingText:], vous pouvez vous attendre à plus de confort à l'intérieur de [:CeluiCiText:] grâce à l'initiative écoÉNERGIE. Non seulement vous profiterez d'un confort accru, mais vous réaliserez également des économies puisque vos factures de consommation d'énergie seront moins élevées année après année. Vos rénovations peuvent aussi contribuer à un environnement plus sain avec de l’air plus propre et une réduction des émissions.</p>
+<p class="fc8">
+<em>Rappelez-vous que pour être admissible aux subventions, vous devez respecter toutes les exigences et les dates limites du programme écoÉNERGIE Rénovation – Maisons ainsi que celles des programmes complémentaires.</em>
+</p>
+
+<p class="fc1">
+Pour plus de renseignements ainsi que des hyperliens aux programmes complémentaires, visitez <a href="http://ecoaction.gc.ca/maisons">http://ecoaction.gc.ca/maisons</a> ou composez le 1 800 O-Canada.</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Comments-->
+<br/>
+<span class="fc6" style="border-style:none; border-width:1px;border-bottom-style:solid;width:700px;">
+  [:CommentHeader:]<br/>
+</span>
+<span class="fc1">
+  <br/>[:Comments:]<br/>
+</span>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer-->
+<p class="fc8">
+<!--Le paiement des incitatifs est sujet à la disponibilité des fonds. 
+Les incitatifs seront payés au montants indiqués lors de l'évaluation E.-->
+</p>
+</body>
+</html>
+<!--EndTemplateBlock-->

@@ -1,0 +1,5655 @@
+<!--TemplateBlock:Header-->
+<html>
+<head>
+<title>H2K</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<style>
+P {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;
+
+		}
+
+TD {	font-family:Arial, Helvetica, sans-serif;
+		font-size:10pt;}
+
+P.SectionHead {	font-family:Arial, Helvetica, sans-serif;
+		font-size:13pt;
+		font-style:italic;
+		font-weight:bold;
+				margin-top:0pt;
+		}
+HR.A{		height:0.5pt;
+		margin-top:0pt;
+		margin-bottom:0pt;
+		padding:0pt;
+		border-width:0pt}
+
+TABLE {page-break-inside:avoid}
+
+table, th, td
+{
+border: 0px solid black;
+}
+
+table
+{
+width : "100%";
+border : 0px
+}
+th, td{
+text-align: left;
+vertical-align: top;
+}
+
+td.colname, th.colname {
+  width: 40%;
+}
+td.coldata, th.coldata {
+  width: 60%;
+}
+
+td.3cols, th.3cols {
+  width: 25%;
+}
+
+td.3colname, th.3colname {
+  width: 25%;
+}
+table .multiCols
+{
+width : 75%;
+}
+
+td.w50, th.w50 {
+  width: 50px;
+}
+DIV.KeepTogether {page-break-inside:avoid}
+
+.fc0 { COLOR:000000;FONT-SIZE:8PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;}
+</style>
+</head>
+<body >
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Title-->
+<table >
+	<tr><td width="100%">
+	<p align="right">
+	<span style="COLOR:000000;FONT-SIZE:24PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;font-style:italic;">
+	HOT2000<br/></span>
+	<span style="COLOR:000000;FONT-SIZE:10PT;FONT-FAMILY:Arial;FONT-WEIGHT:BOLD;">
+	  Natural Resources CANADA<br/>
+	Version [:HOTVER:]</span>
+	</p>
+	</td>
+	<td align="right">
+	<img src="[:ImagePath:]h2k_logo.gif" width =159 height=82>
+	</td></tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:StudentVersion-->
+<p >
+  <b>NOT FOR COMMERCIAL USE
+</b></p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:FileInfo-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="150px">
+	<b>File:</b>
+	</td>
+	<td>
+	[:HseId2(1):]
+	</td></tr>
+	<tr><td width="150px">
+	<b>Application Type:</b>
+	</td>
+	<td>
+	[:AppType2:]
+	</td></tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:UserWeather-->
+<p>
+User Weather File: [:WeatherFile:]<br/>
+ </p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:LibraryWeather-->
+<p>
+ Weather Data for
+  [:CTYNAM:], [:USEPRV:]
+
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:FileInfo2-->
+<hr/>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100px"><b>Builder Code:</b> </td>
+    <td>[:FileID:]</td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td width="100px"><b>Data Entry by:</b> </td>
+    <td>[:HseId0(15):]</td>
+  </tr>
+  [:BeginHideDateOfEntry:]
+  <tr>
+    <td width="100px"><b>Date of entry:</b> </td>
+    <td>[:DateOfEntry:]</td>
+  </tr>
+  <tr>
+    <td width="100px"><b>Company:</b> </td>
+    <td>[:Company:]</td>
+  </tr>
+  [:EndHideDateOfEntry:]
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td width="100px"><b>Client name:</b> </td>
+    <td>[:HseId0(1):]</td>
+  </tr>
+  <tr>
+    <td width="100px"><b>Street address:</b> </td>
+    <td>[:HseId0(2):]</td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+ </table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100px"><b>City:</b> </td>
+    <td>[:HseId1(1):]</td>
+    <td width="100px"><b>Region:</b> </td>
+    <td>[:HseId1(2):]</td>
+  </tr>
+  <tr>
+    <td width="100px"><b>Postal code:</b></td>
+    <td>[:HseId2(3):]</td>
+    <td width="100px"><b>Telephone: </b></td>
+    <td>[:TelePh:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:MailInfo-->
+<br/>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="21%"><b>Mailing address:</b></td>
+    <td width="34%">[:HseId0(16):]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="33%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="21%"><b>City:</b></td>
+    <td width="34%">[:HseId1(3):]</td>
+    <td width="12%"><b>Region:</b></td>
+    <td width="33%">[:HseId1(4):]</td>
+  </tr>
+  <tr>
+    <td width="21%"><b>Postal Code:</b></td>
+    <td width="34%">[:HseId2(4):]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="33%">&nbsp;</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:GeneralHouseCharacteristics-->
+<p>&nbsp;</p>
+<hr/>
+<p class="SectionHead">GENERAL HOUSE CHARACTERISTICS</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="19%"><b>House type:</b></td>
+    <td width="41%">[:HseTyp62:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Number of storeys:</b></td>
+    <td width="41%">[:NumStor63:] </td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Plan shape:</b></td>
+    <td width="41%">[:PlnShape544:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Front orientation:</b></td>
+    <td width="41%">[:FrtOrt34:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Year House Built:</b></td>
+    <td width="41%">[:YrBuilt64:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Wall colour:</b></td>
+    <td width="41%"> [:WlColour88:]</td>
+    <td width="12%"><b>Absorptivity:</b></td>
+    <td width="28%"> [:WallAB:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Roof colour:</b></td>
+    <td width="41%">[:RoofC:]</td>
+    <td width="12%"><b>Absorptivity:</b></td>
+    <td width="28%">[:RoofAB:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Soil Condition:</b></td>
+    <td width="41%">[:SoilType:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Water Table Level:</b></td>
+    <td width="41%">[:WaterTableLevel:]</td>
+    <td width="12%">&nbsp;</td>
+    <td width="28%">&nbsp;</td>
+  </tr>
+</table>
+<p> <b>House Thermal Mass Level:</b> [:HseThermalMass:]<br/></p>
+  <br/>
+  <b>Effective mass fraction</b> [:EffMF:]<br/>
+  <br/>
+  <p style="page-break-after:always;">&nbsp;</p>
+  <!--EndTemplateBlock-->
+
+<!--TemplateBlock:BuildinParametersSummary-->
+<p>&nbsp;</p>
+<hr/>
+<p class="SectionHead"><b>BUILDING PARAMETERS SUMMARY</b></p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Zone1-->
+<p><b>ZONE 1 : Above Grade</b></p>
+<!--Table:ComponentTable-->
+<table ">
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td width="216">
+      <div align="left"><b><font color="#FFFFFF">Component</font></b></div>
+    </td>
+    <td width="280">
+      <div >
+        <p><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+          Gross </font></b></p>
+      </div>
+    </td>
+    <td width="108">
+      <div ><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+        Net </font></b></div>
+    </td>
+    <td width="72">
+      <div ><b><font color="#FFFFFF">Effective ([:Ch3a:])</font></b></div>
+    </td>
+    <td width="87">
+      <div ><b><font color="#FFFFFF">Heat Loss<br/>
+        [:ENUN:] </font></b></div>
+    </td>
+    <td width="87"><font color="#FFFFFF"><b>% Annual Heat Loss</b></font></td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+    <td width="216"><b>[:Comp:]</b></td>
+    <td width="280">
+      <div >[:AreaG:]</div>
+    </td>
+    <td width="108">
+      <div >[:AreaN:]</div>
+    </td>
+    <td width="72">
+      <div >[:ERSI:]</div>
+    </td>
+    <td width="87">
+      <div >[:HeatLoss:]</div>
+    </td>
+    <td width="87">[:PerHeatLoss:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Footer-->
+  <tr bgcolor="#99CCFF">
+    <td bgcolor="#FFFFFF">
+      <div align="right"></div>
+    </td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2">
+      <div ><b>ZONE 1 Totals: </b></div>
+    </td>
+    <td width="87">
+      <div ><b>[:TotHeatLoss:]</b></div>
+    </td>
+    <td width="87"><b>[:TotPerHeatLoss:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Interzone-->
+<p><b>INTER-ZONE Heat Transfer : Floors Above Basement</b></p>
+<table >
+  <tr bgcolor="#000000">
+    <td width="216">
+      <div ><b><font color="#FFFFFF">&nbsp;</font></b></div>
+    </td>
+    <td width="280">
+      <div >
+        <p><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+          Gross </font></b></p>
+      </div>
+    </td>
+    <td width="108">
+      <div ><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+        Net </font></b></div>
+    </td>
+    <td width="72">
+      <div ><b><font color="#FFFFFF">Effective ([:Ch3a:])</font></b></div>
+    </td>
+    <td width="87">
+      <div ><b><font color="#FFFFFF">Heat Loss<br/>
+        [:ENUN:] </font></b></div>
+    </td>
+    <td width="87"><font color="#FFFFFF">&nbsp;</font></td>
+  </tr
+  ><tr bgcolor="#FFFFFF">
+    <td width="216"><b>&nbsp;</b></td>
+    <td width="280">
+      <div >[:AREA:]</div>
+    </td>
+    <td width="108">
+      <div >[:ARNET:]</div>
+    </td>
+    <td width="72">
+      <div >[:RVALUE:]</div>
+    </td>
+    <td width="87">
+      <div >[:GenDat(22):]</div>
+    </td>
+    <td width="87">&nbsp;</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Zone2--><p><b>ZONE 2 : Basement</b></p>
+<!--Table:ComponentTable-->
+<table>
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td width="216">
+      <div align="left"><b><font color="#FFFFFF">Component</font></b></div>
+    </td>
+    <td width="280">
+      <div >
+        <p><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+          Gross </font></b></p>
+      </div>
+    </td>
+    <td width="108">
+      <div ><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+        Net </font></b></div>
+    </td>
+    <td width="72">
+      <div ><b><font color="#FFFFFF">Effective ([:Ch3a:])</font></b></div>
+    </td>
+    <td width="87">
+      <div ><b><font color="#FFFFFF">Heat Loss<br/>
+        [:ENUN:] </font></b></div>
+    </td>
+    <td width="87"><font color="#FFFFFF"><b>% Annual Heat Loss</b></font></td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+    <td width="216"><b>[:Comp:]</b></td>
+    <td width="280">
+      <div >[:AreaG:]</div>
+    </td>
+    <td width="108">
+      <div >[:AreaN:]</div>
+    </td>
+    <td width="72">
+      <div >[:ERSI:]</div>
+    </td>
+    <td width="87">
+      <div >[:HeatLoss:]</div>
+    </td>
+    <td width="87">[:PerHeatLoss:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Footer-->
+  <tr bgcolor="#99CCFF">
+    <td bgcolor="#FFFFFF">
+      <div align="right"></div>
+    </td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2">
+      <div ><b>ZONE 2 Totals: </b></div>
+    </td>
+    <td width="87">
+      <div ><b>[:TotHeatLoss:]</b></div>
+    </td>
+    <td width="87"><b>[:TotPerHeatLoss:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:Zone3-->
+<p><b>ZONE 3: Crawl Space Foundation</b></p>
+<!--Table:ComponentTable-->
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="000000">
+    <td width="174">
+      <div align="left"><b><font color="#FFFFFF">Component</font></b></div>
+    </td>
+    <td width="214">
+      <p ><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+        Gross </font></b></p>
+    </td>
+    <td width="80">
+      <div ><b><font color="#FFFFFF">Area [:Ch3:]<br/>
+        Net </font></b></div>
+    </td>
+    <td width="78">
+      <div ><b><font color="#FFFFFF">Effective ([:Ch3a:])</font></b></div>
+    </td>
+    <td width="93">
+      <div ><b><font color="#FFFFFF">Heat Loss<br/>
+        [:ENUN:] </font></b></div>
+    </td>
+    <td width="118">
+      <div ><font color="#FFFFFF"><b>% Annual Heat Loss</b></font></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+    <td width="174"><b>[:Comp:]</b></td>
+    <td width="214">
+      <div >[:AreaG:]</div>
+    </td>
+    <td width="80">
+      <div >[:AreaN:]</div>
+    </td>
+    <td width="78">
+      <div >[:ERSI:]</div>
+    </td>
+    <td width="93">
+      <div >[:HeatLoss:]</div>
+    </td>
+    <td width="118">
+      <div >[:PerHeatLoss:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Footer-->
+  <tr bgcolor="#99CCFF">
+    <td bgcolor="#FFFFFF">
+      <div align="right"></div>
+    </td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2">
+      <div ><b>ZONE 3 Totals: </b></div>
+    </td>
+    <td width="87">
+      <div ><b>[:TotHeatLoss:]</b></div>
+    </td>
+    <td width="87"><b>[:TotPerHeatLoss:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirLeakageAndVentilation-->
+<hr/>
+<p class="SectionHead">AIR LEAKAGE AND VENTILATION</p>
+<p><b>Building Envelope Surface Area: [:SAREA:] [:LKAL:]</b></p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirTightness1269-->
+<table class="multiCols">
+  <tr>
+    <td colspan="3"><b>Air Tightness Level is</b> [:TglSt1:]</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+<!--TemplateBlock:AirTightness1270-->
+<table class="multiCols">
+  <tr>
+    <td colspan="3">Air Leakage Test Results at 50 Pa.(0.2 in H<sub>2</sub>O) = [:AIR50P:]
+      ACH </td>
+  </tr>
+  <tr>
+    <td colspan="3">Equivalent Leakage Area @ [:TglSt2:] = [:LEAKAR:] [:UniChr:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirLeakageAndVentilation2-->
+<table class="multiCols">
+  <tr>
+    <td width="60%"><b>Terrain Description</b></td>
+    <td width="21%"><b> Height</b></td>
+    <td width="19%"><b>[:LKAL:]</b></td>
+  </tr>
+  <tr>
+    <td width="60%">@ Weather Station : [:TerrainDescrip1:]</td>
+    <td width="21%">Anemometer</td>
+    <td width="19%">[:Height1:]</td>
+  </tr>
+  <tr>
+    <td width="60%">@ Building site : [:TerrainDescrip2:]</td>
+    <td width="21%">Bldg. Eaves</td>
+    <td width="19%">[:Height2:]</td>
+  </tr>
+  <tr>
+    <td width="60%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+    <td width="19%">&nbsp;</td>
+  </tr>
+ </table>
+ <table width="50%" border="0">
+  <tr>
+    <td width="35%"><b>Local Shielding: </b> </td>
+    <td width="21%"><b>Walls:</b> </td>
+    <td width="19%">[:Shield1:]</td>
+  </tr>
+  <tr>
+    <td width="35%">&nbsp;</td>
+    <td width="21%"><b>Flue :</b></td>
+    <td width="19%">[:Shield2:]</td>
+  </tr>
+</table>
+<br/>
+<table class="multiCols">
+  <tr>
+    <td width="27%"><b>Leakage Fractions-</b></td>
+    <td width="10%"><b>Ceiling:</b></td>
+    <td width="16%">[:LeakCeil:]</td>
+    <td width="9%"><b>Walls:</b></td>
+    <td width="16%">[:LeakWalll:]</td>
+    <td width="10%"><b>Floors:</b></td>
+    <td width="12%">[:LeakFloor:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedELArea--><br/>
+<table width="600px" border="0">
+  <tr>
+    <td><b>Estimated Equivalent Leakage Area @ [:Pressure:]:</b></td>
+    <td width="200px">[:LeakArea:] [:UniChr:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirLeakageAndVentilation3-->
+<table width="600px" border="0">
+  <tr>
+    <td><b>Normalized Leakage Area @ [:Pressure:]:</b></td>
+    <td width="200px">[:value:] [:units:] </td>
+  </tr>
+  <tr>
+    <td><b>Estimated Airflow to cause a 5 Pa Pressure Difference:</b></td>
+    <td width="200px">[:IFL5:] [:VFL:]</td>
+  </tr>
+  <tr>
+    <td><b>Estimated Airflow to cause a 10 Pa Pressure Difference:</b></td>
+    <td width="200px">[:IFL10:] [:VFL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedELA-->
+<table width="600px" border="0">
+  <tr>
+    <td><b>ELA used to calculate Estimated Airflows:</b></td>
+    <td width="200px">[:EstAir:] [:UniChr:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:F326VentReq-->
+<p>&nbsp;</p><hr/>
+<p class="SectionHead">F326 VENTILATION REQUIREMENTS</p>
+<p><!--Table:VentReqTable--> </p>
+<table border="0" cellspacing="0" cellpadding="3" width="500">
+  <!--TableRow:Header-->
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+    <td class="colname">[:Room:]</td>
+    <td class="coldata">
+      <div >[:NumRoom:] units @ [:Flow:] [:FlowRate:]: [:TFlow:] [:FlowRate:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<table border="0" cellspacing="0" cellpadding="3" width="500">
+    <tr bgcolor="#FFFFFF">
+    <td  class="colname">Basement Rooms</td>
+    <td  class="coldata">
+      <div> [:Flow:] [:FlowRate:]</div>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentSys-->
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">CENTRAL VENTILATION SYSTEM</p>
+<table class="multiCols">
+  <tr>
+    <td height="19" width="40%"><b>System Type:</b></td>
+    <td height="19" width="60%">[:SysTyp:]</td>
+  </tr>
+  <tr>
+    <td width="40%"><b>Manufacturer:</b></td>
+    <td width="60%">[:HseId0(9):]</td>
+  </tr>
+  <tr>
+    <td ><b>Model Number:</b></td>
+    <td >[:HseId0(10):]</td>
+  </tr>
+</table>
+<br/>
+<table class="multiCols">
+  <tr>
+    <td width="40%"><b>Fan and Preheater Power at [:Temp1:] [:DEGREZ:]:</b></td>
+    <td width="60%">[:PHTKW1:] Watts</td>
+  </tr>
+  <tr>
+    <td><b>Fan and Preheater Power at [:Temp2:] [:DEGREZ:]:</b></td>
+    <td>[:PHTKW2:] Watts</td>
+  </tr>
+  <tr>
+    <td><b>Preheater Capacity:</b></td>
+    <td>[:PRHCAP:] Watts</td>
+  </tr>
+  <tr>
+    <td><b>Sensible Heat Recovery Efficiency at [:Temp3:] [:DEGREZ:]</b></td>
+    <td>[:HRVTST1:]%</td>
+  </tr>
+  <tr>
+    <td><b>Sensible Heat Recovery Efficiency at [:Temp4:] [:DEGREZ:]</b></td>
+    <td>[:HRVTST2:]%</td>
+  </tr>
+  <tr>
+    <td><b>Total Heat Recovery Efficiency in Cooling Mode</b></td>
+    <td>[:HRVTST:]%</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>Low Temperature Ventilation Reduction:</b></td>
+    <td>[:PERV5:]%</td>
+  </tr>
+  <tr>
+    <td><b>Low Temperature Ventilation Reduction: Airflow Adjustment</b></td>
+    <td>[:Rate:] [:FlowUnits:] ([:HCF:]%)</td>
+  </tr>
+</table>
+<p><b><!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentSysFansNoHR--> </p>
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">CENTRAL VENTILATION SYSTEM</p>
+<table class="multiCols">
+  <tr> 
+    <td height="19" width="20%"><b>System Type:</b></td>
+    <td height="19" width="30%">[:SysTyp:]</td>
+  </tr>
+  <tr> 
+    <td width="20%"><b>Manufacturer:</b></td>
+    <td width="30%">[:HseId0(9):]</td>
+  </tr>
+  <tr> 
+    <td width="20%"><b>Model Number:</b></td>
+    <td width="30%">[:HseId0(10):]</td>
+  </tr>
+  <tr> 
+  </tr>
+  <tr> 
+    <td width="20%"><b>Mechanical Ventilator Fan Power</b></td>
+    <td width="30%">[:MechVentFanPow:]</td>
+  </tr>
+</table>
+<br/>
+<p><!--EndTemplateBlock-->
+
+<!--TemplateBlock:NoVentCombApp-->
+<b>NO Vented combustion appliance specified
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:VentCombApp-->
+<br/>Vented combustion appliance depressurization limit: [:MDepLm:] Pa.
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentSys2--></b></p>
+<table class="multiCols">
+  <tr>
+    <td colspan="5"><b>Ventilation Supply Duct</b></td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Location:</b></td>
+    <td width="22%">[:Loc:]</td>
+    <td width="28%"><b>Type:</b></td>
+    <td width="25%">[:Type:]</td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Length:</b></td>
+    <td width="22%">[:Len:] [:u1:]</td>
+    <td width="28%"><b>Diameter:</b></td>
+    <td width="25%">[:Dia:] [:u2:]</td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Insulation:</b></td>
+    <td width="22%">[:Insualtion:] [:u3:]</td>
+    <td width="28%"><b>Sealing Characteristics:</b></td>
+    <td width="25%">[:SealChar:]</td>
+  </tr>
+</table>
+<br/>
+<table class="multiCols">
+  <tr>
+    <td colspan="5"><b>Ventilation Exhaust Duct</b></td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Location:</b></td>
+    <td width="22%">[:Loc2:]</td>
+    <td width="28%"><b>Type:</b></td>
+    <td width="25%">[:Type2:]</td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Length:</b></td>
+    <td width="22%">[:Len2:] [:u1:]</td>
+    <td width="28%"><b>Diameter:</b></td>
+    <td width="25%">[:Dia2:] [:u2:]</td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="22%"><b>Insulation:</b></td>
+    <td width="22%">[:Insualtion2:] [:u3:]</td>
+    <td width="28%"><b>Sealing Characteristics:</b></td>
+    <td width="25%">[:SealChar2:]</td>
+  </tr>
+</table>
+<p><b>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:OperSched1-->
+Operating schedule for</b> [:OperSchedName:]</p>
+<p><!--Table:OperSched1Table--> </p>
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td bgcolor="#000000">
+      <div align="left"><b><font color="#FFFFFF">Month</font></b></div>
+    </td>
+    <td width="116">
+      <p ><b><font color="#FFFFFF">% of Time</font></b></p>
+    </td>
+    <td width="148">
+      <div ><b><font color="#FFFFFF">Added Vent.<br/>
+        Rate ([:Rate:])</font></b></div>
+    </td>
+    <td width="134">
+      <div ><b><font color="#FFFFFF">Month</font></b></div>
+    </td>
+    <td width="110">
+      <div ><b><font color="#FFFFFF">% of Time</font></b></div>
+    </td>
+    <td width="117">
+      <div ><b><font color="#FFFFFF">Added Vent.<br/>
+        Rate ([:Rate:]) </font></b></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+    <td>[:Month1:]</td>
+    <td width="116">
+      <div >[:Time1:]</div>
+    </td>
+    <td width="148">
+      <div >[:AVent1:]</div>
+    </td>
+    <td width="134">
+       <div >[:Month2:]</div>
+    </td>
+    <td width="110">
+      <div >[:Time2:]</div>
+    </td>
+    <td width="117">
+      <div >[:AVent2:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:MechVentFanPow-->
+<p><b>Mechanical Ventilator Fan Power:</b> [:PHTKW1:] Watts</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:OperSched2-->
+<p><b>Operating schedule for</b> [:OperSchedName:]</p>
+<p><!--Table:OperSched2Table--> </p>
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td colspan="2" bgcolor="#000000">
+      <div align="left"><b><font color="#FFFFFF">Month</font></b></div>
+    </td>
+    <td width="116">
+      <p ><b><font color="#FFFFFF">% of Time</font></b></p>
+    </td>
+    <td width="148">
+      <div ><b><font color="#FFFFFF">Added Vent.<br/>
+        Rate ([:Rate:])</font></b></div>
+    </td>
+    <td width="134">
+      <div ><b><font color="#FFFFFF">Month</font></b></div>
+    </td>
+    <td width="110">
+      <div ><b><font color="#FFFFFF">% of Time</font></b></div>
+    </td>
+    <td width="117">
+      <div ><b><font color="#FFFFFF">Added Vent.<br/>
+        Rate ([:Rate:]) </font></b></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="#EEEEEE">
+    <td colspan="2">[:Month1:]</td>
+    <td width="116">
+      <div >[:Time1:]</div>
+    </td>
+    <td width="148">
+      <div >[:AVent1:]</div>
+    </td>
+    <td width="134">[:Month2:]</td>
+    <td width="116">
+      <div >[:Time2:]</div>
+    </td>
+    <td width="148">
+      <div >[:AVent2:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable-->
+<!--EndTemplateBlock-->
+
+<b><!--TemplateBlock:Secondaryfansandotherexhaust--></b>
+<p><br/></p>
+<hr/>
+<p class="SectionHead">SECONDARY FANS & OTHER EXHAUST APPLIANCES</p> 
+<table class="multiCols"> 
+<tr>
+<th class="3colname">&nbsp; </th>
+ <th class="3cols">Control </th>
+<th class="3cols" >Supply ([:FlowUnits:]) </th>
+<th class="3cols">Exhaust ([:FlowUnits:]) </th>
+  </tr>  
+  </table>
+<!--EndTemplateBlock--> 
+
+<!--TemplateBlock:OtherFans-->
+<table  class="multiCols">   
+  <tr > 
+    <td class="3colname"><b>Other Fans</b></td>
+    <td class="3cols"> 
+     Continuous
+    </td>
+    <td class="3cols"> 
+      [:Supply:]
+    </td>
+    <td class="3cols">
+      [:Exhaust:]
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+  
+<!--TemplateBlock:Dryer-->
+<table class="multiCols">   
+  <tr bgcolor="#EEEEEE"> 
+    <td class="3colname"><b>Dryer</b></td>
+    <td class="3cols"> 
+      <div >Continuous</div>
+    </td>
+    <td class="3cols"> 
+      <div >-</div>
+    </td>
+    <td class="3cols"> 
+      <div >[:Exhaust:]</div>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DevicesOverI-->
+<table class="multiCols">   
+  <tr > 
+    <td class="3colname"><b>Devices over 75 L/s</b></td>
+    <td class="3cols"> 
+      <div >Intermittent</div>
+    </td>
+    <td class="3cols"> 
+      <div >-</div>
+    </td>
+    <td class="3cols"> 
+      <div >[:Exhaust:]</div>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DevicesOverM-->
+<table  class="multiCols">   
+  <tr > 
+    <td class="3colname"><b>Devices over 159 cfm</b></td>
+    <td class="3cols"> 
+      <div >Intermittent</div>
+    </td>
+    <td class="3cols"> 
+      <div >-</div>
+    </td>
+    <td class="3cols"> 
+      <div >[:Exhaust:]</div>
+    </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DryVent-->
+<p><br/><b>
+  Dryer is vented outdoors
+<!--EndTemplateBlock--></b>
+
+<b>
+<!--TemplateBlock:NotDryVent--></b><br/><b>
+  Dryer is NOT vented outdoors
+<!--EndTemplateBlock--></b>
+
+<b>
+<!--TemplateBlock:RateFanPow--></b>
+</p>
+<table  class="multiCols">   
+  <tr> 
+    <td class="3colname"><b>Rated Fan Power</b></td>
+    <td class="3cols"> 
+      <div >[:ExFanP:] Watts</div>
+    </td>
+    <td class="3cols"> 
+      <div >&nbsp;</div>
+    </td>
+    <td class="3cols"> 
+      <div >&nbsp;</div>
+    </td>
+  </tr>
+</table>
+<p><b>
+<!--EndTemplateBlock--></b></p>
+  
+<b><!--TemplateBlock:AirLeakAndVentSummary--></b>
+<p><br/></p>
+<hr/>
+<p class="SectionHead">AIR LEAKAGE AND VENTILATION SUMMARY</p>
+<p class="SectionHead"><b>
+<!--EndTemplateBlock--></b>
+
+<b><!--TemplateBlock:F326Req--></b></p>
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>F326 Required continous ventilation: </b></td>
+    <td class="coldata">[:ReqVentRate:] [:VFL:] ([:MACH:] ACH)</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentSuppRate-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Central Ventilation Supply Rate ([:Balance:]):</b></td>
+    <td class="coldata">[:ReqVentRate:] [:VFL:] ([:MACH:] ACH)</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentRate-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Central Ventilation Rate ([:Balance:]):</b></td>
+    <td class="coldata">[:ReqVentRate:] [:VFL:] ([:MACH:] ACH)</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentVentExRate-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Central Ventilation Exhaust Rate ([:Balance:]):</b></td>
+    <td class="coldata">[:ReqVentRate:] [:VFL:] ([:MACH:] ACH)</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:OtherVentExRate-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Other Continuous Supply Flow Rates:</b></td>
+    <td class="coldata">[:ReqVentRate1:] [:VFL:] ([:MACH1:] ACH)</td>
+  </tr>
+</table>
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Other Continuous Exhaust Flow Rates:</b></td>
+    <td class="coldata">[:ReqVentRate2:] [:VFL:] ([:MACH2:] ACH)</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:TotBal-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Total house ventilation is [:Balance:] </b></td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirLeakAndVentSummary2-->
+<table class="multiCols">
+  <tr>
+    <td class="colname"><b>Gross Air Leakage and Ventilation Energy Load:</b></td>
+    <td class="coldata">[:GrossLoad:] [:ENUN:]</td>
+  </tr>
+  <tr>
+    <td class="colname"><b>Seasonal Heat Recovery Ventilator Efficiency:</b></td>
+    <td class="coldata">[:HRVEFF(13):] %</td>
+  </tr>
+  <tr>
+    <td class="colname"><b>Estimated Ventilation Electrical Load: Heating Hours:</b></td>
+    <td class="coldata">[:ElecLoadHH:] [:ENUN:]</td>
+  </tr>
+  <tr>
+    <td class="colname"><b>Estimated Ventilation Electrical Load: Non-Heating Hours:</b></td>
+    <td>[:ElecLoadNonHH:] [:ENUN:]</td>
+  </tr>
+  <tr>
+    <td class="colname"><b>Net Air Leakage and Ventilation Load:</b></td>
+    <td class="coldata">[:NetAirLeakage:] [:ENUN:]</td>
+  </tr>
+</table>
+<p style="page-break-after:always;">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RoomByRoom-->
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">UNIT-BY-UNIT DESIGN HEATING AND COOLING LOADS SUMMARY</p>
+<!--Table:RoomTable-->
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <th width="30%">
+      <div align="left"><b><font color="#FFFFFF">Unit Name</font></b></div>
+    </th>
+    <th width="12%">
+      <div ><b><font color="#FFFFFF">Floor Area<br/>
+        ([:Ch3:])</font></b></div>
+    </th>
+     <th width="12%">
+      <div ><b><font color="#FFFFFF">Heating Load<br/>
+        ([:WATTS:])</font></b></div>
+    </th>
+    <th width="12%">
+      <div ><b><font color="#FFFFFF">Cooling Load<br/>
+        ([:WATTS:])</font></b></div>
+    </th>
+    <th width="12%">
+      <div ><b><font color="#FFFFFF">Ventilation Flow<br/>
+        Heating([:CFM:])</font></b></div>
+    </th>
+  <th width="12%">
+      <div ><b><font color="#FFFFFF">Ventilation Flow<br/>
+        Cooling ([:CFM:])</font></b></div>
+    </th>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body-->
+  <tr bgcolor="[:BGColour:]">
+      <td  ><b>[:Name:]</b></td>
+    <td >
+      <div >[:FloorArea:]</div>
+    </td>
+    <td >
+      <div >[:HeatingLoad:]</div>
+    </td>
+    <td >
+      <div >[:CoolingLoad:]</div>
+    </td>
+    <td >
+      <div >[:VentHeat:]</div>
+    </td>
+    <td >
+      <div >[:VentCool:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--EndTable-->
+  <tr>
+    <td colspan="6">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="190"><b>Whole house</b></td>
+    <td  >[:FloorArea:]</td>
+    <td  >[:HeatLoad:]</td>
+    <td  >[:CoolLoad:]</td>
+    <td  >[:totalHeatFlow:]</td>
+    <td  >[:totalCoolFlow1:]</td>
+  </tr>
+  <tr>
+    <td width="190"><b>Latent cooling</b></td>
+    <td  >-</td>
+    <td  >-</td>
+    <td  >[:GenDat(114):]</td>
+    <td  >-</td>
+    <td  >-</td>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="190"><b>Totals</b></td>
+    <td  >[:FloorArea:]</td>
+    <td  >[:TotalHeatLoad:]</td>
+    <td  >[:TotalCoolLoad:]</td>
+    <td  >[:totalHeatFlow2:]</td>
+    <td  >[:totalCoolFlow2:]</td>
+  </tr>
+</table>
+<p style="page-break-after:always;">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RoomByRoomDetail-->
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">UNIT-BY-UNIT DESIGN HEATING AND COOLING LOAD DETAILS</p>
+<!--Table:RoomTable-->
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+       <th width="30%>
+      <div align="left"><b><font color="#FFFFFF">Unit Component</font></b></div>
+    </th>
+    <th width="12%">
+      <div ><b><font color="#FFFFFF">[:RSI:]</font></b></div>
+    </th>
+     <th width="12%">
+      <div ><b><font color="#FFFFFF">Gross Area<br/>
+        ([:Ch3:])</font></b></div>
+    </th>
+     <th width="12%">
+      <div ><b><font color="#FFFFFF">Net Area<br/>
+        ([:Ch3:])</font></b></div>
+    </th>
+     <th width="12%">
+      <div ><b><font color="#FFFFFF">Heating Load<br/>
+        ([:WATTS:])</font></b></div>
+    </th>
+     <th width="12%">
+      <div ><b><font color="#FFFFFF">Cooling Load<br/>
+        ([:WATTS:])</font></b></div>
+    </th>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body1-->
+  <tr bgcolor="[:BGColour:]">
+    <td colspan="6" height="23"><b>[:RoomName:]</b> </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body2-->
+  <tr>
+    <td width="229"><b>[:Component:]</b></td>
+    <td width="81" >[:RVal:]</td>
+    <td width="104" >[:GArea:]</td>
+    <td width="124" >[:NArea:]</td>
+    <td width="223" >[:HeatLd:]</td>
+    <td width="202" >[:CoolLd:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body3-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body4-->
+  <tr>
+    <td width="229"><b>Total Loss/Gain</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >[:HeatLd:]</td>
+    <td width="202" >[:CoolLd:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body5-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body6-->
+  <tr>
+    <td width="229"><b>Air Change</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >[:HeatVent:]</td>
+    <td width="202" >[:CoolVent:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body7-->
+  <tr>
+    <td width="229"><b>Internal Gain: People</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >-</td>
+    <td width="202" >[:PeopleGain:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body8-->
+  <tr>
+    <td width="229"><b>Internal Gain: Appliances</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >-</td>
+    <td width="202" >[:ApplGain:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body9-->
+  <tr>
+    <td colspan="6">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body10-->
+  <tr>
+    <td width="229"><b>Total Room Load</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >[:HeatLoad1:]</td>
+    <td width="202" >[:CoolLoad1:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body11-->
+  <tr>
+    <td width="229"><b>Air Flow Rate ([:CFM:])</b></td>
+    <td width="81" >-</td>
+    <td width="104" >-</td>
+    <td width="124" >-</td>
+    <td width="223" >[:HeatFlow:]</td>
+    <td width="202" >[:CoolFlow:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body12-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body13-->
+  <tr>
+    <td colspan="6"><b>[:GlobHeatSys:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body14-->
+   <tr>
+    <td colspan="6">[:GlobHeatSysDesc:]</td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body15-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body16-->
+  <tr>
+    <td colspan="6"><b>[:GlobDHWSys:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+  <!--TableRow:Body17-->
+  <tr>
+      <td colspan="6">[:GlobDHWSysDesc:]</td>
+  </tr>
+  <!--EndTableRow-->
+
+  <!--TableRow:Body18-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+
+  <!--TableRow:Body21-->
+    <tr>
+      <td colspan="6"><b>[:GlobVentSys:]</td>
+    </tr>
+  <!--EndTableRow-->
+
+  <!--TableRow:Body22-->
+    <tr>
+      <td colspan="6" height="5">
+        <hr noshade size="1">
+      </td>
+    </tr>
+  <!--EndTableRow-->
+
+  <!--TableRow:Body19-->
+  <tr>
+      <td colspan="6"><b>[:FoundIncluded:]</b></td>
+  </tr>
+  <!--EndTableRow-->
+
+  <!--TableRow:Body20-->
+  <tr>
+    <td colspan="6" height="5">
+      <hr noshade size="1">
+    </td>
+  </tr>
+  <!--EndTableRow-->
+
+  <!--EndTable-->
+</table>
+<p style="page-break-after:always;">&nbsp;</p>
+<!--EndTemplateBlock-->
+
+
+<!--TemplateBlock:SpaceHeatingSummary-->
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">CENTRAL SPACE HEATING SYSTEM</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:SpaceHeatSys1-->
+<table class="multiCols">
+  <tr>
+    <td><b>[:Pri:] Heating Fuel:</b></td>
+    <td>[:Fuel:]</td>
+  </tr>
+  <tr>
+    <td><b>Equipment:</b></td>
+    <td>[:Equip:][:Equip2:]</td>
+  </tr>
+  <tr>
+    <td><b>Manufacturer:</b></td>
+    <td>[:HseId0(7):]</td>
+  </tr>
+  <tr>
+    <td><b>Model:</b></td>
+    <td>[:HseId0(8):]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualSpaceHeatingSummary--> </b> </p>
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">SPACE HEATING SYSTEMS ANNUAL SUMMARY</p>
+<table class="multiCols" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%"><b>Design Heat Loss at [:Temp:] [:DEGREZ:] ([:UnitLoss:] [:WattPVol:]):</b></td>
+    <td width="30%">[:Loss:] [:Watt:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:SpecifiedOutputCapacity-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Specified Output Capacity:</b></td>
+    <td width="30%">[:SpecOut:] [:KW:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CalculatedOutputCapacity-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Calculated* Output Capacity:</b></td>
+    <td width="30%">[:SpecOut:] [:KW:]</td>
+  </tr>
+  <tr>
+    <td colspan="2">* Design Heat loss X [:SizeFactor:] + 0.5 kW</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:PilotLight-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Pilot Light energy consumption:</b></td>
+    <td width="30%">[:PLECON:] [:LKAL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:CentSpHeatEnergy-->
+<table class="multiCols">
+  <tr>
+    <td width="40%"><b>Central heating system energy consumption:</b></td>
+    <td width="60%">[:CSHECON:] [:LKAL:]</td>
+  </tr>
+</table>
+<p><!--EndTemplateBlock-->
+
+<!--TemplateBlock:AFUE--></b> </p>
+<table class="multiCols">
+  <tr>
+    <td width="37%"><b>AFUE:</b></td>
+    <td width="63%">[:AFUE:]</td>
+  </tr>
+  <tr>
+    <td width="40%"><b>Steady State Efficiency:</b></td>
+    <td width="60%">[:SSE:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:SSE-->
+<table class="multiCols">
+  <tr>
+    <td width="40%"><b>Steady State Efficiency:</b></td>
+    <td width="60%">[:SSE:] %</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboSpaceHeatingSummary-->
+<br/>
+<hr/>
+<p class="SectionHead">COMBO SPACE + DHW HEATING SYSTEM</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboSpaceHeatSys1-->
+<table class="multiCols">
+  <tr>
+    <td width="44%"><b>[:Pri:] Heating Fuel:</b></td>
+    <td width="56%">[:Fuel:]</td>
+  </tr>
+  <tr>
+    <td width="44%"><b>Equipment:</b></td>
+    <td width="56%">[:Equip:][:Equip2:]</td>
+  </tr>
+  <tr>
+    <td width="44%"><b>Manufacturer: </b></td>
+    <td width="56%">[:HseId0(7):]</td>
+  </tr>
+  <tr>
+    <td width="44%"><b>Model:</b></td>
+    <td width="56%">[:HseId0(8):]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboSpecifiedOutputCapacity-->
+<table class="multiCols">
+  <tr>
+    <td width="43%"><b>Specified Output Capacity:</b></td>
+    <td width="56%">[:SpecOut:] [:KW:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboCalculatedOutputCapacity-->
+<table class="multiCols">
+  <tr>
+    <td width="43%"><b>Calculated* Output Capacity:</b></td>
+    <td width="56%">[:SpecOut:] [:KW:]</td>
+  </tr>
+  <tr>
+    <td colspan="2">* Design Heat loss X [:SizeFactor:] + 0.5 kW</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboInsCap-->
+<p>Insufficient capacity specified: [:val1:] [:KW:] (Required = [:val2:] [:KW:])<br/>
+</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboPilotLight-->
+<table class="multiCols">
+  <tr>
+    <td width="43%"><b>Pilot Light energy consumption:</b></td>
+    <td width="56%">[:PLECON:] [:LKAL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboAFUE-->
+  </b><b> </b> </p>
+<table class="multiCols">
+  <tr>
+    <td width="43%"><b>AFUE:</b></td>
+    <td width="57%">[:AFUE:]</td>
+  </tr>
+  <tr>
+    <td width="43%"><b>Steady State Efficiency:</b></td>
+    <td width="57%">[:SSE:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:ComboSSE-->
+<table class="multiCols">
+  <tr>
+    <td width="43%"><b>Steady State Efficiency:</b></td>
+    <td width="57%">[:SSE:] %</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+ <!--TemplateBlock:RadiantHydronicHeat-->
+ <p><b>Radiant / Hydronic Heating</b></p>
+ <!--Table:RadiantHydronicHeatTable-->
+<table border="0" cellspacing="0" cellpadding="3" width="655">
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td colspan="2" bgcolor="#000000">
+      <div align="left"><b><font color="#FFFFFF">Location</font></b> </div>
+    </td>
+    <td width="251">
+      <div > <b><font color="#FFFFFF">Effective Temp. (Deg [:DEGREZ:])</font></b></div>
+    </td>
+    <td width="204">
+      <div ><b><font color="#FFFFFF">% of Total Area</font></b></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor=[:BGColour:]>
+    <td colspan="2">
+      <div align="left">[:CompType:]</div>
+    </td>
+    <td width="251">
+      <div >[:EffTemp:]</div>
+    </td>
+    <td width="204">
+      <div >[:TotArea:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable--><br/>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RadiantHeat-->
+<p><br/>
+  <b>Radiant ceiling/floor heating</b>
+  <!--Table:RadiantHeatTable-->
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td colspan="2" bgcolor="#000000">
+      <div align="left"><b><font color="#FFFFFF">Component Type</font></b> </div>
+    </td>
+    <td width="203">
+      <div > <b><font color="#FFFFFF">Component Location</font></b></div>
+    </td>
+    <td width="234">
+      <div > <b><font color="#FFFFFF">Effective Temp. (Deg [:DEGREZ:])</font></b></div>
+    </td>
+    <td width="171">
+      <div ><b><font color="#FFFFFF">% of Total Area</font></b></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor=[:BGColour:]>
+    <td colspan="2">[:CompType:]</td>
+    <td width="203">
+      <div >[:CompLoc:]</div>
+    </td>
+    <td width="234">
+      <div >[:EffTemp:]</div>
+    </td>
+    <td width="171">
+      <div >[:TotArea:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable--><br/>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:RadiantError-->
+ <p><b>Radiant heating selected, but NOT defined</b></p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AirConSystem-->
+<br/>
+<hr/>
+<p class="SectionHead">CENTRAL AIR CONDITIONING SYSTEM</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AC1-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="19%"><b>System Type:</b></td>
+    <td width="41%">[:SysType:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Manufacturer:</b></td>
+    <td width="41%">[:HseId0(13):] </td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b> Model:</b></td>
+    <td width="41%">[:HseId0(14):]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b> Capacity:</b></td>
+    <td width="41%">[:AIRCAP:] [:WATTS:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b> SEER</b></td>
+    <td width="41%">[:SEER:]</td>
+    <td width="13%"><b>Rated COP</b></td>
+    <td width="27%">[:AIRCOP:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Sensible Heat Ratio:</b></td>
+    <td width="41%">[:ACSHRA:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%" height="15"><b>Indoor Fan Flow Rate:</b></td>
+    <td width="41%" height="15">[:AIRFLO:] [:VFL:]</td>
+    <td width="13%" height="15"><b>Fan Power (watts)</b></td>
+    <td width="27%" height="15">[:ACqFan:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Ventilator Flow Rate:</b></td>
+    <td width="41%">[:Ventvntr:] [:VFL:]</td>
+    <td width="19%"><b>Crankcase Heater Power (watts):</b></td>
+    <td width="41%">[:ACCch:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Fraction of windows Openable </b></td>
+    <td width="41%">[:Fglz:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AC2-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="19%"><b>System Type:</b></td>
+    <td width="41%">[:SysType:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Manufacturer:</b></td>
+    <td width="41%">[:HseId0(13):] </td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b> Model:</b></td>
+    <td width="41%">[:HseId0(14):]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%"><b> Capacity:</b></td>
+    <td width="41%">[:AIRCAP:] [:WATTS:]</td>
+    <td width="13%"><b>Rated COP</b></td>
+    <td width="27%">[:AIRCOP:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Sensible Heat Ratio:</b></td>
+    <td width="41%">[:ACSHRA:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="19%" height="15"><b>Indoor Fan Flow Rate:</b></td>
+    <td width="41%" height="15">[:AIRFLO:] [:VFL:]</td>
+    <td width="13%" height="15"><b>Fan Power (watts)</b></td>
+    <td width="27%" height="15">[:ACqFan:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Ventilator Flow Rate:</b></td>
+    <td width="41%">[:Ventvntr:] [:VFL:]</td>
+    <td width="19%"><b>Crankcase Heater Power (watts):</b></td>
+    <td width="41%">[:ACCch:]</td>
+  </tr>
+  <tr>
+    <td width="19%"><b>Fraction of windows Openable </b></td>
+    <td width="41%">[:Fglz:]</td>
+    <td width="13%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AC3-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="19%"><b>Economizer control:</b></td>
+    <td width="34%">[:FILLST(1):]</td>
+    <td width="19%"><b>Indoor Fan Operation:</b></td>
+    <td width="28%">[:FILLST(2):]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AC4--><p><b>Air Conditioner is
+  integrated with the Heating System</b> </p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:HRVCredit-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="39%"><b>Including credit for HRV ([:UnitLoss:] [:WattPVol:]):</b></td>
+    <td width="28%">[:Loss:] [:ZLABL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DomesticWaterHeatingSystem-->
+<p>&nbsp;
+</p>
+<hr/>
+<p class="SectionHead">CENTRAL DOMESTIC WATER HEATING SYSTEM</p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DHW1--><p><b>No Central
+  DHW system installed</b></p>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DHW2-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>[:PRI:] Water Heating Fuel:</b></td>
+    <td width="30%">[:FUELT:] [:KW:]</td>
+  </tr>
+  <tr>
+    <td width="20%"><b>Water Heating Equipment:</b></td>
+    <td width="30%">[:WaterHeatEquip:] </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DHW3-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Manufactuer:</b></td>
+    <td width="30%">[:Man:]</td>
+  </tr>
+  <tr>
+    <td width="20%"><b>Model:</b></td>
+    <td width="30%">[:Mod:] </td>
+  </tr>
+</table><!--EndTemplateBlock-->
+
+<!--TemplateBlock:CSIA-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>CSIA Solar Collector Rating:</b></td>
+    <td width="30%">[:CSIA:] MJ/Year</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DHW2a--></b></p>
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>[:PRI:] Water Heating Fuel:</b></td>
+    <td width="30%">[:FUELT:] [:KW:]</td>
+  </tr>
+  <tr>
+    <td><b>Water Heating Equipment:</b></td>
+    <td>[:WaterHeatEquip:] </td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnFaca-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Energy Factor:</b></td>
+    <td width="30%">[:EnFac:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:DHW3a-->
+<table class="multiCols">
+  <tr>
+    <td width="57%"><b>Manufactuer:</b></td>
+    <td width="43%">[:Man:]</td>
+  </tr>
+  <tr>
+    <td width="57%"><b>Model:</b></td>
+    <td width="43%">[:Mod:] </td>
+  </tr>
+</table><!--EndTemplateBlock-->
+
+<!--TemplateBlock:CSIAa-->
+<table class="multiCols">
+  <tr>
+    <td width="57%"><b>CSIA Solar Collector Rating:</b></td>
+    <td width="43%">[:CSIA:] MJ/Year</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnFac1-->
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Energy Factor:</b></td>
+    <td width="30%">[:EnFac:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualSpaceHeatingSummary2-->
+<table class="multiCols">
+  <tr>
+      <td width="20%"><b>Gross Space Heat Loss:</b></td>
+     <td width="30%">[:CH71:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="20%"><b>Gross Space Heating Load:</b></td>
+    <td width="30%">[:CH85:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Usable Internal Gains:</b></td>
+    <td>[:CH75:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Usable Internal Gains Fraction:</b></td>
+    <td>[:AIGF:] %</td>
+  </tr>
+  <tr>
+    <td><b>Usable Solar Gains:</b></td>
+    <td>[:CH73:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Usable Solar Gains Fraction:</b></td>
+    <td>[:ASF:] %</td>
+  </tr>
+  <tr>
+    <td><b>Auxilary Energy Required:</b></td>
+    <td>[:CH74:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>Space Heating Systems Load:</b></td>
+    <td>[:CH76:] [:ELABL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualSpaceCoolingSummary-->
+
+<p>&nbsp;
+</p>
+<hr/>
+<p class="SectionHead">ANNUAL SPACE COOLING SUMMARY</p>
+<table class="multiCols">
+  <tr>
+    <td><b>Design Cooling Load for [:Val:] at [:Temp:] [:DEGREZ:]:</b></td>
+    <td>[:ACAPDE:] [:ZLABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Design Sensible Heat Ratio:</b></td>
+    <td>[:ASHRDE:]</td>
+  </tr>
+  <tr>
+    <td><b>Estimated Annual Space Cooling Energy:</b></td>
+    <td>[:Val2:]</td>
+  </tr>
+  <tr>
+    <td><b>Seasonal COP ( [:Val3:] to [:Val4:]):</b></td>
+    <td>[:ACMCOP(13):]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualDHWSummary-->
+<p>&nbsp;
+</p>
+<hr/>
+<p class="SectionHead">ANNUAL DOMESTIC WATER HEATING SUMMARY</p>
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Daily Hot Water Consumption:</b></td>
+    <td width="30%">[:HOTWAT:] [:WLABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Hot Water Temperature:</b></td>
+    <td>[:DHWDat(2):] [:DEGREZ:]</td>
+  </tr>
+  <tr>
+    <td><b>Estimated Domestic Water Heating Load:</b></td>
+    <td>[:CH71:] [:ELABL:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualDHWEnergySummary-->
+<br/>
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>[:PRI:] Domestic Water Heating Energy Consumption:</b></td>
+    <td width="30%">[:CH71:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>[:PRI:] System Seasonal Efficiency:</b></td>
+    <td>[:SPDWEF:]%</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualDHWEnergySummary2-->
+<br/>
+<table class="multiCols">
+  <tr>
+    <td><b>[:PRI:] Domestic Water Heating Energy Consumption:</b></td>
+    <td>[:CH71:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>[:PRI:] System Seasonal Efficiency:</b></td>
+    <td>[:SPDWEF:]%</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualDHWEnergyConsumption-->
+<br/>
+<table class="multiCols">
+  <tr>
+    <td width="20%"><b>Annual Domestic Water Heating Energy Consumption:</b></td>
+    <td width="30%">[:CH71Tot:] [:ELABL:]</td>
+  </tr>
+  </table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:AnnualSolarDHWSummary-->
+<table class="multiCols">
+  <tr>
+    <td><b>Solar Domestic Water Heating System Contribution:</b></td>
+    <td>[:CH71:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>Domestic Water Heating Energy Consumption:</b></td>
+    <td>[:CH72:] [:ELABL:]</td>
+  </tr>
+  <tr>
+    <td><b>System Seasonal Efficiency:</b></td>
+    <td>[:SECNDY:] [:SPDWEF:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary-->
+<p>&nbsp;
+</p>
+<hr/>
+<p class="SectionHead">BASE LOADS SUMMARY</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<th>
+  <tr>
+   <tr> 
+    <td width="5%">&nbsp;</td>
+    <td class="colname">&nbsp;</td>
+    <td width="25%"><b>kwh/day</b></td>
+    <td width="27%"><b>Annual kWh</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Interior Lighting</b></td>
+    <td width="25%">[:IntLight:]</td>
+    <td width="27%">[:AIntLight:]</td>
+  </tr>
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%"><b>Appliances</b></td>
+    <td width="25%">[:App:]</td>
+    <td width="27%">[:AApp:]</td>
+  </tr>
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%"><b>Other</b></td>
+    <td width="25%">[:Other:]</td>
+    <td width="27%">[:AOther:]</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Exterior Use</b></td>
+    <td width="25%">[:ExtElc:]</td>
+    <td width="27%">[:AExtElc:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary1-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>HVAC Fans</b></td>
+    <td width="25%">[:HVACFan:]</td>
+    <td width="27%">[:AHVACFan:]</td>
+  </tr>
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%"><b>HRV/Exhaust</b></td>
+    <td width="25%">[:HRVEx:]</td>
+    <td width="27%">[:AHRVEx:]</td>
+  </tr>
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%"><b>Space Heating</b></td>
+    <td width="25%">[:SpaceHeat:]</td>
+    <td width="27%">[:ASpaceHeat:]</td>
+  </tr>
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%"><b>Space Cooling</b></td>
+    <td width="25%">[:SpaceCool:]</td>
+    <td width="27%">[:ASpaceCool:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary2-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Total Average Electrical Load</b></td>
+    <td width="25%">[:Tot:]</td>
+    <td width="27%">[:ATot:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary3-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td width="43%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Total Average Electrical Load</b></td>
+    <td width="25%">[:Tot:]</td>
+    <td width="27%">[:ATot:]</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary4-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <br/>
+  <tr>
+    <td width="5%"><b>[:Label1:] Stove </b></td>
+    <td width="43%"><b>Location: </b>[:Loc:]</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Energy consumption: </b>[:EnerConsumption:] [:Units:]/Day</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary5-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <br/>
+  <tr>
+    <td width="5%"><b>[:Label1:] Dryer </b></td>
+    <td width="43%"><b>Location: </b>[:Loc:]</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Energy consumption: </b>[:EnerConsumption:] [:Units:]/Day</td>
+  </tr>
+</table>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:BaseLoadsSummary6-->
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">[:CreditType:] Energy Credits</p>
+<!--EndTemplateBlock-->
+ 
+<!--TemplateBlock:BaseLoadsSummary7--> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="2"><b>Energy Efficient Lighting Credits</b></td>
+  </tr>
+ [:LightStart0:] <tr>  
+    <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Kitchen</b></td>
+    <td class="coldata">110 kWh</td>
+  </tr> [:LightEnd0:]
+   [:LightStart1:]<tr>  
+    <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Main hallway</b></td>
+    <td class="coldata">70 kWh</td>
+  </tr>[:LightEnd1:]
+   [:LightStart2:]<tr>  
+      <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Living room</b></td>
+    <td class="coldata">65 kWh</td>
+  </tr>[:LightEnd2:]
+   [:LightStart3:]<tr>  
+     <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Family room</b></td>
+    <td class="coldata">65 kWh</td>
+  </tr>[:LightEnd3:]
+   [:LightStart4:]<tr>  
+      <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Dining room, or bedroom, or entrance, or bathroom, or finished 
+      room </b></td>
+    <td class="coldata">17 kWh</td>
+  </tr>[:LightEnd4:]
+  [:LightStart5:] <tr>  
+      <td class="colname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Utility or laundry room,or unfinished room</b></td>
+    <td class="coldata">9 kWh</td>
+  </tr>[:LightEnd5:]
+  </table>
+<!--EndTemplateBlock-->
+ <!--TemplateBlock:BaseLoadsSummary8-->
+	<table>
+    [:CreditStart0:] <tr>
+    <td class="colname"><b>Electronic Thermostats</b></td>
+    <td class="coldata">[:CreditVal0:] kWh</td>
+  </tr>[:CreditEnd0:]
+  [:CreditStart1:] <tr>
+    <td class="colname"><b>Ventilation system</b></td>
+    <td class="coldata"[:CreditVal1:] kWh</td>
+  </tr>[:CreditEnd1:]
+  [:CreditStart2:] <tr>
+    <td class="colname"><b>Attached Garage</b></td>
+    <td class="coldata">[:CreditVal2:] kWh</td>
+  </tr>[:CreditEnd2:]
+  [:CreditStart3:] <tr>
+    <td class="colname"><b>Photovoltaic solar panels (PV arrays)</b></td>
+    <td class="coldata">[:CreditVal3:] kWh</td>
+  </tr>[:CreditEnd3:]
+  [:CreditStart4:] <tr>
+    <td class="colname"><b>Wind energy contribution</b></td>
+    <td class="coldata">[:CreditVal4:] kWh</td>
+  </tr>[:CreditEnd4:]
+    [:CreditStart5:] <tr>
+    <td class="colname"><b>Other Credits 1</b></td>
+    <td class="coldata">[:CreditVal5:] kWh</td>
+  </tr>[:CreditEnd5:]
+    [:CreditStart6:] <tr>
+    <td class="colname"><b>Other Credits 2</b></td>
+    <td class="coldata">[:CreditVal6:] kWh</td>
+  </tr>[:CreditEnd6:]
+  [:CreditStart7:] <tr>
+    <td class="colname"><b>Allowance for EnerGuide rating of 80</b></td>
+    <td class="coldata">[:CreditVal7:] kWh</td>
+  </tr>[:CreditEnd7:]
+  <tr>
+    <td class="colname">&nbsp;</td>
+    <td class="coldata">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="colname"><b>Total</b></td>
+    <td class="coldata">[:CreditTotal:] kWh</td>
+  </tr>
+</table>
+<p><b><!--EndTemplateBlock-->
+
+<!--TemplateBlock:FanOperationSummary--></B></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   FAN OPERATION SUMMARY (kWh)</P>
+
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       <B>Hours</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       <B>HRV/Exhaust Fans</B></TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       <B>Space Heating</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       <B>Space Cooling</B></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       <B>Heating</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM11:]</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       [:FANSUM12:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM13:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       <B>Neither</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM21:]</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       [:FANSUM22:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM23:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       <B>Cooling</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM31:]</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       [:FANSUM32:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM33:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="21%" VALIGN=CENTER>
+      <P>
+       <B>Total</B></TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM41:]</TD>
+     <TD WIDTH="25%" VALIGN=CENTER>
+      <P>
+       [:FANSUM42:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       [:FANSUM43:]</TD>
+    </TR>
+   </TABLE>
+  <P>
+   &nbsp;</P>
+  <P>
+   <!--EndTemplateBlock--><!--TemplateBlock:R2000Report--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   R-2000 HOME PROGRAM ENERGY CONSUMPTION SUMMARY REPORT</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual Space Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:SPCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KSPCON:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Ventilator Electrical Consumption: Heating Hours</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:MaCVEHH:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:aCVEHH:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual DHW Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:DWCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KDWCON:] kWh</TD>
+    </TR>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>ESTIMATED ANNUAL SPACE + DHW ENERGY CONSUMPTION</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:ASDHEC:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KASDHEC:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>ANNUAL R-2000 SPACE + DHW ENERGY CONSUMPTION TARGET</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:R2KTAR:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KR2KTAR:] kWh</TD>
+    </TR>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Greenhouse Gas Emissions</B></TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       [:GGE:] tonnes/year</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:SuperEReport--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   SUPER-E HOME PROGRAM ENERGY CONSUMPTION SUMMARY REPORT</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual Space Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:SPCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KSPCON:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Ventilator Electrical Consumption: Heating Hours</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:MaCVEHH:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:aCVEHH:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual DHW Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:DWCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KDWCON:] kWh</TD>
+    </TR>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>ESTIMATED ANNUAL SPACE + DHW ENERGY CONSUMPTION</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:ASDHEC:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KASDHEC:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>SUPER-E SPACE + DHW ENERGY CONSUMPTION TARGET</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:R2KTAR:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KR2KTAR:] kWh</TD>
+    </TR>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Greenhouse Gas Emissions</B></TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       [:GGE:] tonnes/year</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnerguideReport--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   ENERGUIDE FOR HOUSES ENERGY CONSUMPTION SUMMARY REPORT</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual Space Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:SPCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KSPCON:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Ventilator Electrical Consumption: Heating Hours</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:MaCVEHH:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:aCVEHH:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Annual DHW Heating Energy Consumption</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:DWCON:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KDWCON:] kWh</TD>
+    </TR>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>ESTIMATED ANNUAL SPACE + DHW ENERGY CONSUMPTION</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       = [:ASDHEC:] MJ</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       = [:KASDHEC:] kWh</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>ENERGUIDE RATING (0 to 100)</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       [:ERate:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="54%" VALIGN=CENTER>
+      <P>
+       <B>EnerGuide Required Ventilation Capacity (Central)</B></TD>
+     <TD WIDTH="19%" VALIGN=CENTER>
+      <P>
+       [:EGRVC:] [:VFL:]</TD>
+     <TD WIDTH="27%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <tr>
+    <td width="54%" VALIGN=CENTER><b>[:RatingAccurateText:]</b></td>
+    <td width="19%" VALIGN=CENTER>[:RatingAccurateValue:]</td>
+    <td width="27%" VALIGN=CENTER>&nbsp;</td>
+    </tr>
+   </TABLE>
+   <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="39%" VALIGN=CENTER>
+      <P>
+       <B>Estimated Greenhouse Gas Emissions</B></TD>
+     <TD WIDTH="61%" VALIGN=CENTER>
+      <P>
+       [:GGE:] tonnes/year</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:EnergyConsumptionReport-->
+
+<p><br/>
+</p>
+<hr/>
+<p class="SectionHead">ENERGY CONSUMPTION SUMMARY REPORT</p>
+<p>&nbsp; </p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="54%"><b>Estimated Annual Space Heating Energy Consumption</b></td>
+    <td width="19%">= [:SPCON:] MJ</td>
+    <td width="27%">= [:KSPCON:] kWh</td>
+  </tr>
+  <tr>
+    <td width="54%"><b>Ventilator Electrical Consumption: Heating Hours</b></td>
+    <td width="19%"> = [:MaCVEHH:] MJ</td>
+    <td width="27%">= [:aCVEHH:] kWh</td>
+  </tr>
+  <tr>
+    <td width="54%"><b>Estimated Annual DHW Heating Energy Consumption</b></td>
+    <td width="19%"> = [:DWCON:] MJ</td>
+    <td width="27%">= [:KDWCON:] kWh</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="54%">&nbsp;</td>
+    <td width="19%">&nbsp;</td>
+    <td width="27%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="54%"><b>ESTIMATED ANNUAL SPACE + DHW ENERGY CONSUMPTION</b></td>
+    <td width="19%"> = [:ASDHEC:] MJ</td>
+    <td width="27%">= [:KASDHEC:] kWh</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="39%">&nbsp;</td>
+    <td width="61%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="39%"><b>Estimated Greenhouse Gas Emissions</b></td>
+    <td width="61%"> [:GGE:] tonnes/year</td>
+  </tr>
+</table>
+<b> </b>
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedAnnualFuelConsumptionSummary-->
+<p>&nbsp;
+</p>
+<hr/>
+<p class="SectionHead">ESTIMATED ANNUAL FUEL CONSUMPTION SUMMARY</p>
+<p><!--Table:FuelConsumptionSummaryTable--> </p>
+<table >
+  <!--TableRow:Header-->
+  <tr bgcolor="#000000">
+    <td width="150">
+      <div align="left"><b><font color="#FFFFFF">Fuel</font></b></div>
+    </td>
+    <td width="108">
+      <p ><b><font color="#FFFFFF">Space Heating</font></b></p>
+    </td>
+    <td width="118">
+      <div ><b><font color="#FFFFFF">Space Cooling</font></b></div>
+    </td>
+    <td width="113">
+      <div ><b><font color="#FFFFFF">DHW Heating</font></b></div>
+    </td>
+    <td width="89">
+      <div ><b><font color="#FFFFFF">Appliance</font></b></div>
+    </td>
+    <td width="112">
+      <div ><font color="#FFFFFF"><b>Total</b></font></div>
+    </td>
+  </tr>
+  <!--EndTableRow--> <!--TableRow:Body-->
+  <tr bgcolor="[:BGColor:]">
+    <td width="150"><b>[:SRCE:] ([:ZLABL:])</b></td>
+    <td width="108">
+      <div >[:FULCON1:]</div>
+    </td>
+    <td width="118">
+      <div >[:FULCON2:]</div>
+    </td>
+    <td width="113">
+      <div >[:FULCON3:]</div>
+    </td>
+    <td width="89">
+      <div >[:FULCON4:]</div>
+    </td>
+    <td width="112">
+      <div >[:FULCON5:]</div>
+    </td>
+  </tr>
+  <!--EndTableRow-->
+</table>
+<!--EndTable--><!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedAnnualFuelCostsSummary--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   ESTIMATED ANNUAL FUEL CONSUMPTION COSTS</P>
+  <P>
+   Fuel Costs Library = [:FuelCostLibrary:]
+<!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedAnnualError--><BR>
+   Problem @ Fuel = [:Fuel:] [Fuel lib incomplete] <B><!--EndTemplateBlock--><!--TemplateBlock:EstimatedAnnualFuelConsumptionSummary2--></B></P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="150" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">RATE</FONT></B></TD>
+     <TD WIDTH="108" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Electricity</FONT></B><BR>
+       <B><FONT COLOR="WHITE">([:Type1:])</FONT></B></TD>
+     <TD WIDTH="118" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Natural Gas</FONT></B><BR>
+       <B><FONT COLOR="WHITE">([:Type2:])</FONT></B></TD>
+     <TD WIDTH="113" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Oil</FONT></B><BR>
+       <B><FONT COLOR="WHITE">([:Type3:])</FONT></B></TD>
+     <TD WIDTH="89" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Propane</FONT></B><BR>
+       <B><FONT COLOR="WHITE">([:Type4:])</FONT></B></TD>
+     <TD WIDTH="112" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Wood</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:Type5:])</B></FONT></TD>
+     <TD WIDTH="112" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Total</FONT></B></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="150" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B>$</B></TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA1:]</TD>
+     <TD WIDTH="118" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA2:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA3:]</TD>
+     <TD WIDTH="89" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA4:]</TD>
+     <TD WIDTH="112" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA5:]</TD>
+     <TD WIDTH="112" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:FCOSTA6:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:MonthlyEnergyProfile--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   MONTHLY ENERGY PROFILE</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="153" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Energy Load</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="128" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Internal Gains</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="116" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Solar Gains</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="113" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Aux. Energy</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="153" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>HRV Eff.</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>%</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="128" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="116" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="153" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="128" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="116" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="153" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="153" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="128" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="116" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="113" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="153" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:HRVEFF(13)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:FoundationEnergyProfile--></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   FOUNDATION ENERGY PROFILE</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD COLSPAN="5" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Heat Loss ([:WLABL:])</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="143" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Crawl Space</B></FONT></TD>
+     <TD WIDTH="130" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Slab</B></FONT></TD>
+     <TD WIDTH="133" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Basement</B></FONT></TD>
+     <TD WIDTH="113" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Walkout</B></FONT></TD>
+     <TD WIDTH="144" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Total</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="143" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="130" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="133" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="113" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="143" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="130" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="133" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="113" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="143" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="130" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="133" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="113" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="144" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:FoundationTempuratureVentialtionProfile--></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   FOUNDATION TEMPERATURES &amp; VENTILATION PROFILE</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD COLSPAN="3" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Temperature (Deg [:DEGREZ:])</FONT></B></TD>
+     <TD COLSPAN="2" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Air Change Rate</FONT></B></TD>
+     <TD WIDTH="145" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">Heat Loss</FONT></B></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Crawl Space</B></FONT></TD>
+     <TD WIDTH="101" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Basement</B></FONT></TD>
+     <TD WIDTH="91" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Walkout</B></FONT></TD>
+     <TD WIDTH="90" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Natural</B></FONT></TD>
+     <TD WIDTH="108" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Total</B></FONT></TD>
+     <TD WIDTH="145" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>([:WLABL:]</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="101" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="90" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="108" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+     <TD WIDTH="145" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="101" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="90" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="108" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+     <TD WIDTH="145" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="101" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="91" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="90" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="108" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+     <TD WIDTH="145" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:SpaceHeatingSystemPerformance--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   SPACE HEATING SYSTEM PERFORMANCE</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Space Heating Load</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="91" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Furnace Input</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="81" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Pilot Light</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Indoor Fans</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Heat Pump Input</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Total Input</B></FONT><BR>
+       <FONT COLOR="WHITE"><B>([:WLABL:])</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>System Cop</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)1:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)2:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)3:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)4:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)5:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)6:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)7:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)8:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)9:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)10:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)11:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)12:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="91" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="81" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)13:]</TD>
+     <TD WIDTH="109" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:ACSystemPerformance--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   AIR CONDITIONING SYSTEM PERFORMANCE</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Sensible</B></FONT></TD>
+     <TD WIDTH="91" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Latent</B></FONT></TD>
+     <TD WIDTH="81" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>AirCond</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Fan</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Ventilator</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Total</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>COP</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Av.RH</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)1:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)1:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)2:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)2:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)3:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)3:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)4:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)4:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)5:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)5:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)6:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)6:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)7:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)7:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)8:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)8:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)9:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)9:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)10:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)10:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)11:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)11:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)12:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)12:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="91" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="81" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)13:]</TD>
+     <TD WIDTH="109" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)13:]</TD>
+     <TD WIDTH="109" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(8)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:MonthlyEnergyConsumptionProfile--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   MONTHLY ESTIMATED ENERGY CONSUMPTION BY DEVICE ([:UNITLABL:])</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P>
+       &nbsp;</TD>
+     <TD COLSPAN="2" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Space Heating</B></FONT></TD>
+     <TD COLSPAN="2" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <B><FONT COLOR="WHITE">DHW Heating</FONT></B></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Lights &amp;</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>HRV &amp;</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Air</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <!-- $MVD$:spaceretainer() -->&nbsp;<BR>
+       <FONT COLOR="WHITE"><B>Primary</B></FONT></TD>
+     <TD WIDTH="91" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Secondary</B></FONT></TD>
+     <TD WIDTH="81" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Primary</B></FONT></TD>
+     <TD WIDTH="86" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Secondary</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Appliances</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>FANS</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Conditioner</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)1:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)2:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)3:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)4:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)5:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)6:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)7:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)8:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)9:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)10:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="91" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+     <TD WIDTH="86" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)11:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="91" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+     <TD WIDTH="86" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)12:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="91" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="81" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+     <TD WIDTH="86" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)13:]</TD>
+     <TD WIDTH="109" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(7)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedFuelCosts--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   ESTIMATED FUEL COSTS (Dollars)</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Electricity</B></FONT></TD>
+     <TD WIDTH="104" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Natural Gas</B></FONT></TD>
+     <TD WIDTH="81" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Oil</B></FONT></TD>
+     <TD WIDTH="94" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Propane</B></FONT></TD>
+     <TD WIDTH="115" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Wood</B></FONT></TD>
+     <TD WIDTH="144" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Total</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="104" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="81" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="94" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="115" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+     <TD WIDTH="144" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="104" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="81" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="94" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="115" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+     <TD WIDTH="144" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="104" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="81" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="94" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="115" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+     <TD WIDTH="144" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(6)13:]</TD>
+    </TR>
+</TABLE><B><!--EndTemplateBlock-->
+
+<!--TemplateBlock:EstimatedAnnualError2--></B><BR>
+   Problem @ Fuel = [:Fuel:] [Fuel lib incomplete] <!--EndTemplateBlock--><!--TemplateBlock:MonthlyVariableFuelRates--></P>
+  <P>
+   &nbsp;</P>
+  <P STYLE="text-align : center;" ALIGN=CENTER>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P CLASS="SectionHead">
+   Monthly Variable Fuel Rates</P>
+  <P>
+   Fuel Costs Library = [:FuelCostLibrary:]</P>
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="3" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD WIDTH="67" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Month</B></FONT></TD>
+     <TD WIDTH="121" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Electricity</B></FONT></TD>
+     <TD WIDTH="109" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Natural Gas</B></FONT></TD>
+     <TD WIDTH="106" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Oil</B></FONT></TD>
+     <TD WIDTH="135" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Propane</B></FONT></TD>
+     <TD WIDTH="193" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       <FONT COLOR="WHITE"><B>Wood</B></FONT></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jan</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)1:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)1:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)1:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)1:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)1:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Feb</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)2:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)2:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)2:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)2:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)2:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Mar</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)3:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)3:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)3:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)3:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)3:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Apr</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)4:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)4:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)4:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)4:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)4:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>May</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)5:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)5:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)5:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)5:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)5:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Jun</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)6:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)6:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)6:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)6:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)6:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Jul</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)7:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)7:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)7:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)7:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)7:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Aug</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)8:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)8:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)8:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)8:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)8:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Sep</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)9:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)9:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)9:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)9:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)9:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Oct</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)10:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)10:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)10:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)10:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)10:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P>
+       <B>Nov</B></TD>
+     <TD WIDTH="121" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)11:]</TD>
+     <TD WIDTH="109" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)11:]</TD>
+     <TD WIDTH="106" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)11:]</TD>
+     <TD WIDTH="135" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)11:]</TD>
+     <TD WIDTH="193" BGCOLOR="#EEEEEE" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)11:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" VALIGN=CENTER>
+      <P>
+       <B>Dec</B></TD>
+     <TD WIDTH="121" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)12:]</TD>
+     <TD WIDTH="109" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)12:]</TD>
+     <TD WIDTH="106" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)12:]</TD>
+     <TD WIDTH="135" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)12:]</TD>
+     <TD WIDTH="193" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)12:]</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="67" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P>
+       <B>Ann</B></TD>
+     <TD WIDTH="121" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(1)13:]</TD>
+     <TD WIDTH="109" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(2)13:]</TD>
+     <TD WIDTH="106" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(3)13:]</TD>
+     <TD WIDTH="135" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(4)13:]</TD>
+     <TD WIDTH="193" BGCOLOR="#99CCFF" VALIGN=CENTER>
+      <P STYLE="text-align : center;" ALIGN=CENTER>
+       [:EC(5)13:]</TD>
+    </TR>
+</TABLE><!--EndTemplateBlock-->
+
+<!--TemplateBlock:Footer--></P>
+  <P>
+   The calculated heat losses and energy consumptions are only
+   estimates, based upon the data entered and assumptions within the
+   program. Actual energy consumption and heat losses will be influenced
+   by construction practices, localized weather, equipment
+   characteristics and the lifestyle of the occupants.
+ </DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV></BODY>
+</html>
