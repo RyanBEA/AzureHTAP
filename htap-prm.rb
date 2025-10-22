@@ -951,7 +951,7 @@ def process_completed_runs(thread_indices, batchStatusUpdate, batchStartTime, he
         if section.eql?("status") || section.eql?("configuration")
           this_run_results[section].keys.each do |node|
             debug_out("  ------ #{section}/#{node}\n")
-            if section == status && node == "success" && $RunResults[run_key][section][node] == false
+            if section == "status" && node == "success" && $RunResults[run_key][section][node] == false
               next
             else
               $RunResults[run_key][section][node] = this_run_results[section][node]
