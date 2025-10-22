@@ -677,7 +677,581 @@ end
 #======================================================================================================
 =end
 
+def launch_run_for_thread(thread, choicefile, snail_delay: false)
+  update_run_status(action: "Spawning threads")
+
+  $choicefiles[thread] = choicefile
+  $H2kFile = $gArchetypeHash[choicefile]
+  $Ruleset = $gRulesetHash[choicefile]
+  $Location = $gLocationHash[choicefile]
+
+  if $H2kFile.nil?
+    fatalerror("No archetype mapped for choice file '#{choicefile}'")
+  end
+
+  $RunNumber = $RunNumber + 1
+  run_dir = $RunDirs[thread]
+  save_dir = "#{$SaveDirectoryRoot}-#{$RunNumber}"
+
+  $RunNumbers[thread] = $RunNumber
+  $SaveDirs[thread]   = save_dir
+
+  unless Dir.exist?(run_dir)
+    Dir.mkdir(run_dir) || fatalerror(" Fatal Error! Could not create #{run_dir} below #{$gMasterPath}!\n MKDir Return code: #{$?}\n")
+  else
+    begin
+      FileUtils.rm_r Dir.glob("#{run_dir}/*.*")
+    rescue
+      warn_out("Could not delete files from within #{run_dir} (Try #1/3)\n")
+      attempts = 1
+      while attempts < 3
+        begin
+          sleep 5
+          FileUtils.rm_r Dir.glob("#{run_dir}/*.*")
+          break
+        rescue
+          attempts += 1
+          warn_out("Could not delete files from within #{run_dir} (Try ##{attempts}/3)\n")
+          if attempts == 3
+            warn_out("Trying to run simulation without deleting files in #{run_dir}")
+          end
+        end
+      end
+    end
+  end
+
+  if $choicesInMemory
+    choicefile_handle = File.open("#{run_dir}/#{choicefile}", 'w')
+    choicefile_handle.write($ChoiceFileContents[choicefile])
+    choicefile_handle.close
+  else
+    FileUtils.cp(choicefile, run_dir)
+  end
+
+  FileUtils.cp($gHTAPOptionsFile, run_dir)
+  FileUtils.cp("#{$gArchetypeDir}\\#{$H2kFile}", run_dir)
+
+  if $gComputeCosts || $gLEEPPathwayExport
+    begin
+      FileUtils.cp($gCostingFile, run_dir)
+    rescue
+      err_out("Unit cost database ('#{$gCostingFile}') was not copied successfully.")
+      fatalerror("Failed to copy unit-cost DB")
+    end
+  end
+
+  Dir.chdir(run_dir)
+
+  run_key = "run-#{thread}"
+  $RunResults[run_key] = {
+    "status" => {
+      "success" => nil,
+      "errors" => Array.new,
+      "warnings" => Array.new
+    },
+    "configuration" => Hash.new,
+    "input" => Hash.new,
+    "archetype" => Hash.new,
+    "output" => Hash.new,
+    "cost-estimates" => Hash.new
+  }
+
+  $LocalChoiceFile  = File.basename(choicefile)
+  $LocalOptionsFile = File.basename($gHTAPOptionsFile)
+
+  subCostFlag = ""
+  subRulesetsFlag = ""
+  subCostFlag = "--auto_cost_options --unit-cost-db #{$gCostingFile}" if $gComputeCosts
+  subRulesetsFlag = "--rulesets #{$gRulesetsFile}" unless $gRulesetsFile.to_s.empty?
+
+  cmdscript =  "ruby #{$gSubstitutePath} " +
+               "-o #{$LocalOptionsFile} " +
+               "-c #{$LocalChoiceFile} " +
+               "-b #{$H2kFile} " +
+               "#{subRulesetsFlag} " +
+               "#{subCostFlag} " +
+               "--prm " +
+               "#{$gExtendedOutputFlag} " +
+               "#{$gHourlySimulationFlag}"
+
+  cmdtxt = File.open("run-cmd.ps1", 'w')
+  cmdtxt.write "#{cmdscript} -v "
+  cmdtxt.close
+
+  debugflag = $gLogDebugMsgs ? "" : "--no-debug"
+
+  pid = Process.spawn("#{cmdscript} #{debugflag}", :err => "substitute-h2k-errors.txt")
+  $PIDS[thread] = pid
+  update_run_status(threads_delta: 1)
+
+  if snail_delay && $snailStart
+    1.upto(5) do
+      sleep($snailStartWait.to_f / 5.0)
+    end
+  end
+
+  Dir.chdir($gMasterPath)
+  $choicefileIndex = $choicefileIndex + 1
+
+  pid
+end
+
+def run_these_cases_async(current_task_files)
+  $RunResults         = Hash.new
+  $choicefiles        = Array.new
+  $PIDS               = Array.new
+  $FinishedTheseFiles = Hash.new
+  $RunNumbers         = Array.new
+  $CompletedRunCount  = 0
+  $FailedRunCount     = 0
+  $GiveUp             = false
+
+  current_task_files.each do |choicefile|
+    $FinishedTheseFiles[choicefile] = false
+  end
+
+  total_files = current_task_files.length
+  return if total_files.zero?
+
+  $choicefileIndex = 0
+  $RunsDone = false
+  startRunsTime = Time.now
+
+  fJSONout = File.open("#{$gOutputJSON}", 'w')
+  json_state = { file: fJSONout, first_line: true, last_count: 0 }
+  header_state = { written: $bReadyToResume ? true : false }
+
+  batchStatusUpdate = Array.new
+  pending_queue = current_task_files.dup
+  slot_state = {}
+  active_slots = {}
+  snail_slots_remaining = $snailStart ? $gNumberOfThreads : 0
+
+  $batchCount = 0
+  update_run_status(threads_total: $gNumberOfThreads)
+  update_run_status(action: "Initializing runs")
+
+  spawn_run = lambda do |thread|
+    choicefile = pending_queue.shift
+    return unless choicefile
+
+    $batchCount += 1
+    fracCompleted = ($choicefileIndex.to_f / total_files.to_f)
+    if fracCompleted.positive?
+      timeNow = Time.now
+      timeLapsed = (timeNow - startRunsTime)
+      timeRemaining = timeLapsed / fracCompleted - timeLapsed
+      update_run_status(time_left: "#{formatTimeInterval(timeRemaining)}")
+    end
+
+    update_run_status(batch: $batchCount)
+    pid = launch_run_for_thread(thread, choicefile, snail_delay: snail_slots_remaining.positive?)
+    snail_slots_remaining -= 1 if snail_slots_remaining.positive?
+    slot_state[thread] = { choicefile: choicefile, start_time: Time.now }
+    active_slots[thread] = pid
+  end
+
+  (0...$gNumberOfThreads).each do |thread|
+    break if pending_queue.empty?
+    spawn_run.call(thread)
+  end
+
+  while !active_slots.empty?
+    pid, status = Process.wait2(-1)
+    thread = active_slots.key(pid)
+    thread ||= $PIDS.index(pid)
+
+    unless thread
+      warn_out("Received completion for unknown PID #{pid}")
+      next
+    end
+
+    run_key = "run-#{thread}"
+    if $RunResults[run_key] && status.exitstatus != 0
+      $RunResults[run_key]["status"]["success"] = false
+      $RunResults[run_key]["status"]["errors"].push " Run failed - substitute-h2k.rb returned status #{status.exitstatus}"
+    end
+
+    update_run_status(action: "Shutting down thread ##{thread + 1}")
+    update_run_status(threads_delta: -1)
+
+    batchStatusUpdate.clear
+    batchStartTime = slot_state[thread][:start_time]
+    process_completed_runs([thread], batchStatusUpdate, batchStartTime, header_state, json_state)
+
+    active_slots.delete(thread)
+    slot_state.delete(thread)
+
+    completed = $FinishedTheseFiles.values.count(true)
+    fracCompleted = completed.to_f / total_files.to_f
+    update_run_status(frac_done: "#{(fracCompleted * 100).round(2)}")
+    update_run_status(run_count: completed)
+
+    break if $GiveUp
+
+    unless pending_queue.empty?
+      spawn_run.call(thread)
+    end
+  end
+
+  json_state[:file].close
+  Dir.chdir($gMasterPath)
+
+  $RunsDone = true unless $FinishedTheseFiles.has_value?(false)
+end
+
+def process_completed_runs(thread_indices, batchStatusUpdate, batchStartTime, header_state, json_state)
+  return if thread_indices.nil? || thread_indices.empty?
+
+  run_keys = thread_indices.map { |idx| "run-#{idx}" }
+
+  thread_indices.each do |thread_idx|
+    run_key = "run-#{thread_idx}"
+
+    Dir.chdir($gMasterPath)
+    Dir.chdir($RunDirs[thread_idx])
+
+    # Save HTAP-prm run information
+    $RunResults[run_key]["configuration"]["RunNumber"]      = "#{$RunNumbers[thread_idx].to_s}"
+    $RunResults[run_key]["configuration"]["RunDirectory"]   = "#{$RunDirs[thread_idx].to_s}"
+    $RunResults[run_key]["configuration"]["SaveDirectory"]  = "#{$SaveDirs[thread_idx].to_s}"
+    $RunResults[run_key]["configuration"]["ChoiceFile"]     = "#{$choicefiles[thread_idx].to_s}"
+
+    run_failed = false
+
+    # Parse contents of substitute-h2k-errors.txt, which may contain ruby errors if substitute-h2k.rb did
+    # not execute correctly.
+    $RunResults[run_key]["status"]["substitute-h2k-err-msgs"] = "nil"
+
+    if File.exist?("substitute-h2k-errors.txt")
+      errmsgs = File.read("substitute-h2k-errors.txt")
+      errmsgs_chk = errmsgs
+      unless errmsgs_chk.gsub(/\n*/, "").gsub(/ */, "").empty?
+        $RunResults[run_key]["status"]["substitute-h2k-err-msgs"] = errmsgs
+      end
+    end
+
+    # if JSON output was generated, default to parsing that.
+    json_parsed = false
+    debug_out "Looking for #{$RunResultFilenameV2} ? \n"
+
+    if File.exist?($RunResultFilenameV2)
+      debug_out "Found it. Parsing JSON output !\n"
+      contents = File.read($RunResultFilenameV2)
+      this_run_results = JSON.parse(contents)
+
+      # Delete audit data unless it is requested.
+      if !this_run_results["cost-estimates"].nil? &&
+         !this_run_results["cost-estimates"]["audit"].nil? &&
+         ! $gTest_params["audit-costs"]
+        this_run_results["cost-estimates"]["audit"] = nil
+      end
+
+      this_run_results.keys.each do |section|
+        if section.eql?("status") || section.eql?("configuration")
+          this_run_results[section].keys.each do |node|
+            debug_out("  ------ #{section}/#{node}\n")
+            if section == status && node == "success" && $RunResults[run_key][section][node] == false
+              next
+            else
+              $RunResults[run_key][section][node] = this_run_results[section][node]
+            end
+          end
+        else
+          debug_out " ...... #{section} \n"
+          $RunResults[run_key][section] = this_run_results[section]
+        end
+      end
+      run_failed = true if !$RunResults[run_key]["status"]["success"]
+      json_parsed = true
+
+      # Extract data for use in pathway tool
+      LEEPPathways.ExtractPathwayData(this_run_results) if $gLEEPPathwayExport
+    end
+
+    # if JSON output not found, attempt to parse summary-out file
+    if json_parsed
+      debug_out "No futher file processing needed\n"
+      debug_out drawRuler " . "
+      debug_out "results from #{run_key}:\n"
+    elsif File.exist?($RunResultFilename)
+      debug_out "processing old token/value file \n"
+
+      contents = File.open($RunResultFilename, 'r')
+
+      ec = 0
+      wc = 0
+      lineCount = 0
+
+      tokenResults = Hash.new
+
+      begin
+        contents.each do |line|
+          lineCount = lineCount + 1
+          line_clean = line.gsub(/ /, '')
+          line_clean = line.gsub(/\n/, '')
+          unless line_clean.to_s.empty?
+            contents_array = line_clean.split('=')
+            token = contents_array[0].gsub(/\s*/, '')
+            value = contents_array[1].gsub(/^\s*/, '')
+            value = contents_array[1].gsub(/^ /, '')
+            value = contents_array[1].gsub(/ +$/, '')
+
+            case token
+            when /s.error/
+              token.concat("@#{ec}")
+              ec = ec + 1
+            when /s.warning/
+              token.concat("@#{wc}")
+              wc = wc + 1
+            end
+            tokenResults[token] = value
+          end
+        end
+        contents.close
+      rescue
+        tokenResults["status.success"] = "false"
+      end
+
+      if tokenResults["status.success"] =~ /false/
+        run_failed = true
+        $RunResults[run_key]["status"]["success"] = false
+      else
+        $RunResults[run_key]["status"]["success"] = true
+      end
+
+      tokenResults.each_key do |token|
+        tokenResults[token].gsub!(/,/, ';')
+        node = token.gsub(/\./, '|')
+
+        case token
+        when /^status/
+          $RunResults[run_key]["status"][node.gsub(/^status\|/, '')] = tokenResults[token]
+        when /^configuration/
+          $RunResults[run_key]["configuration"][node.gsub(/^configuration\|/, '')] = tokenResults[token]
+        when /^input/
+          field = node.gsub(/^input\|/, '')
+          if field.eql?("Opt-archetype")
+            $RunResults[run_key]["configuration"]["archetype"] = tokenResults[token]
+          else
+            $RunResults[run_key]["input"][field] = tokenResults[token]
+          end
+        when /^archetype/
+          $RunResults[run_key]["archetype"][node.gsub(/^archetype\|/, '')] = tokenResults[token]
+        when /^cost-estimates/
+          $RunResults[run_key]["cost-estimates"][node.gsub(/^cost-estimates\|/, '')] = tokenResults[token]
+        else
+          $RunResults[run_key][node] = tokenResults[token]
+        end
+      end
+    else
+      warn_out("Could not parse results from #{$RunDirs[thread_idx]}")
+      $RunResults[run_key]["status"]["success"] = false
+      run_failed = true
+    end
+
+    # Save files from runs that failed, or possibly all runs.
+    if $gSaveAllRuns || run_failed || !$RunResults[run_key]["status"]["success"]
+      Dir.chdir($gMasterPath)
+      if !Dir.exist?($SaveDirs[thread_idx])
+        Dir.mkdir($SaveDirs[thread_idx])
+      else
+        FileUtils.rm_rf Dir.glob("#{$SaveDirs[thread_idx]}/*.*")
+      end
+
+      FileUtils.cp(Dir.glob("#{$RunDirs[thread_idx]}/*.*"), "#{$SaveDirs[thread_idx]}")
+      FileUtils.rm_rf("#{$RunDirs[thread_idx]}/sim-output")
+    end
+
+    # Update status of this thread.
+    $FinishedTheseFiles[$choicefiles[thread_idx]] = true
+  end
+
+  errs = ""
+  currentAction = "Postprocessing results"
+  $outputlines = ""
+  row = 0
+
+  $gJSONAllData = {
+    "htap-results" => Array.new,
+    "htap-configuration" => Array.new
+  }
+
+  $gJSONAllData["htap-configuration"] = {
+    "git-branch" => $branch_name,
+    "git-revision" => $revision_number,
+    "runs-by-h2kVersion" => Hash.new
+  }
+
+  run_keys.each do |run|
+    next unless $RunResults.key?(run)
+
+    thisRunHash = {
+      "result-number"     => $gHashLoc + 1,
+      "status"            => $RunResults[run]["status"],
+      "archetype"         => $RunResults[run]["archetype"],
+      "input"             => $RunResults[run]["input"],
+      "output"            => $RunResults[run]["output"],
+      "configuration"     => $RunResults[run]["configuration"],
+      "cost-estimates"    => $RunResults[run]["cost-estimates"]
+    }
+
+    if !$gTest_params["audit-costs"]
+      thisRunHash["cost-estimates"]["audit"] = nil if thisRunHash["cost-estimates"]
+    end
+
+    begin
+      h2kVersion = thisRunHash["configuration"]["version"]["HOT2000"]
+      unless $gJSONAllData["htap-configuration"]["runs-by-h2kVersion"].key?(h2kVersion)
+        $gJSONAllData["htap-configuration"]["runs-by-h2kVersion"][h2kVersion] = 0
+      end
+
+      $gJSONAllData["htap-configuration"]["runs-by-h2kVersion"][h2kVersion] += 1
+
+      if !$RunResults[run]["analysis_BCStepCode"].nil?
+        thisRunHash["analysis:BCStepCode"] = $RunResults[run]["analysis_BCStepCode"]
+      end
+    rescue
+    end
+
+    $gJSONAllData["htap-results"].push thisRunHash
+
+    if $RunResults[run]["status"]["success"] == false
+      errs = "\n\n       (!) simulation errors found (!)"
+      msg = "#{$RunResults[run]["configuration"]["ChoiceFile"]} (dir: #{$RunResults[run]["configuration"]["SaveDirectory"]}) - substitute-h2k.rb reports errors"
+      $failures.write "#{msg}\n"
+      $FailedRuns.push msg
+      $FailedRunCount = $FailedRunCount + 1
+      update_run_status(err_count: $FailedRunCount)
+    else
+      thread = run.gsub(/run-/, "").to_i
+      batchStatusUpdate.push $choicefiles[thread]
+      $CompletedRunCount = $CompletedRunCount + 1
+    end
+
+    $gHashLoc = $gHashLoc + 1
+
+    if $RunResults[run]["status"]["success"] == false && $StopOnError
+      $RunsDone = true
+      $GiveUp = true
+    end
+    Dir.chdir($gMasterPath)
+  end
+
+  outputlines = ""
+  headerLine = ""
+  batchSuccessCount = 0
+
+  headerOut = header_state[:written]
+
+  update_run_status(action: "Writing CSV output")
+
+  run_keys.each do |run|
+    data = $RunResults[run]
+    next if data.nil? || data["status"].nil? || data["status"]["success"].to_s =~ /false/ || data["status"]["success"] == false
+    batchSuccessCount += 1
+    debug_off
+    data.keys.sort.each do |section|
+      data[section].keys.sort.each do |subsection|
+        contents = data[section][subsection]
+
+        if section =~ /cost-estimates/ && (subsection =~ /byAttribute/ || subsection =~ /byBuildingComponent/)
+          contents.each do |colName, colValue|
+            headerLine.concat("#{section}|#{subsection}|#{colName},") unless headerOut
+            result = colValue.is_a?(Hash) || colValue.is_a?(Array) ? "Details in JSON output" : colValue
+            outputlines.concat("#{result},")
+          end
+        else
+          headerLine.concat("#{section}|#{subsection},") unless headerOut
+          result = contents.is_a?(Hash) || contents.is_a?(Array) ? "Details in JSON output" : contents
+          outputlines.concat("#{result},")
+        end
+      end
+    end
+
+    unless headerOut
+      headerLine.concat("\n")
+      $fCSVout.write(headerLine)
+      headerOut = true
+    end
+    outputlines.concat("\n")
+  end
+
+  debug_off
+  $fCSVout.write(outputlines)
+  $fCSVout.flush
+
+  if $gJSONize
+    update_run_status(action: "Writing JSON output")
+    stream_out("        -> Writing JSON output to HTAP-prm-output.json... ")
+
+    fJSONout = json_state[:file]
+    firstJSONLine = json_state[:first_line]
+    lastCount = json_state[:last_count]
+
+    nextBatch = JSON.pretty_generate($gJSONAllData)
+    configStarted = false
+    configtxt = "  ],\n"
+    nextBatch.each_line do |line|
+      configStarted = true if line =~ /"htap-configuration": \{/
+      configtxt += line if configStarted
+    end
+    configtxt += "\n"
+    configtxt.gsub!(/\n/, "\r\n")
+    thisCount = configtxt.length
+
+    if !firstJSONLine
+      fJSONout.seek(-lastCount, :CUR)
+      txtOut = ",\n"
+      txtOut += nextBatch.gsub(/^\{\n^\s*\"htap-results\":\s*\[\n/, "")
+    else
+      txtOut = nextBatch
+    end
+
+    lastCount = thisCount
+    firstJSONLine = false
+    fJSONout.write txtOut
+    fJSONout.flush
+
+    json_state[:first_line] = firstJSONLine
+    json_state[:last_count] = lastCount
+  end
+
+  if $gLEEPPathwayExport
+    update_run_status(action: "Exporting Pathway file")
+    LEEPPathways.ExportPathwayData()
+  end
+
+  update_run_status(action: "Updating HTAP.resume file")
+  list = ""
+  batchStatusUpdate.each do |run|
+    list += "#{run}\n"
+  end
+  $fResume.write list
+  batchStatusUpdate.clear
+  $fResume.flush
+
+  $failures.flush
+
+  run_keys.each { |run| $RunResults.delete(run) }
+
+  batchLapsedTime = "#{(Time.now - batchStartTime).round(0)}"
+
+  HTAPConfig.countSuccessfulEvals(batchSuccessCount)
+  HTAPConfig.writeConfigData()
+
+  update_run_status(action: "Batch complete")
+
+  header_state[:written] = headerOut
+
+  unless $FinishedTheseFiles.has_value?(false)
+    $RunsDone = true
+    update_run_status(action: "Job complete")
+  end
+end
+
 def run_these_cases(current_task_files)
+  return run_these_cases_async(current_task_files)
 
 
   $RunResults         = Hash.new
