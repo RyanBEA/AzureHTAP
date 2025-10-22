@@ -1670,7 +1670,7 @@ def run_these_cases(current_task_files)
             if ( section.eql?("status") || section.eql?("configuration") ) then
               thisRunResults[section].keys.each do | node |
                 debug_out ("  ------ #{section}/#{node}\n")
-                if ( section == status && node == "success" && $RunResults["run-#{thread3}"][section][node] == false ) then
+                if ( section == "status" && node == "success" && $RunResults["run-#{thread3}"][section][node] == false ) then
 
                 else
                   $RunResults["run-#{thread3}"][section][node]  = thisRunResults[section][node]
