@@ -13,6 +13,7 @@ require 'pp'
 require 'json'
 require 'set'
 require 'rexml/document'
+require 'thread'
 
 
 require_relative 'inc/msgs'
@@ -825,6 +826,8 @@ def run_these_cases_async(current_task_files)
   pending_queue = current_task_files.dup
   slot_state = {}
   active_slots = {}
+  watcher_threads = {}
+  completion_queue = Queue.new
   snail_slots_remaining = $snailStart ? $gNumberOfThreads : 0
 
   $batchCount = 0
@@ -849,6 +852,15 @@ def run_these_cases_async(current_task_files)
     snail_slots_remaining -= 1 if snail_slots_remaining.positive?
     slot_state[thread] = { choicefile: choicefile, start_time: Time.now }
     active_slots[thread] = pid
+
+    watcher_threads[thread] = Thread.new(thread, pid) do |thread_idx, child_pid|
+      begin
+        _, wait_status = Process.wait2(child_pid)
+        completion_queue << { thread: thread_idx, pid: child_pid, status: wait_status }
+      rescue => e
+        completion_queue << { thread: thread_idx, pid: child_pid, error: e }
+      end
+    end
   end
 
   (0...$gNumberOfThreads).each do |thread|
@@ -856,31 +868,41 @@ def run_these_cases_async(current_task_files)
     spawn_run.call(thread)
   end
 
-  while !active_slots.empty?
-    pid, status = Process.wait2(-1)
-    thread = active_slots.key(pid)
-    thread ||= $PIDS.index(pid)
+  loop do
+    break if active_slots.empty?
 
-    unless thread
-      warn_out("Received completion for unknown PID #{pid}")
+    completion = completion_queue.pop
+    thread = completion[:thread]
+    pid = completion[:pid]
+    status = completion[:status]
+
+    unless active_slots.key?(thread)
+      warn_out("Received completion for unknown slot #{thread} (PID #{pid})")
       next
     end
 
+    if status.nil? && completion[:error]
+      warn_out("Thread #{thread + 1} wait failed: #{completion[:error].message}")
+    end
+
     run_key = "run-#{thread}"
-    if $RunResults[run_key] && status.exitstatus != 0
+    if $RunResults[run_key] && (!status || status.exitstatus != 0)
+      exit_code = status ? status.exitstatus : "unknown"
       $RunResults[run_key]["status"]["success"] = false
-      $RunResults[run_key]["status"]["errors"].push " Run failed - substitute-h2k.rb returned status #{status.exitstatus}"
+      $RunResults[run_key]["status"]["errors"].push " Run failed - substitute-h2k.rb returned status #{exit_code}"
     end
 
     update_run_status(action: "Shutting down thread ##{thread + 1}")
     update_run_status(threads_delta: -1)
 
     batchStatusUpdate.clear
-    batchStartTime = slot_state[thread][:start_time]
+    batchStartTime = slot_state[thread] ? slot_state[thread][:start_time] : Time.now
     process_completed_runs([thread], batchStatusUpdate, batchStartTime, header_state, json_state)
 
     active_slots.delete(thread)
     slot_state.delete(thread)
+    watcher = watcher_threads.delete(thread)
+    watcher.join if watcher
 
     completed = $FinishedTheseFiles.values.count(true)
     fracCompleted = completed.to_f / total_files.to_f
@@ -893,6 +915,8 @@ def run_these_cases_async(current_task_files)
       spawn_run.call(thread)
     end
   end
+
+  watcher_threads.each_value(&:join)
 
   json_state[:file].close
   Dir.chdir($gMasterPath)
